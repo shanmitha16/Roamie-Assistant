@@ -1,0 +1,83 @@
+{
+  "app": {
+    "name": "Roamie",
+    "tagline": "Your AI Travel Companion"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "disruption": "Disruption Shield",
+    "expenses": "Expenses",
+    "checklist": "Packing & Docs",
+    "onboarding": "Setup",
+    "logout": "Logout"
+  },
+  "onboarding": {
+    "title": "Welcome to Roamie",
+    "subtitle": "Your AI-powered travel companion",
+    "login": "Sign In",
+    "createAccount": "Create Account",
+    "email": "Email",
+    "password": "Password",
+    "name": "Full Name",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "preferences": "Your Preferences",
+    "preferencesSubtitle": "Tell us about yourself so we can personalize your experience",
+    "language": "Language",
+    "tripPurpose": "Trip Purpose",
+    "business": "Business",
+    "leisure": "Leisure",
+    "dietary": "Dietary",
+    "seat": "Seat",
+    "getStarted": "Get Started"
+  },
+  "dashboard": {
+    "title": "Your Trips",
+    "newTrip": "New Trip",
+    "createTrip": "Plan a New Trip",
+    "destination": "Destination",
+    "start": "Start Date",
+    "end": "End Date",
+    "create": "Create Trip",
+    "itinerary": "Itinerary",
+    "days": "days",
+    "flights": "Flights",
+    "hotel": "Hotel",
+    "buildItinerary": "Build Itinerary",
+    "building": "Building...",
+    "noItinerary": "No itinerary yet",
+    "buildHint": "Click 'Build Itinerary' to generate an AI-powered itinerary"
+  },
+  "disruption": {
+    "title": "Disruption Shield",
+    "subtitle": "Simulate a flight cancellation and watch Roamie resolve everything automatically",
+    "simulate": "Simulate Flight Cancellation",
+    "confirmPay": "Confirm & Pay"
+  },
+  "expenses": {
+    "title": "Expense AI",
+    "subtitle": "Paste receipt text and let AI categorize your spending",
+    "pasteReceipt": "Paste Receipt Text",
+    "placeholder": "Jumbo Seafood Clarke Quay\nChilli Mud Crab $65\nMantou $8\nDrinks $12\nTotal: SGD 85.00",
+    "scan": "Scan Receipt",
+    "breakdown": "Spending Breakdown",
+    "total": "Total Spend",
+    "transactions": "transactions"
+  },
+  "checklist": {
+    "title": "Packing & Documents",
+    "noTrip": "Select a trip to see your checklists",
+    "packing": "Packing List",
+    "docs": "Visa & Documents",
+    "laws": "Local Laws"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Retry",
+    "save": "Save",
+    "cancel": "Cancel",
+    "close": "Close",
+    "next": "Next"
+  }
+}

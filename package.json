@@ -1,0 +1,16 @@
+{
+  "name": "roamie",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Roamie — AI Travel Companion",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:api\" \"npm run dev:web\"",
+    "dev:api": "cd apps/api && npm run dev",
+    "dev:web": "cd apps/web && npm run dev",
+    "build": "cd apps/web && npm run build",
+    "test": "cd apps/api && npm test"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

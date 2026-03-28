@@ -1,0 +1,194 @@
+{
+  "singapore": {
+    "days": {
+      "day1": {
+        "events": [
+          {"time":"08:00","duration_minutes":60,"type":"food","title":"Breakfast at Ya Kun Kaya Toast","description":"Start your day with the iconic kaya toast and kopi set — a true Singaporean breakfast ritual since 1944.","location":"Ya Kun Kaya Toast, Far East Square","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"09:30","duration_minutes":120,"type":"sightseeing","title":"Marina Bay Sands & Gardens by the Bay","description":"Walk along the Marina Bay waterfront. Visit the Supertree Grove — free entry, stunning architecture.","location":"Gardens by the Bay","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"12:00","duration_minutes":90,"type":"food","title":"Lunch at Maxwell Food Centre","description":"Try the legendary Tian Tian Hainanese Chicken Rice — Michelin Bib Gourmand, under S$5.","location":"Maxwell Food Centre, Chinatown","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"14:00","duration_minutes":120,"type":"sightseeing","title":"Chinatown Heritage Walk","description":"Explore Buddha Tooth Relic Temple, Chinatown Street Market, and the colourful shophouses.","location":"Chinatown, Singapore","isGapSuggestion":false,"isBreathingRoom":false,"culturalNudge":"Remove shoes before entering the Buddha Tooth Relic Temple. Dress modestly — cover shoulders and knees."},
+          {"time":"16:30","duration_minutes":30,"type":"break","title":"Breathing Room","description":"Cool down at a local café. Try an iced coffee at Tiong Bahru Bakery before the evening rush.","location":"Tiong Bahru Bakery","isGapSuggestion":false,"isBreathingRoom":true},
+          {"time":"17:30","duration_minutes":90,"type":"activity","title":"Clarke Quay Riverside Walk","description":"Walk along the Singapore River. Watch the boats go by. Great vibe as the lights come on at sunset.","location":"Clarke Quay","isGapSuggestion":true,"isBreathingRoom":false},
+          {"time":"19:30","duration_minutes":90,"type":"food","title":"Dinner at Lau Pa Sat","description":"One of Singapore's most iconic hawker centres in a beautiful Victorian-era cast iron structure. Try satay from Satay Street.","location":"Lau Pa Sat, Raffles Quay","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"21:30","duration_minutes":60,"type":"sightseeing","title":"Marina Bay Sands Light Show","description":"Watch the Spectra light and water show. Free. Best viewed from the waterfront promenade.","location":"Marina Bay Sands Event Plaza","isGapSuggestion":false,"isBreathingRoom":false}
+        ]
+      },
+      "day2": {
+        "events": [
+          {"time":"08:30","duration_minutes":60,"type":"food","title":"Breakfast at Toast Box","description":"Traditional nanyang coffee and thick toast set — perfect fuel for a day of exploration.","location":"Toast Box, Orchard Road","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"10:00","duration_minutes":150,"type":"activity","title":"Sentosa Island Adventure","description":"Cable car to Sentosa. Visit the SEA Aquarium or just enjoy Palawan Beach — Southeast Asia's southernmost point.","location":"Sentosa Island","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"12:30","duration_minutes":60,"type":"food","title":"Lunch at Vivocity Food Republic","description":"Massive food court with everything from laksa to dim sum. Budget-friendly, air-conditioned.","location":"Vivocity Mall","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"14:00","duration_minutes":120,"type":"sightseeing","title":"Little India Walking Tour","description":"Colourful shophouses, Sri Veeramakaliamman Temple, spice shops, and the best biryani in Singapore.","location":"Little India, Singapore","isGapSuggestion":false,"isBreathingRoom":false,"culturalNudge":"Photography may be restricted inside Hindu temples. Ask before photographing worshippers."},
+          {"time":"16:30","duration_minutes":30,"type":"break","title":"Breathing Room","description":"Decompress at a quiet café in Kampong Glam before the evening leg.","location":"Haji Lane Café","isGapSuggestion":false,"isBreathingRoom":true},
+          {"time":"17:30","duration_minutes":120,"type":"shopping","title":"Orchard Road Shopping","description":"Singapore's iconic shopping strip. Window shop at ION Orchard or browse local boutiques at Mandarin Gallery.","location":"Orchard Road","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"20:00","duration_minutes":90,"type":"food","title":"Dinner at Jumbo Seafood","description":"Singapore's signature chilli crab — a must-try dish. Book ahead to avoid the queue.","location":"Jumbo Seafood, Clarke Quay","isGapSuggestion":false,"isBreathingRoom":false}
+        ]
+      },
+      "day3": {
+        "events": [
+          {"time":"07:30","duration_minutes":60,"type":"food","title":"Breakfast at Killiney Kopitiam","description":"One of Singapore's oldest kopitiams. Try the kopi and French toast with kaya butter.","location":"Killiney Kopitiam, Killiney Road","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"09:00","duration_minutes":120,"type":"sightseeing","title":"Botanic Gardens (UNESCO)","description":"Singapore's UNESCO World Heritage Site. Explore the National Orchid Garden — 1,000+ orchid species.","location":"Singapore Botanic Gardens","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"11:30","duration_minutes":60,"type":"food","title":"Brunch at Tiong Bahru","description":"Explore Singapore's hippest neighbourhood. Local bakeries, specialty coffee, indie bookshops.","location":"Tiong Bahru","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"13:00","duration_minutes":90,"type":"activity","title":"National Gallery Singapore","description":"Southeast Asia's largest modern art museum, housed in two magnificent heritage buildings.","location":"National Gallery Singapore","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"15:00","duration_minutes":30,"type":"break","title":"Breathing Room","description":"One last quiet moment before heading to the airport. Reflect on the trip at Merlion Park.","location":"Merlion Park","isGapSuggestion":false,"isBreathingRoom":true},
+          {"time":"16:00","duration_minutes":60,"type":"shopping","title":"Last-Minute Shopping","description":"Pick up souvenirs at Bugis Street Market — Singapore's largest street shopping destination.","location":"Bugis Street Market","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"17:30","duration_minutes":60,"type":"transport","title":"Transfer to Airport","description":"Head to Changi Airport. Allow 60 minutes for travel time.","location":"Singapore Changi Airport","isGapSuggestion":false,"isBreathingRoom":false}
+        ]
+      }
+    },
+    "documentChecklist": ["Valid passport (min 6 months validity)", "No visa needed for India passport holders (30-day free entry)", "Travel insurance (recommended)", "Hotel booking confirmation", "Return flight ticket", "Singapore dollars (SGD) — ATMs widely available", "SIM card or data eSIM for connectivity"],
+    "culturalNudges": ["Chewing gum is banned in Singapore — do not bring any", "Jaywalking is a fineable offence — use pedestrian crossings", "Durian is banned on public transport and in most hotels", "Tipping is not expected — service charge already included", "Remove shoes when entering temples and mosques"]
+  },
+  "mumbai": {
+    "days": {
+      "day1": {
+        "events": [
+          {"time":"08:00","duration_minutes":60,"type":"food","title":"Breakfast at Leopold Café","description":"Historic café in Colaba — vada pav, chai, and the buzzing energy of South Mumbai.","location":"Leopold Café, Colaba","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"09:30","duration_minutes":120,"type":"sightseeing","title":"Gateway of India & Taj Mahal Palace","description":"Mumbai's most iconic landmark. Walk around the harbour, photograph the Taj Hotel.","location":"Gateway of India","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"12:00","duration_minutes":90,"type":"food","title":"Lunch at Britannia & Co","description":"Try the legendary berry pulao — a Parsi delicacy served since 1923.","location":"Britannia & Co, Ballard Estate","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"14:00","duration_minutes":120,"type":"sightseeing","title":"Crawford Market & Chor Bazaar","description":"Explore Mumbai's oldest and most vibrant markets. Spices, antiques, street life at its best.","location":"Crawford Market","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"16:30","duration_minutes":30,"type":"break","title":"Breathing Room","description":"Cool down with a fresh coconut water on Marine Drive.","location":"Marine Drive","isGapSuggestion":false,"isBreathingRoom":true},
+          {"time":"17:30","duration_minutes":90,"type":"sightseeing","title":"Marine Drive Sunset","description":"Walk the Queen's Necklace as the sun sets. One of Mumbai's most iconic experiences.","location":"Marine Drive","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"19:30","duration_minutes":90,"type":"food","title":"Street Food at Chowpatty","description":"Pav bhaji, sev puri, kulfi — the ultimate Mumbai street food experience.","location":"Girgaon Chowpatty","isGapSuggestion":false,"isBreathingRoom":false}
+        ]
+      },
+      "day2": {
+        "events": [
+          {"time":"08:30","duration_minutes":60,"type":"food","title":"South Indian Breakfast","description":"Dosa, idli, and filter coffee at a traditional Udipi restaurant.","location":"Ram Ashraya, Matunga","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"10:00","duration_minutes":150,"type":"activity","title":"Elephanta Caves (UNESCO)","description":"Take a ferry from Gateway of India to these ancient rock-cut cave temples.","location":"Elephanta Island","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"13:00","duration_minutes":60,"type":"food","title":"Lunch at Bademiya","description":"Mumbai's king of kebabs. Late-night legend, but great anytime.","location":"Bademiya, Colaba","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"14:30","duration_minutes":120,"type":"sightseeing","title":"Dhobi Ghat & Dharavi Walk","description":"See the world's largest open-air laundry and take a respectful guided walk through Dharavi.","location":"Dhobi Ghat, Mahalaxmi","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"17:00","duration_minutes":30,"type":"break","title":"Breathing Room","description":"Sit at a Bandra café and people-watch along Hill Road.","location":"Bandra West","isGapSuggestion":false,"isBreathingRoom":true},
+          {"time":"18:00","duration_minutes":120,"type":"activity","title":"Bandra-Worli Sea Link & Bandstand","description":"Drive across the sea link, then walk to Shah Rukh Khan's Mannat — an iconic Bandra landmark.","location":"Bandstand Promenade, Bandra","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"20:30","duration_minutes":90,"type":"food","title":"Dinner at Peshawri","description":"Award-winning North Indian cuisine at ITC Grand Central.","location":"ITC Grand Central","isGapSuggestion":false,"isBreathingRoom":false}
+        ]
+      },
+      "day3": {
+        "events": [
+          {"time":"08:00","duration_minutes":60,"type":"food","title":"Irani Chai & Bun Maska","description":"Begin the last day with Mumbai's most beloved breakfast at Kyani & Co.","location":"Kyani & Co, Marine Lines","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"09:30","duration_minutes":120,"type":"sightseeing","title":"Chhatrapati Shivaji Terminus (UNESCO)","description":"One of the world's most beautiful railway stations. Gothic-Victorian architecture at its finest.","location":"CST Station","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"12:00","duration_minutes":60,"type":"food","title":"Thali Lunch","description":"Full Gujarati or Rajasthani thali — unlimited servings, incredible variety.","location":"Shree Thaker Bhojanalay","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"13:30","duration_minutes":90,"type":"shopping","title":"Linking Road & Hill Road Shopping","description":"Bargain for clothes, accessories, and souvenirs in Bandra's famous shopping streets.","location":"Linking Road, Bandra","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"15:30","duration_minutes":30,"type":"break","title":"Breathing Room","description":"Final quiet moment with a cutting chai at a street-side stall.","location":"Bandra Station Area","isGapSuggestion":false,"isBreathingRoom":true},
+          {"time":"16:30","duration_minutes":60,"type":"transport","title":"Transfer to Airport","description":"Head to Chhatrapati Shivaji International Airport.","location":"Mumbai Airport","isGapSuggestion":false,"isBreathingRoom":false}
+        ]
+      }
+    },
+    "documentChecklist": ["Valid passport", "Visa (if applicable)", "Travel insurance", "Hotel confirmations", "Indian Rupees (INR)", "Vaccination records if required"],
+    "culturalNudges": ["Remove shoes before entering temples", "Dress modestly at religious sites", "Haggle respectfully at markets", "Use right hand for greetings and eating", "Respect photography restrictions at religious sites"]
+  },
+  "london": {
+    "days": {
+      "day1": {
+        "events": [
+          {"time":"08:30","duration_minutes":60,"type":"food","title":"English Breakfast","description":"Full English at a traditional café — eggs, beans, toast, sausages, and a strong cup of tea.","location":"The Regency Café, Westminster","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"10:00","duration_minutes":120,"type":"sightseeing","title":"Westminster & Big Ben","description":"Walk past the Houses of Parliament, Big Ben, and Westminster Abbey.","location":"Westminster, London","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"12:30","duration_minutes":60,"type":"food","title":"Lunch at Borough Market","description":"London's most famous food market. Try a steak sandwich or fresh oysters.","location":"Borough Market","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"14:00","duration_minutes":120,"type":"sightseeing","title":"Tower of London","description":"See the Crown Jewels and explore 1,000 years of history.","location":"Tower of London","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"16:30","duration_minutes":30,"type":"break","title":"Breathing Room","description":"Afternoon tea break at a riverside café near Tower Bridge.","location":"Tower Bridge Area","isGapSuggestion":false,"isBreathingRoom":true},
+          {"time":"17:30","duration_minutes":90,"type":"sightseeing","title":"South Bank Walk","description":"Walk along the Thames from Tower Bridge to the Tate Modern.","location":"South Bank, London","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"19:30","duration_minutes":90,"type":"food","title":"Dinner","description":"Enjoy dinner at a gastropub in Southwark.","location":"Southwark, London","isGapSuggestion":false,"isBreathingRoom":false}
+        ]
+      },
+      "day2": {
+        "events": [
+          {"time":"09:00","duration_minutes":60,"type":"food","title":"Breakfast at Dishoom","description":"Bombay-style café — bacon naan roll is legendary.","location":"Dishoom, King's Cross","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"10:30","duration_minutes":150,"type":"sightseeing","title":"British Museum","description":"Free entry. See the Rosetta Stone, Egyptian mummies, and Parthenon sculptures.","location":"British Museum","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"13:00","duration_minutes":60,"type":"food","title":"Lunch in Covent Garden","description":"Choose from dozens of restaurants in London's liveliest piazza.","location":"Covent Garden","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"14:30","duration_minutes":120,"type":"shopping","title":"Oxford Street & Regent Street","description":"London's premier shopping streets — from luxury flagships to high street stores.","location":"Oxford Street","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"17:00","duration_minutes":30,"type":"break","title":"Breathing Room","description":"Relax in Hyde Park. People-watch near the Serpentine.","location":"Hyde Park","isGapSuggestion":false,"isBreathingRoom":true},
+          {"time":"18:00","duration_minutes":120,"type":"activity","title":"West End Show","description":"Catch a musical or play in London's Theatre District.","location":"West End, London","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"20:30","duration_minutes":90,"type":"food","title":"Dinner in Soho","description":"Late dinner in one of Soho's excellent restaurants.","location":"Soho, London","isGapSuggestion":false,"isBreathingRoom":false}
+        ]
+      },
+      "day3": {
+        "events": [
+          {"time":"08:30","duration_minutes":60,"type":"food","title":"Breakfast at The Wolseley","description":"Elegant European-style café-restaurant on Piccadilly.","location":"The Wolseley, Piccadilly","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"10:00","duration_minutes":120,"type":"sightseeing","title":"Buckingham Palace & St James's Park","description":"Watch the Changing of the Guard (check schedule) then walk through St James's Park.","location":"Buckingham Palace","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"12:30","duration_minutes":60,"type":"food","title":"Lunch at a Pub","description":"Traditional Sunday roast or fish and chips at a classic London pub.","location":"Local Pub, Westminster","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"14:00","duration_minutes":90,"type":"sightseeing","title":"Natural History Museum","description":"Free entry. Iconic building and world-class exhibits.","location":"Natural History Museum, South Kensington","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"16:00","duration_minutes":30,"type":"break","title":"Breathing Room","description":"Final cuppa at a Kensington café before heading to the airport.","location":"South Kensington","isGapSuggestion":false,"isBreathingRoom":true},
+          {"time":"17:00","duration_minutes":60,"type":"transport","title":"Transfer to Airport","description":"Head to Heathrow Airport via the Piccadilly Line or Heathrow Express.","location":"Heathrow Airport","isGapSuggestion":false,"isBreathingRoom":false}
+        ]
+      }
+    },
+    "documentChecklist": ["Valid passport (6+ months)", "UK visa if required (check visa requirements for your nationality)", "Travel insurance", "Oyster card or contactless payment for transport", "GBP cash for small purchases", "Umbrella (always)"],
+    "culturalNudges": ["Stand on the right side of escalators", "Queue patiently — cutting queues is a serious faux pas", "Tipping 10-15% is customary at restaurants", "The Tube stops running around midnight (check Night Tube on Fri/Sat)"]
+  },
+  "tokyo": {
+    "days": {
+      "day1": {
+        "events": [
+          {"time":"08:00","duration_minutes":60,"type":"food","title":"Breakfast at Tsukiji Outer Market","description":"Fresh sushi, tamagoyaki, and matcha — the classic Tokyo morning start.","location":"Tsukiji Outer Market","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"09:30","duration_minutes":120,"type":"sightseeing","title":"Senso-ji Temple, Asakusa","description":"Tokyo's oldest and most famous temple. Walk through Nakamise-dori shopping street.","location":"Senso-ji, Asakusa","isGapSuggestion":false,"isBreathingRoom":false,"culturalNudge":"Bow slightly before entering the temple gate. Do not touch the incense burner inside."},
+          {"time":"12:00","duration_minutes":60,"type":"food","title":"Ramen at Ichiran","description":"Solo-booth ramen experience — customise every detail on a paper slip. Iconic.","location":"Ichiran Ramen, Asakusa","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"13:30","duration_minutes":120,"type":"sightseeing","title":"Akihabara Electric Town","description":"Anime, manga, electronics — Japan's otaku capital. Fun even if you're not a fan.","location":"Akihabara","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"16:00","duration_minutes":30,"type":"break","title":"Breathing Room","description":"Quiet matcha at a traditional tea house in Ueno.","location":"Ueno Park","isGapSuggestion":false,"isBreathingRoom":true},
+          {"time":"17:00","duration_minutes":120,"type":"sightseeing","title":"Shibuya Crossing & Hachiko","description":"The world's busiest pedestrian crossing. Walk it as the lights change. Visit the Hachiko statue.","location":"Shibuya Crossing","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"19:30","duration_minutes":90,"type":"food","title":"Dinner in Shinjuku","description":"Explore Memory Lane (Omoide Yokocho) — tiny yakitori bars under the train tracks.","location":"Shinjuku, Tokyo","isGapSuggestion":false,"isBreathingRoom":false}
+        ]
+      },
+      "day2": {
+        "events": [
+          {"time":"08:30","duration_minutes":60,"type":"food","title":"Conbini Breakfast","description":"Japanese convenience stores are incredible — try an onigiri, egg sandwich, and Boss coffee.","location":"7-Eleven or Lawson","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"10:00","duration_minutes":120,"type":"sightseeing","title":"Meiji Shrine & Harajuku","description":"Walk through the serene forested path to Meiji Shrine, then hit Takeshita Street for pop culture overload.","location":"Meiji Shrine, Harajuku","isGapSuggestion":false,"isBreathingRoom":false,"culturalNudge":"Bow once before passing through the torii gate at Meiji Shrine. Keep your voice low inside the shrine grounds."},
+          {"time":"12:30","duration_minutes":60,"type":"food","title":"Crepes & Street Food in Harajuku","description":"Rainbow cotton candy, giant crepes, and the most photogenic food in Tokyo.","location":"Takeshita Street, Harajuku","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"14:00","duration_minutes":120,"type":"activity","title":"TeamLab Borderless","description":"Immersive digital art experience — one of the most visited museums in the world.","location":"TeamLab, Azabudai","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"16:30","duration_minutes":30,"type":"break","title":"Breathing Room","description":"Rest with an iced matcha latte at a Omotesando café.","location":"Omotesando","isGapSuggestion":false,"isBreathingRoom":true},
+          {"time":"17:30","duration_minutes":90,"type":"sightseeing","title":"Tokyo Tower at Sunset","description":"Climb Tokyo Tower for panoramic city views as the sun sets.","location":"Tokyo Tower","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"19:30","duration_minutes":90,"type":"food","title":"Omakase Sushi","description":"Multi-course chef's selection sushi at a traditional counter restaurant.","location":"Ginza","isGapSuggestion":false,"isBreathingRoom":false}
+        ]
+      },
+      "day3": {
+        "events": [
+          {"time":"08:00","duration_minutes":60,"type":"food","title":"Hotel Breakfast","description":"Japanese-style breakfast — grilled fish, miso soup, rice, pickles.","location":"Hotel","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"09:30","duration_minutes":120,"type":"sightseeing","title":"Imperial Palace East Gardens","description":"Beautiful free gardens surrounding the Emperor's residence. Peaceful morning walk.","location":"Imperial Palace East Gardens","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"12:00","duration_minutes":60,"type":"food","title":"Tonkatsu Lunch","description":"Crispy pork cutlet with cabbage and rice — a Tokyo comfort food staple.","location":"Maisen Tonkatsu, Omotesando","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"13:30","duration_minutes":90,"type":"shopping","title":"Ginza Shopping","description":"High-end shopping district. Browse Uniqlo's flagship, MUJI, and luxury boutiques.","location":"Ginza","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"15:30","duration_minutes":30,"type":"break","title":"Breathing Room","description":"Final moment of zen at a quiet garden café.","location":"Ginza","isGapSuggestion":false,"isBreathingRoom":true},
+          {"time":"16:30","duration_minutes":60,"type":"transport","title":"Transfer to Airport","description":"Take the Narita Express or Limousine Bus to the airport.","location":"Narita/Haneda Airport","isGapSuggestion":false,"isBreathingRoom":false}
+        ]
+      }
+    },
+    "documentChecklist": ["Valid passport (no visa needed for many nationalities, 90-day stay)", "Travel insurance", "Japan Rail Pass if planning day trips", "Suica/Pasmo IC card for transit", "Japanese Yen (JPY) — cash is still king in many places", "Pocket WiFi or eSIM"],
+    "culturalNudges": ["Never tip in Japan — it can be considered rude", "Speak quietly on trains — phone calls are taboo", "Always remove shoes when entering homes, temples, and many restaurants", "Do not eat while walking — find a bench or stand still to eat", "Bow when greeting — a slight nod is sufficient for tourists"]
+  },
+  "new york": {
+    "days": {
+      "day1": {
+        "events": [
+          {"time":"08:00","duration_minutes":60,"type":"food","title":"Bagel Breakfast","description":"Classic New York bagel with lox and cream cheese from a legendary deli.","location":"Russ & Daughters, Lower East Side","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"09:30","duration_minutes":120,"type":"sightseeing","title":"Statue of Liberty & Ellis Island","description":"Take the ferry to Liberty Island. Book the pedestal access for the best photo opportunity.","location":"Statue of Liberty, Liberty Island","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"12:00","duration_minutes":60,"type":"food","title":"Pizza Lunch","description":"Dollar slice or classic Margherita — you can't visit NYC without proper NY pizza.","location":"Joe's Pizza, Greenwich Village","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"13:30","duration_minutes":120,"type":"sightseeing","title":"9/11 Memorial & One World Observatory","description":"Pay respects at the memorial pools, then visit the observation deck for city views.","location":"World Trade Center","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"16:00","duration_minutes":30,"type":"break","title":"Breathing Room","description":"Coffee and people-watching at Washington Square Park.","location":"Washington Square Park","isGapSuggestion":false,"isBreathingRoom":true},
+          {"time":"17:00","duration_minutes":90,"type":"sightseeing","title":"High Line Walk","description":"Walk the elevated park built on a historic freight rail line. Stunning city views.","location":"The High Line","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"19:00","duration_minutes":120,"type":"food","title":"Dinner in Little Italy","description":"Pasta, wine, and the charm of Mulberry Street.","location":"Little Italy, Manhattan","isGapSuggestion":false,"isBreathingRoom":false}
+        ]
+      },
+      "day2": {
+        "events": [
+          {"time":"08:30","duration_minutes":60,"type":"food","title":"Diner Breakfast","description":"Classic American diner — pancakes, eggs, and bottomless coffee.","location":"Tom's Restaurant, Upper West Side","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"10:00","duration_minutes":150,"type":"sightseeing","title":"Central Park","description":"Walk the Great Lawn, Bethesda Fountain, and Bow Bridge.","location":"Central Park","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"12:30","duration_minutes":60,"type":"food","title":"Lunch at Chelsea Market","description":"Indoor food hall with everything from tacos to lobster rolls.","location":"Chelsea Market","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"14:00","duration_minutes":120,"type":"sightseeing","title":"Metropolitan Museum of Art","description":"One of the world's greatest art museums. Pay-what-you-wish for NY residents.","location":"The Met, Fifth Avenue","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"16:30","duration_minutes":30,"type":"break","title":"Breathing Room","description":"Sit on the Met steps and watch Fifth Avenue go by.","location":"Met Museum Steps","isGapSuggestion":false,"isBreathingRoom":true},
+          {"time":"17:30","duration_minutes":90,"type":"sightseeing","title":"Times Square & Broadway","description":"The neon-lit heart of NYC. Catch a Broadway show if time allows.","location":"Times Square","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"19:30","duration_minutes":90,"type":"food","title":"Dinner in Koreatown","description":"Korean BBQ on 32nd Street — grill your own meats and enjoy the vibrant K-Town energy.","location":"Koreatown, 32nd Street","isGapSuggestion":false,"isBreathingRoom":false}
+        ]
+      },
+      "day3": {
+        "events": [
+          {"time":"08:00","duration_minutes":60,"type":"food","title":"Brunch","description":"New York-style brunch — avocado toast, shakshuka, or eggs benedict.","location":"Sarabeth's","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"09:30","duration_minutes":120,"type":"sightseeing","title":"Brooklyn Bridge Walk","description":"Walk across the iconic bridge for stunning Manhattan skyline views. Start from the Brooklyn side.","location":"Brooklyn Bridge","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"12:00","duration_minutes":60,"type":"food","title":"DUMBO Food Scene","description":"Grab a slice at Juliana's or explore the local food scene under the Manhattan Bridge.","location":"DUMBO, Brooklyn","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"13:30","duration_minutes":90,"type":"shopping","title":"SoHo Shopping","description":"Designer boutiques, art galleries, and cast-iron architecture.","location":"SoHo, Manhattan","isGapSuggestion":false,"isBreathingRoom":false},
+          {"time":"15:30","duration_minutes":30,"type":"break","title":"Breathing Room","description":"Final coffee at a rooftop bar with city views.","location":"Rooftop Café, SoHo","isGapSuggestion":false,"isBreathingRoom":true},
+          {"time":"16:30","duration_minutes":60,"type":"transport","title":"Transfer to Airport","description":"Head to JFK or Newark Airport via subway + AirTrain or taxi.","location":"JFK Airport","isGapSuggestion":false,"isBreathingRoom":false}
+        ]
+      }
+    },
+    "documentChecklist": ["Valid passport (6+ months validity)", "ESTA approval or US visa", "Travel insurance", "USD cash and credit cards", "MetroCard for subway", "Hotel confirmations"],
+    "culturalNudges": ["Tip 18-20% at restaurants — it's not optional, it's expected", "Walk fast and stay to the right on sidewalks", "Don't block subway doors — let people exit first", "Jaywalking is common but technically illegal"]
+  }
+}

@@ -1,0 +1,27 @@
+src/adapters/controllers/checklist.controller.ts(17,46): error TS2345: Argument of type 'string | string[]' is not assignable to parameter of type 'string'.
+  Type 'string[]' is not assignable to type 'string'.
+src/adapters/controllers/checklist.controller.ts(23,60): error TS2345: Argument of type 'string | string[]' is not assignable to parameter of type 'string'.
+  Type 'string[]' is not assignable to type 'string'.
+src/adapters/controllers/checklist.controller.ts(57,46): error TS2345: Argument of type 'string | string[]' is not assignable to parameter of type 'string'.
+  Type 'string[]' is not assignable to type 'string'.
+src/adapters/controllers/checklist.controller.ts(60,60): error TS2345: Argument of type 'string | string[]' is not assignable to parameter of type 'string'.
+  Type 'string[]' is not assignable to type 'string'.
+src/adapters/controllers/disruption.controller.ts(115,16): error TS2322: Type 'string | string[]' is not assignable to type 'string | StringFilter<"DisruptionLog"> | undefined'.
+  Type 'string[]' is not assignable to type 'string | StringFilter<"DisruptionLog"> | undefined'.
+src/adapters/controllers/expense.controller.ts(8,17): error TS2554: Expected 1 arguments, but got 0.
+src/adapters/controllers/itinerary.controller.ts(51,51): error TS2345: Argument of type 'string | string[]' is not assignable to parameter of type 'string'.
+  Type 'string[]' is not assignable to type 'string'.
+src/adapters/controllers/trip.controller.ts(66,16): error TS2322: Type 'string | string[]' is not assignable to type 'string | undefined'.
+  Type 'string[]' is not assignable to type 'string'.
+src/adapters/controllers/trip.controller.ts(81,25): error TS2339: Property 'itinerary' does not exist on type '{ status: string; id: string; createdAt: Date; updatedAt: Date; userId: string; destination: string; startDate: Date; endDate: Date; }'.
+src/adapters/controllers/trip.controller.ts(81,40): error TS7006: Parameter 'day' implicitly has an 'any' type.
+src/adapters/controllers/trip.controller.ts(112,9): error TS2322: Type 'string | string[]' is not assignable to type 'string | undefined'.
+  Type 'string[]' is not assignable to type 'string'.
+src/adapters/controllers/trip.controller.ts(140,9): error TS2322: Type 'string | string[]' is not assignable to type 'string | undefined'.
+  Type 'string[]' is not assignable to type 'string'.
+src/adapters/services/WeatherService.ts(39,16): error TS18046: 'data' is of type 'unknown'.
+src/adapters/services/WeatherService.ts(41,20): error TS18046: 'data' is of type 'unknown'.
+src/adapters/services/WeatherService.ts(42,20): error TS18046: 'data' is of type 'unknown'.
+src/adapters/services/WeatherService.ts(43,37): error TS18046: 'data' is of type 'unknown'.
+src/adapters/services/WeatherService.ts(44,24): error TS18046: 'data' is of type 'unknown'.
+src/adapters/services/WeatherService.ts(45,45): error TS18046: 'data' is of type 'unknown'.

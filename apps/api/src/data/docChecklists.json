@@ -1,0 +1,17 @@
+{
+  "IN": {
+    "SG": {"visa":"No visa required (30-day free entry for Indian passport holders)","health":"No mandatory vaccinations. Yellow fever certificate if arriving from endemic country.","documents":["Valid passport (6+ months)","Return ticket","Hotel booking proof","Sufficient funds (~SGD 100/day)"],"money":"Singapore Dollar (SGD). Cards widely accepted. ATMs everywhere.","emergency":"Emergency: 999 (Police), 995 (Ambulance/Fire)"},
+    "GB": {"visa":"UK visa required. Apply via VFS Global. Processing: 3-6 weeks.","health":"No mandatory vaccinations.","documents":["Valid passport (6+ months)","UK visa","Travel insurance","Return ticket","Proof of accommodation","Bank statements (3 months)"],"money":"British Pound (GBP). Contactless widely accepted. Oyster card for transport.","emergency":"Emergency: 999 or 112"},
+    "JP": {"visa":"No visa required for tourism (90-day free entry). Must have return ticket.","health":"No mandatory vaccinations.","documents":["Valid passport (6+ months)","Return ticket","Hotel booking or host address","Customs declaration form (given on flight)"],"money":"Japanese Yen (JPY). Cash is king — many small shops don't accept cards. ATMs at 7-Eleven and post offices.","emergency":"Emergency: 110 (Police), 119 (Ambulance/Fire)"},
+    "US": {"visa":"B1/B2 visa or ESTA required. Interview may be needed at US embassy.","health":"No mandatory vaccinations.","documents":["Valid passport (validity for stay duration)","US visa or ESTA approval","Return ticket","Proof of funds","Hotel booking"],"money":"US Dollar (USD). Cards accepted almost everywhere. Tipping 18-20% expected.","emergency":"Emergency: 911"}
+  },
+  "US": {
+    "SG": {"visa":"No visa required (90-day free entry for US passport holders)","health":"No mandatory vaccinations.","documents":["Valid passport (6+ months)","Return ticket"],"money":"SGD. Cards widely accepted.","emergency":"Emergency: 999"},
+    "GB": {"visa":"No visa required (6-month visitor, electronic travel authorisation may apply)","health":"No mandatory vaccinations.","documents":["Valid passport","Return ticket"],"money":"GBP. Contactless everywhere.","emergency":"Emergency: 999"},
+    "JP": {"visa":"No visa required (90-day free entry)","health":"No mandatory vaccinations.","documents":["Valid passport","Return ticket","Customs declaration"],"money":"JPY. Carry cash.","emergency":"Emergency: 110/119"},
+    "IN": {"visa":"India eVisa required (30-day tourist). Apply online, processing 72 hours.","health":"No mandatory vaccinations but recommended: Hepatitis A/B, Typhoid.","documents":["Valid passport (6+ months)","India eVisa","Travel insurance","Return ticket"],"money":"Indian Rupee (INR). Cards accepted at most hotels/restaurants. Cash useful at markets.","emergency":"Emergency: 112"}
+  },
+  "default": {
+    "default": {"visa":"Check visa requirements at your embassy website.","health":"No mandatory vaccinations. Check WHO recommendations.","documents":["Valid passport (6+ months)","Visa if required","Travel insurance","Return ticket","Hotel booking confirmation"],"money":"Check local currency. Carry backup payment method.","emergency":"Emergency number varies by country. Common: 112 (international)"}
+  }
+}

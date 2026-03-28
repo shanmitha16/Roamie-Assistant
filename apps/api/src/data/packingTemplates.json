@@ -1,0 +1,78 @@
+{
+  "clothing_hot": [
+    {"item":"Light cotton t-shirts (×4)","reason":"Tropical climate — breathable fabrics essential","essential":true},
+    {"item":"Shorts / skirts (×3)","reason":"Daytime comfort in hot weather","essential":true},
+    {"item":"One long-sleeved shirt","reason":"Air-conditioned restaurants and sun protection","essential":true},
+    {"item":"Sandals / flip-flops","reason":"Beach, pool, and casual walking","essential":true},
+    {"item":"Comfortable walking shoes","reason":"Extended sightseeing trips","essential":true},
+    {"item":"Rain jacket / compact umbrella","reason":"Tropical rain showers are sudden and common","essential":true},
+    {"item":"Swimwear","reason":"Hotel pool, beach visits","essential":false},
+    {"item":"Hat or cap","reason":"Sun protection during outdoor activities","essential":false},
+    {"item":"Light pajamas","reason":"Comfortable sleepwear","essential":false}
+  ],
+  "clothing_cold": [
+    {"item":"Warm jacket / down coat","reason":"Cold weather protection","essential":true},
+    {"item":"Layers (fleece, sweaters ×3)","reason":"Indoor heating varies — layering is key","essential":true},
+    {"item":"Thermal underwear","reason":"Extra warmth for very cold days","essential":true},
+    {"item":"Warm trousers (×3)","reason":"Daily wear","essential":true},
+    {"item":"Warm socks (×5)","reason":"Cold feet = miserable day","essential":true},
+    {"item":"Waterproof boots","reason":"Rain, snow, and wet conditions","essential":true},
+    {"item":"Gloves and scarf","reason":"Wind chill protection","essential":true},
+    {"item":"Beanie / warm hat","reason":"Heat loss from head","essential":false}
+  ],
+  "clothing_mild": [
+    {"item":"Mix of t-shirts and long sleeves (×5)","reason":"Variable temperatures through the day","essential":true},
+    {"item":"Light jacket or cardigan","reason":"Morning and evening can be cool","essential":true},
+    {"item":"Comfortable jeans or chinos (×3)","reason":"Versatile for all occasions","essential":true},
+    {"item":"Walking shoes","reason":"Extended exploration days","essential":true},
+    {"item":"Dress shoes or smart sandals","reason":"Dinner reservations or evening events","essential":false},
+    {"item":"Rain jacket","reason":"Weather can be unpredictable","essential":true}
+  ],
+  "toiletries": [
+    {"item":"Toothbrush & toothpaste","reason":"Daily hygiene","essential":true},
+    {"item":"Deodorant","reason":"Daily hygiene","essential":true},
+    {"item":"Sunscreen SPF 50+","reason":"UV protection during outdoor activities","essential":true},
+    {"item":"Moisturiser","reason":"Airplane air dries skin; climate change can irritate","essential":false},
+    {"item":"Shampoo & conditioner (travel size)","reason":"Hotels may not have your preferred brand","essential":false},
+    {"item":"Razor / grooming kit","reason":"Personal grooming","essential":false},
+    {"item":"Medication / first aid kit","reason":"Basic painkillers, plasters, any prescriptions","essential":true},
+    {"item":"Insect repellent","reason":"Tropical destinations — mosquito protection","essential":false},
+    {"item":"Hand sanitiser (travel size)","reason":"Not all restrooms have soap","essential":true}
+  ],
+  "tech": [
+    {"item":"Phone + charger","reason":"Navigation, communication, cameras","essential":true},
+    {"item":"Universal power adapter","reason":"Different plug types worldwide","essential":true},
+    {"item":"Portable battery pack","reason":"Long days out — phone dies fast with GPS + camera","essential":true},
+    {"item":"Headphones / earbuds","reason":"Flights, transit, language apps","essential":false},
+    {"item":"Camera (if not using phone)","reason":"Better quality photos for memories","essential":false},
+    {"item":"Laptop + charger","reason":"Business trips or remote work","essential":false},
+    {"item":"eSIM / local SIM card","reason":"Data connectivity abroad","essential":true}
+  ],
+  "documents": [
+    {"item":"Passport (6+ months validity)","reason":"Required for international travel","essential":true},
+    {"item":"Visa / eVisa printout","reason":"Some countries require paper visa on arrival","essential":true},
+    {"item":"Travel insurance documents","reason":"Medical emergency, trip cancellation coverage","essential":true},
+    {"item":"Flight booking confirmations","reason":"Required at check-in and immigration","essential":true},
+    {"item":"Hotel booking confirmations","reason":"Proof of accommodation for immigration","essential":true},
+    {"item":"Copies of all documents (digital + paper)","reason":"Backup in case originals are lost","essential":true},
+    {"item":"Emergency contact card","reason":"Wallet card with emergency info","essential":false},
+    {"item":"International driving permit","reason":"If planning to rent a car","essential":false}
+  ],
+  "misc": [
+    {"item":"Day bag / backpack","reason":"Carry essentials during day trips","essential":true},
+    {"item":"Packing cubes","reason":"Organisation and space efficiency","essential":false},
+    {"item":"Reusable water bottle","reason":"Stay hydrated, reduce plastic waste","essential":true},
+    {"item":"Snacks for the flight","reason":"Airline food can be unreliable","essential":false},
+    {"item":"Neck pillow","reason":"Long-haul flight comfort","essential":false},
+    {"item":"Travel lock","reason":"Hostel lockers, luggage security","essential":false},
+    {"item":"Phrasebook / translation app","reason":"Communication in local language","essential":false}
+  ],
+  "business": [
+    {"item":"Business cards","reason":"Networking at meetings and events","essential":true},
+    {"item":"Formal wear (2 sets)","reason":"Client meetings and dinners","essential":true},
+    {"item":"Laptop + charger","reason":"Presentations and work","essential":true},
+    {"item":"Notebook + pen","reason":"Meeting notes","essential":true},
+    {"item":"Dress shoes","reason":"Professional appearance","essential":true},
+    {"item":"Portable monitor (optional)","reason":"Extended work sessions","essential":false}
+  ]
+}

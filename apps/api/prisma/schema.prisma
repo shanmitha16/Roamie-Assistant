@@ -19,10 +19,20 @@ model User {
   passportCountry String?
   paymentBalance  Float     @default(10000)
   travelProfile   String    @default("{}")
+  isAdmin         Boolean   @default(false)
   createdAt       DateTime  @default(now())
   updatedAt       DateTime  @updatedAt
   trips           Trip[]
   expenses        Expense[]
+}
+
+model Feedback {
+  id        String   @id @default(uuid())
+  name      String?
+  email     String?
+  rating    Int
+  message   String
+  createdAt DateTime @default(now())
 }
 
 model Trip {

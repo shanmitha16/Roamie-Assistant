@@ -10,6 +10,7 @@ interface User {
   dietaryPref?: string;
   seatPreference?: string;
   passportCountry?: string;
+  isAdmin?: boolean;
   paymentBalance?: number;
 }
 
@@ -47,6 +48,7 @@ interface AppStore {
   loading: boolean;
   error: string | null;
   itineraryBuilding: boolean;
+  recommendedPlan: any | null;
 
   login: (email: string, password: string) => Promise<void>;
   register: (data: { email: string; password: string; name: string; preferredLang: string; tripPurpose: string; dietaryPref?: string; seatPreference?: string; passportCountry?: string }) => Promise<void>;
@@ -79,6 +81,7 @@ interface AppStore {
   fetchNotes: (tripId: string) => Promise<any[]>;
   undoDay: (dayId: string) => Promise<any>;
   setError: (error: string | null) => void;
+  setRecommendedPlan: (plan: any) => void;
 }
 
 // Load persisted cart from localStorage
@@ -107,6 +110,7 @@ export const useStore = create<AppStore>((set: any, get: any) => ({
   loading: false,
   error: null,
   itineraryBuilding: false,
+  recommendedPlan: null,
 
   login: async (email: string, password: string) => {
     set({ loading: true, error: null });
@@ -205,7 +209,7 @@ export const useStore = create<AppStore>((set: any, get: any) => ({
 
   deleteTrip: async (id: string) => {
     await api.delete(`/trips/${id}`);
-    const trips = get().trips.filter(t => t.id !== id);
+    const trips = get().trips.filter((t: any) => t.id !== id);
     set({ trips });
     if (get().currentTrip?.id === id) set({ currentTrip: null });
   },
@@ -298,13 +302,13 @@ export const useStore = create<AppStore>((set: any, get: any) => ({
   },
 
   addToCart: (item: CartItem) => {
-    const cart = [...get().cart.filter(c => c.id !== item.id), item];
+    const cart = [...get().cart.filter((c: any) => c.id !== item.id), item];
     persistCart(cart);
     set({ cart });
   },
 
   removeFromCart: (id: string) => {
-    const cart = get().cart.filter(c => c.id !== id);
+    const cart = get().cart.filter((c: any) => c.id !== id);
     persistCart(cart);
     set({ cart });
   },
@@ -442,4 +446,5 @@ export const useStore = create<AppStore>((set: any, get: any) => ({
   },
 
   setError: (error: string | null) => set({ error }),
+  setRecommendedPlan: (plan: any) => set({ recommendedPlan: plan }),
 }));

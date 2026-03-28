@@ -15,6 +15,8 @@ import translationController from '../adapters/controllers/translation.controlle
 import suggestionsController from '../adapters/controllers/suggestions.controller';
 import bookingSuggestionsController from '../adapters/controllers/booking-suggestions.controller';
 import packingController from '../adapters/controllers/packing.controller';
+import feedbackController, { getFeedbackRoutes } from '../adapters/controllers/feedback.controller';
+import { authMiddleware } from './middleware/auth';
 
 export function createApp() {
   const app = express();
@@ -48,6 +50,8 @@ export function createApp() {
   app.use('/api/suggestions', suggestionsController);
   app.use('/api/booking-suggestions', bookingSuggestionsController);
   app.use('/api/packing', packingController);
+  app.use('/api/feedback', feedbackController);
+  app.use('/api/admin/feedback', getFeedbackRoutes(authMiddleware));
 
   app.use((err: Error, req: express.Request, res: express.Response, next: express.NextFunction) => {
     console.error('Unhandled error:', err);

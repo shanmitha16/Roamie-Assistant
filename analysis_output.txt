@@ -1,0 +1,52 @@
+﻿python : Traceback (most 
+recent call last):
+At line:1 char:1
++ python 
+adsb_anomaly_analyzer.py 
+2>&1 | Out-File -FilePath 
+analysis_ou ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo         
+     : NotSpecified: (Tra  
+  ceback (most recent ca   
+ ll last)::String) [],     
+RemoteException
+    + FullyQualifiedErrorI 
+   d : NativeCommandError
+ 
+  File "C:\Users\SHANMITHA\
+Desktop\PROJECTS!\roamiedra
+ft-master - Copy\adsb_anoma
+ly_analyzer.py", line 862, 
+in <module>
+    main()
+  File "C:\Users\SHANMITHA\
+Desktop\PROJECTS!\roamiedra
+ft-master - Copy\adsb_anoma
+ly_analyzer.py", line 579, 
+in main
+    print_banner()
+  File "C:\Users\SHANMITHA\
+Desktop\PROJECTS!\roamiedra
+ft-master - Copy\adsb_anoma
+ly_analyzer.py", line 535, 
+in print_banner
+    print("""
+  File "C:\Program Files\Wi
+ndowsApps\PythonSoftwareFou
+ndation.Python.3.11_3.11.25
+44.0_x64__qbz5n2kfra8p0\Lib
+\encodings\cp1252.py", 
+line 19, in encode
+    return codecs.charmap_e
+ncode(input,self.errors,enc
+oding_table)[0]
+           ^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^
+UnicodeEncodeError: 
+'charmap' codec can't 
+encode characters in 
+position 7-86: character 
+maps to <undefined>

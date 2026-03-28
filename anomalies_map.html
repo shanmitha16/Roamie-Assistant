@@ -1,0 +1,3872 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8b9fc17ccc2d3ae03994977d6c1da38d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8b9fc17ccc2d3ae03994977d6c1da38d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8b9fc17ccc2d3ae03994977d6c1da38d = L.map(
+                "map_8b9fc17ccc2d3ae03994977d6c1da38d",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d14ec18eb7012873c04285576e054d44 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d14ec18eb7012873c04285576e054d44.addTo(map_8b9fc17ccc2d3ae03994977d6c1da38d);
+        
+    
+            var feature_group_59b1f3568de9345d41be8a65490e2eb1 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_ee98505d8d16ae5dc6e9d27495dc8c21 = L.marker(
+                [22.5014, 53.9567],
+                {
+}
+            ).addTo(feature_group_59b1f3568de9345d41be8a65490e2eb1);
+        
+    
+            var icon_dd5997f48ee46157d47e3ac95c8b57ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_78dd8e6bc2573456157ce164221d2caf = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_939dcfc26b86e74d0f943e739c225e6a = $(`<div id="html_939dcfc26b86e74d0f943e739c225e6a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 300px;">             <h4 style="color: #ff3333; margin-bottom: 5px;">🔴 UNEXPLAINED ANOMALY</h4>             <b>Callsign:</b> UAE192<br>             <b>ICAO:</b> 8963d8<br>             <b>Altitude:</b> 23275 ft<br>             <b>Speed:</b> 10.4 kts<br>             <b>V-Rate:</b> -1984 fpm<br>             <hr style="margin: 5px 0;">             <b>Anomalies Detected:</b><ul style="margin-top: 5px; padding-left: 20px;">         <li>SUB_STALL_SPEED</li><li>HOVER_DETECTED</li><li>ANOMALOUS_CLIMB_GRADIENT</li><li>ALTITUDE_DISCREPANCY</li></ul></div></div>`)[0];
+                popup_78dd8e6bc2573456157ce164221d2caf.setContent(html_939dcfc26b86e74d0f943e739c225e6a);
+            
+        
+
+        marker_ee98505d8d16ae5dc6e9d27495dc8c21.bindPopup(popup_78dd8e6bc2573456157ce164221d2caf)
+        ;
+
+        
+    
+    
+            marker_ee98505d8d16ae5dc6e9d27495dc8c21.bindTooltip(
+                `<div>
+                     UNEXPLAINED: UAE192 (8963d8)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ee98505d8d16ae5dc6e9d27495dc8c21.setIcon(icon_dd5997f48ee46157d47e3ac95c8b57ee);
+            
+    
+            var marker_e20683d9ca38fffdfcd9f480cc100f21 = L.marker(
+                [54.1334, 17.5526],
+                {
+}
+            ).addTo(feature_group_59b1f3568de9345d41be8a65490e2eb1);
+        
+    
+            var icon_2626c51394c495ea05d5db63ee0c60fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ed6e012a8d946824fdcb6445a3e45fb5 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_26e6ad5c5c90b7f1dbce2470842225d4 = $(`<div id="html_26e6ad5c5c90b7f1dbce2470842225d4" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 300px;">             <h4 style="color: #ff3333; margin-bottom: 5px;">🔴 UNEXPLAINED ANOMALY</h4>             <b>Callsign:</b> KLM15H<br>             <b>ICAO:</b> 484c51<br>             <b>Altitude:</b> 22450 ft<br>             <b>Speed:</b> 0.0 kts<br>             <b>V-Rate:</b> -4543 fpm<br>             <hr style="margin: 5px 0;">             <b>Anomalies Detected:</b><ul style="margin-top: 5px; padding-left: 20px;">         <li>HOVER_DETECTED</li></ul></div></div>`)[0];
+                popup_ed6e012a8d946824fdcb6445a3e45fb5.setContent(html_26e6ad5c5c90b7f1dbce2470842225d4);
+            
+        
+
+        marker_e20683d9ca38fffdfcd9f480cc100f21.bindPopup(popup_ed6e012a8d946824fdcb6445a3e45fb5)
+        ;
+
+        
+    
+    
+            marker_e20683d9ca38fffdfcd9f480cc100f21.bindTooltip(
+                `<div>
+                     UNEXPLAINED: KLM15H (484c51)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e20683d9ca38fffdfcd9f480cc100f21.setIcon(icon_2626c51394c495ea05d5db63ee0c60fa);
+            
+    
+            var marker_a1c78e17caa9e2a739b382403e189314 = L.marker(
+                [31.7171, 35.9994],
+                {
+}
+            ).addTo(feature_group_59b1f3568de9345d41be8a65490e2eb1);
+        
+    
+            var icon_51cf2793a75740fff4259938cea3e8c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b0e650af0c617a3538a772bcfab69e78 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_9c502b1706706a9754abb4155d0c3648 = $(`<div id="html_9c502b1706706a9754abb4155d0c3648" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 300px;">             <h4 style="color: #ff3333; margin-bottom: 5px;">🔴 UNEXPLAINED ANOMALY</h4>             <b>Callsign:</b> RJA164<br>             <b>ICAO:</b> 740828<br>             <b>Altitude:</b> 29325 ft<br>             <b>Speed:</b> 0.0 kts<br>             <b>V-Rate:</b> +0 fpm<br>             <hr style="margin: 5px 0;">             <b>Anomalies Detected:</b><ul style="margin-top: 5px; padding-left: 20px;">         <li>HOVER_DETECTED</li><li>GRAVITATIONAL_ANOMALY</li><li>ALTITUDE_DISCREPANCY</li></ul></div></div>`)[0];
+                popup_b0e650af0c617a3538a772bcfab69e78.setContent(html_9c502b1706706a9754abb4155d0c3648);
+            
+        
+
+        marker_a1c78e17caa9e2a739b382403e189314.bindPopup(popup_b0e650af0c617a3538a772bcfab69e78)
+        ;
+
+        
+    
+    
+            marker_a1c78e17caa9e2a739b382403e189314.bindTooltip(
+                `<div>
+                     UNEXPLAINED: RJA164 (740828)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a1c78e17caa9e2a739b382403e189314.setIcon(icon_51cf2793a75740fff4259938cea3e8c7);
+            
+    
+            var marker_72ce0739eeda4872724e0be01f619bb8 = L.marker(
+                [58.1841, 20.1903],
+                {
+}
+            ).addTo(feature_group_59b1f3568de9345d41be8a65490e2eb1);
+        
+    
+            var icon_513af75fba21f6843e530850017e0139 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a917a6cdafdd8abfa87b1f1f2a431209 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_2e45b85f70cbdb81d362ab0dc039b9dd = $(`<div id="html_2e45b85f70cbdb81d362ab0dc039b9dd" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 300px;">             <h4 style="color: #ff3333; margin-bottom: 5px;">🔴 UNEXPLAINED ANOMALY</h4>             <b>Callsign:</b> ETH715<br>             <b>ICAO:</b> 040187<br>             <b>Altitude:</b> 37000 ft<br>             <b>Speed:</b> 51.6 kts<br>             <b>V-Rate:</b> -24768 fpm<br>             <hr style="margin: 5px 0;">             <b>Anomalies Detected:</b><ul style="margin-top: 5px; padding-left: 20px;">         <li>EXTREME_VERTICAL_RATE</li><li>SUB_STALL_SPEED</li><li>ANOMALOUS_CLIMB_GRADIENT</li><li>ALTITUDE_DISCREPANCY</li></ul></div></div>`)[0];
+                popup_a917a6cdafdd8abfa87b1f1f2a431209.setContent(html_2e45b85f70cbdb81d362ab0dc039b9dd);
+            
+        
+
+        marker_72ce0739eeda4872724e0be01f619bb8.bindPopup(popup_a917a6cdafdd8abfa87b1f1f2a431209)
+        ;
+
+        
+    
+    
+            marker_72ce0739eeda4872724e0be01f619bb8.bindTooltip(
+                `<div>
+                     UNEXPLAINED: ETH715 (040187)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_72ce0739eeda4872724e0be01f619bb8.setIcon(icon_513af75fba21f6843e530850017e0139);
+            
+    
+            var marker_52a60f39a126661669daeaa6e543b5fb = L.marker(
+                [44.93, 48.4561],
+                {
+}
+            ).addTo(feature_group_59b1f3568de9345d41be8a65490e2eb1);
+        
+    
+            var icon_2afbb61f919d284d3414a4ba997848f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_98ca3e41396b9ff3ae53beaf92b3708e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_2c0cbe2cbd410757dc2a9f4ae78d71a5 = $(`<div id="html_2c0cbe2cbd410757dc2a9f4ae78d71a5" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 300px;">             <h4 style="color: #ff3333; margin-bottom: 5px;">🔴 UNEXPLAINED ANOMALY</h4>             <b>Callsign:</b> AHY078<br>             <b>ICAO:</b> 424293<br>             <b>Altitude:</b> 37000 ft<br>             <b>Speed:</b> 9.0 kts<br>             <b>V-Rate:</b> +1600 fpm<br>             <hr style="margin: 5px 0;">             <b>Anomalies Detected:</b><ul style="margin-top: 5px; padding-left: 20px;">         <li>SUB_STALL_SPEED</li><li>HOVER_DETECTED</li><li>ANOMALOUS_CLIMB_GRADIENT</li><li>ALTITUDE_DISCREPANCY</li></ul></div></div>`)[0];
+                popup_98ca3e41396b9ff3ae53beaf92b3708e.setContent(html_2c0cbe2cbd410757dc2a9f4ae78d71a5);
+            
+        
+
+        marker_52a60f39a126661669daeaa6e543b5fb.bindPopup(popup_98ca3e41396b9ff3ae53beaf92b3708e)
+        ;
+
+        
+    
+    
+            marker_52a60f39a126661669daeaa6e543b5fb.bindTooltip(
+                `<div>
+                     UNEXPLAINED: AHY078 (424293)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_52a60f39a126661669daeaa6e543b5fb.setIcon(icon_2afbb61f919d284d3414a4ba997848f4);
+            
+    
+            var marker_471e9bc748f6afb86129b2307d775307 = L.marker(
+                [31.7171, 35.9993],
+                {
+}
+            ).addTo(feature_group_59b1f3568de9345d41be8a65490e2eb1);
+        
+    
+            var icon_5b3154966237419b3e9cc96bb9dd8ad3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_29347734bc17c5d3d9460d6de6bb44ff = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_c281fad2b4099f3998394ac0a2a37e12 = $(`<div id="html_c281fad2b4099f3998394ac0a2a37e12" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 300px;">             <h4 style="color: #ff3333; margin-bottom: 5px;">🔴 UNEXPLAINED ANOMALY</h4>             <b>Callsign:</b> RJA507<br>             <b>ICAO:</b> 74482e<br>             <b>Altitude:</b> 15125 ft<br>             <b>Speed:</b> 0.0 kts<br>             <b>V-Rate:</b> +4543 fpm<br>             <hr style="margin: 5px 0;">             <b>Anomalies Detected:</b><ul style="margin-top: 5px; padding-left: 20px;">         <li>HOVER_DETECTED</li><li>ALTITUDE_DISCREPANCY</li></ul></div></div>`)[0];
+                popup_29347734bc17c5d3d9460d6de6bb44ff.setContent(html_c281fad2b4099f3998394ac0a2a37e12);
+            
+        
+
+        marker_471e9bc748f6afb86129b2307d775307.bindPopup(popup_29347734bc17c5d3d9460d6de6bb44ff)
+        ;
+
+        
+    
+    
+            marker_471e9bc748f6afb86129b2307d775307.bindTooltip(
+                `<div>
+                     UNEXPLAINED: RJA507 (74482e)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_471e9bc748f6afb86129b2307d775307.setIcon(icon_5b3154966237419b3e9cc96bb9dd8ad3);
+            
+    
+            var marker_e568b2a8cdd9d6ebe4b020988fcbd2b1 = L.marker(
+                [45.4409, 47.7067],
+                {
+}
+            ).addTo(feature_group_59b1f3568de9345d41be8a65490e2eb1);
+        
+    
+            var icon_16e9d5578ef4de02112de918e95ad4ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f6c59835528455106af334946c4ad29d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_6a5ec65a09d5e774021d2e5da5e0a281 = $(`<div id="html_6a5ec65a09d5e774021d2e5da5e0a281" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 300px;">             <h4 style="color: #ff3333; margin-bottom: 5px;">🔴 UNEXPLAINED ANOMALY</h4>             <b>Callsign:</b> UTA785<br>             <b>ICAO:</b> 151d79<br>             <b>Altitude:</b> 34075 ft<br>             <b>Speed:</b> 8.0 kts<br>             <b>V-Rate:</b> +705 fpm<br>             <hr style="margin: 5px 0;">             <b>Anomalies Detected:</b><ul style="margin-top: 5px; padding-left: 20px;">         <li>SUB_STALL_SPEED</li><li>HOVER_DETECTED</li><li>ANOMALOUS_CLIMB_GRADIENT</li><li>ALTITUDE_DISCREPANCY</li><li>UNREGISTERED_ICAO</li></ul></div></div>`)[0];
+                popup_f6c59835528455106af334946c4ad29d.setContent(html_6a5ec65a09d5e774021d2e5da5e0a281);
+            
+        
+
+        marker_e568b2a8cdd9d6ebe4b020988fcbd2b1.bindPopup(popup_f6c59835528455106af334946c4ad29d)
+        ;
+
+        
+    
+    
+            marker_e568b2a8cdd9d6ebe4b020988fcbd2b1.bindTooltip(
+                `<div>
+                     UNEXPLAINED: UTA785 (151d79)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e568b2a8cdd9d6ebe4b020988fcbd2b1.setIcon(icon_16e9d5578ef4de02112de918e95ad4ba);
+            
+    
+            var marker_7336528d453f721547d4ad85e6f4a98e = L.marker(
+                [44.0885, 38.5774],
+                {
+}
+            ).addTo(feature_group_59b1f3568de9345d41be8a65490e2eb1);
+        
+    
+            var icon_b70dc40c02db3177268a5f4986323f5d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db6062ede7db18b02206b8a7808bdcc8 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_7edfc710e2f3fc64140eb22e478a2fc9 = $(`<div id="html_7edfc710e2f3fc64140eb22e478a2fc9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 300px;">             <h4 style="color: #ff3333; margin-bottom: 5px;">🔴 UNEXPLAINED ANOMALY</h4>             <b>Callsign:</b> TUA922<br>             <b>ICAO:</b> 601834<br>             <b>Altitude:</b> 35000 ft<br>             <b>Speed:</b> 8.0 kts<br>             <b>V-Rate:</b> +0 fpm<br>             <hr style="margin: 5px 0;">             <b>Anomalies Detected:</b><ul style="margin-top: 5px; padding-left: 20px;">         <li>SUB_STALL_SPEED</li><li>HOVER_DETECTED</li><li>ALTITUDE_DISCREPANCY</li></ul></div></div>`)[0];
+                popup_db6062ede7db18b02206b8a7808bdcc8.setContent(html_7edfc710e2f3fc64140eb22e478a2fc9);
+            
+        
+
+        marker_7336528d453f721547d4ad85e6f4a98e.bindPopup(popup_db6062ede7db18b02206b8a7808bdcc8)
+        ;
+
+        
+    
+    
+            marker_7336528d453f721547d4ad85e6f4a98e.bindTooltip(
+                `<div>
+                     UNEXPLAINED: TUA922 (601834)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7336528d453f721547d4ad85e6f4a98e.setIcon(icon_b70dc40c02db3177268a5f4986323f5d);
+            
+    
+            var marker_b908cffb8ca967604baf9f54a656cef9 = L.marker(
+                [56.5486, 18.5964],
+                {
+}
+            ).addTo(feature_group_59b1f3568de9345d41be8a65490e2eb1);
+        
+    
+            var icon_ed2c1daf5a1d79cdccb7382a83bb2f59 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2057006b7d765c08cc1c4e924fb12004 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_9d4388f7300644f4d8e15c0d4453b7c4 = $(`<div id="html_9d4388f7300644f4d8e15c0d4453b7c4" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 300px;">             <h4 style="color: #ff3333; margin-bottom: 5px;">🔴 UNEXPLAINED ANOMALY</h4>             <b>Callsign:</b> SAS742<br>             <b>ICAO:</b> 4caf16<br>             <b>Altitude:</b> 31000 ft<br>             <b>Speed:</b> 9.9 kts<br>             <b>V-Rate:</b> -1217 fpm<br>             <hr style="margin: 5px 0;">             <b>Anomalies Detected:</b><ul style="margin-top: 5px; padding-left: 20px;">         <li>SUB_STALL_SPEED</li><li>HOVER_DETECTED</li><li>ANOMALOUS_CLIMB_GRADIENT</li><li>ALTITUDE_DISCREPANCY</li><li>UNREGISTERED_ICAO</li></ul></div></div>`)[0];
+                popup_2057006b7d765c08cc1c4e924fb12004.setContent(html_9d4388f7300644f4d8e15c0d4453b7c4);
+            
+        
+
+        marker_b908cffb8ca967604baf9f54a656cef9.bindPopup(popup_2057006b7d765c08cc1c4e924fb12004)
+        ;
+
+        
+    
+    
+            marker_b908cffb8ca967604baf9f54a656cef9.bindTooltip(
+                `<div>
+                     UNEXPLAINED: SAS742 (4caf16)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b908cffb8ca967604baf9f54a656cef9.setIcon(icon_ed2c1daf5a1d79cdccb7382a83bb2f59);
+            
+    
+            feature_group_59b1f3568de9345d41be8a65490e2eb1.addTo(map_8b9fc17ccc2d3ae03994977d6c1da38d);
+        
+    
+            var feature_group_d03f5317294179f492890d5dd82fa2db = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_1ef8dd1bd4bf37b1f6486c608db031a6 = L.circleMarker(
+                [41.7884, -111.8487],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_b83290266ea616af3ed7ba4638f926ad = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aeebf4bf6f6020389a7359f88aba7e84 = $(`<div id="html_aeebf4bf6f6020389a7359f88aba7e84" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> N759PA<br>             <b>ICAO:</b> aa3cbe<br>             <b>Altitude:</b> 4125 ft<br>             <b>Speed:</b> 38.0 kts<br>         </div>         </div>`)[0];
+                popup_b83290266ea616af3ed7ba4638f926ad.setContent(html_aeebf4bf6f6020389a7359f88aba7e84);
+            
+        
+
+        circle_marker_1ef8dd1bd4bf37b1f6486c608db031a6.bindPopup(popup_b83290266ea616af3ed7ba4638f926ad)
+        ;
+
+        
+    
+    
+            circle_marker_1ef8dd1bd4bf37b1f6486c608db031a6.bindTooltip(
+                `<div>
+                     N759PA (aa3cbe)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5e0bd813f02dcbfd2cce92f23b4b3358 = L.circleMarker(
+                [35.67, -84.6618],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_209ee9c1ac9d30d683ae2fc25883c329 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8572edeb8f4da99289b30adbaa98bd01 = $(`<div id="html_8572edeb8f4da99289b30adbaa98bd01" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> AAL478<br>             <b>ICAO:</b> ab6fdd<br>             <b>Altitude:</b> 36000 ft<br>             <b>Speed:</b> 435.5 kts<br>         </div>         </div>`)[0];
+                popup_209ee9c1ac9d30d683ae2fc25883c329.setContent(html_8572edeb8f4da99289b30adbaa98bd01);
+            
+        
+
+        circle_marker_5e0bd813f02dcbfd2cce92f23b4b3358.bindPopup(popup_209ee9c1ac9d30d683ae2fc25883c329)
+        ;
+
+        
+    
+    
+            circle_marker_5e0bd813f02dcbfd2cce92f23b4b3358.bindTooltip(
+                `<div>
+                     AAL478 (ab6fdd)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2172d97e16054d0fd6ec625f8359e6b7 = L.circleMarker(
+                [37.2966, -99.531],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_f51e3c85adb4e1d0de9b4b5b93c5ce2d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ebc8dd032d287be2791ccb7f40be87d6 = $(`<div id="html_ebc8dd032d287be2791ccb7f40be87d6" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> LXJ411<br>             <b>ICAO:</b> a4d86a<br>             <b>Altitude:</b> 45000 ft<br>             <b>Speed:</b> 498.7 kts<br>         </div>         </div>`)[0];
+                popup_f51e3c85adb4e1d0de9b4b5b93c5ce2d.setContent(html_ebc8dd032d287be2791ccb7f40be87d6);
+            
+        
+
+        circle_marker_2172d97e16054d0fd6ec625f8359e6b7.bindPopup(popup_f51e3c85adb4e1d0de9b4b5b93c5ce2d)
+        ;
+
+        
+    
+    
+            circle_marker_2172d97e16054d0fd6ec625f8359e6b7.bindTooltip(
+                `<div>
+                     LXJ411 (a4d86a)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e40d74900b8144f3d39cbd1e64c7c56f = L.circleMarker(
+                [36.8745, -95.1341],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_41adc780c671568aea9d26e259145603 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6a0733cd95510964192be6d2fed7769b = $(`<div id="html_6a0733cd95510964192be6d2fed7769b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> N331ZM<br>             <b>ICAO:</b> a39bd1<br>             <b>Altitude:</b> 30000 ft<br>             <b>Speed:</b> 247.6 kts<br>         </div>         </div>`)[0];
+                popup_41adc780c671568aea9d26e259145603.setContent(html_6a0733cd95510964192be6d2fed7769b);
+            
+        
+
+        circle_marker_e40d74900b8144f3d39cbd1e64c7c56f.bindPopup(popup_41adc780c671568aea9d26e259145603)
+        ;
+
+        
+    
+    
+            circle_marker_e40d74900b8144f3d39cbd1e64c7c56f.bindTooltip(
+                `<div>
+                     N331ZM (a39bd1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ed8ac3e10b7338d515215d52dfca2584 = L.circleMarker(
+                [33.0753, -88.5092],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_66e972588f53a605decd44b37de54b8e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_024dbd317eeea425abe771378eaebd47 = $(`<div id="html_024dbd317eeea425abe771378eaebd47" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> DAL836<br>             <b>ICAO:</b> a36898<br>             <b>Altitude:</b> 33975 ft<br>             <b>Speed:</b> 426.6 kts<br>         </div>         </div>`)[0];
+                popup_66e972588f53a605decd44b37de54b8e.setContent(html_024dbd317eeea425abe771378eaebd47);
+            
+        
+
+        circle_marker_ed8ac3e10b7338d515215d52dfca2584.bindPopup(popup_66e972588f53a605decd44b37de54b8e)
+        ;
+
+        
+    
+    
+            circle_marker_ed8ac3e10b7338d515215d52dfca2584.bindTooltip(
+                `<div>
+                     DAL836 (a36898)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_066dc5eb4fdc3f324791a992e3b25a7c = L.circleMarker(
+                [32.6075, -95.633],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_b013c14a2cdaa1d1ff498c262aa0ebb4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9c7a6fdbb8ffe6327bc5f1e472f8fc07 = $(`<div id="html_9c7a6fdbb8ffe6327bc5f1e472f8fc07" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> VJA334<br>             <b>ICAO:</b> a3a578<br>             <b>Altitude:</b> 21025 ft<br>             <b>Speed:</b> 412.8 kts<br>         </div>         </div>`)[0];
+                popup_b013c14a2cdaa1d1ff498c262aa0ebb4.setContent(html_9c7a6fdbb8ffe6327bc5f1e472f8fc07);
+            
+        
+
+        circle_marker_066dc5eb4fdc3f324791a992e3b25a7c.bindPopup(popup_b013c14a2cdaa1d1ff498c262aa0ebb4)
+        ;
+
+        
+    
+    
+            circle_marker_066dc5eb4fdc3f324791a992e3b25a7c.bindTooltip(
+                `<div>
+                     VJA334 (a3a578)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_709abb972b440625bd788dbc0fa2ced4 = L.circleMarker(
+                [19.307, -94.9108],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_c768e3f542c410f0f80347eeb6693598 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a12ae8f551146ff13e0f2095da7b705e = $(`<div id="html_a12ae8f551146ff13e0f2095da7b705e" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> AMX532<br>             <b>ICAO:</b> ad5622<br>             <b>Altitude:</b> 33000 ft<br>             <b>Speed:</b> 522.4 kts<br>         </div>         </div>`)[0];
+                popup_c768e3f542c410f0f80347eeb6693598.setContent(html_a12ae8f551146ff13e0f2095da7b705e);
+            
+        
+
+        circle_marker_709abb972b440625bd788dbc0fa2ced4.bindPopup(popup_c768e3f542c410f0f80347eeb6693598)
+        ;
+
+        
+    
+    
+            circle_marker_709abb972b440625bd788dbc0fa2ced4.bindTooltip(
+                `<div>
+                     AMX532 (ad5622)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f22ad2adc85cdd6a6ad2a729e23046a0 = L.circleMarker(
+                [37.6624, -87.9979],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_d4c62fcad2c098b4b7e62f30ed0fb650 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d5bd51341cd36dd1055166b06403f987 = $(`<div id="html_d5bd51341cd36dd1055166b06403f987" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> N53HA<br>             <b>ICAO:</b> a6aec4<br>             <b>Altitude:</b> 30575 ft<br>             <b>Speed:</b> 492.6 kts<br>         </div>         </div>`)[0];
+                popup_d4c62fcad2c098b4b7e62f30ed0fb650.setContent(html_d5bd51341cd36dd1055166b06403f987);
+            
+        
+
+        circle_marker_f22ad2adc85cdd6a6ad2a729e23046a0.bindPopup(popup_d4c62fcad2c098b4b7e62f30ed0fb650)
+        ;
+
+        
+    
+    
+            circle_marker_f22ad2adc85cdd6a6ad2a729e23046a0.bindTooltip(
+                `<div>
+                     N53HA (a6aec4)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d7be2391b5d8f63f696f660ca0a1a4bf = L.circleMarker(
+                [32.3177, -83.8945],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_d20d8c01171b8d6dbf6e9fc0b1588a58 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2f557ebbed1a1169093a4c4dc4b004ef = $(`<div id="html_2f557ebbed1a1169093a4c4dc4b004ef" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> DAL3075<br>             <b>ICAO:</b> ad5628<br>             <b>Altitude:</b> 27000 ft<br>             <b>Speed:</b> 469.1 kts<br>         </div>         </div>`)[0];
+                popup_d20d8c01171b8d6dbf6e9fc0b1588a58.setContent(html_2f557ebbed1a1169093a4c4dc4b004ef);
+            
+        
+
+        circle_marker_d7be2391b5d8f63f696f660ca0a1a4bf.bindPopup(popup_d20d8c01171b8d6dbf6e9fc0b1588a58)
+        ;
+
+        
+    
+    
+            circle_marker_d7be2391b5d8f63f696f660ca0a1a4bf.bindTooltip(
+                `<div>
+                     DAL3075 (ad5628)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1ab9212b1d334c769273d99a726fbd8a = L.circleMarker(
+                [33.5513, -80.2855],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_5d09592c548b069218b72fd5be273810 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_075c5abbd0bfa11475c41ab82cd3be16 = $(`<div id="html_075c5abbd0bfa11475c41ab82cd3be16" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> AAL941<br>             <b>ICAO:</b> a0e250<br>             <b>Altitude:</b> 27200 ft<br>             <b>Speed:</b> 429.7 kts<br>         </div>         </div>`)[0];
+                popup_5d09592c548b069218b72fd5be273810.setContent(html_075c5abbd0bfa11475c41ab82cd3be16);
+            
+        
+
+        circle_marker_1ab9212b1d334c769273d99a726fbd8a.bindPopup(popup_5d09592c548b069218b72fd5be273810)
+        ;
+
+        
+    
+    
+            circle_marker_1ab9212b1d334c769273d99a726fbd8a.bindTooltip(
+                `<div>
+                     AAL941 (a0e250)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_51c1510cb647cf3d637895ba6ef7521c = L.circleMarker(
+                [34.438, -119.0794],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_ef34ef1318a8a2f58ed68bd7ec1d2630 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_18c88710215f8b0d51cde77e1e270c20 = $(`<div id="html_18c88710215f8b0d51cde77e1e270c20" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> SWA4240<br>             <b>ICAO:</b> ad694c<br>             <b>Altitude:</b> 35000 ft<br>             <b>Speed:</b> 404.0 kts<br>         </div>         </div>`)[0];
+                popup_ef34ef1318a8a2f58ed68bd7ec1d2630.setContent(html_18c88710215f8b0d51cde77e1e270c20);
+            
+        
+
+        circle_marker_51c1510cb647cf3d637895ba6ef7521c.bindPopup(popup_ef34ef1318a8a2f58ed68bd7ec1d2630)
+        ;
+
+        
+    
+    
+            circle_marker_51c1510cb647cf3d637895ba6ef7521c.bindTooltip(
+                `<div>
+                     SWA4240 (ad694c)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d8002bcd7dd73d6c23cea4af5a62f24c = L.circleMarker(
+                [2.9505, 101.2173],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_b738934211b3180c7a09467e3e69a730 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3a67d0428a8e8a60964db6a81812931d = $(`<div id="html_3a67d0428a8e8a60964db6a81812931d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> AWQ127<br>             <b>ICAO:</b> 8a02cb<br>             <b>Altitude:</b> 13525 ft<br>             <b>Speed:</b> 373.9 kts<br>         </div>         </div>`)[0];
+                popup_b738934211b3180c7a09467e3e69a730.setContent(html_3a67d0428a8e8a60964db6a81812931d);
+            
+        
+
+        circle_marker_d8002bcd7dd73d6c23cea4af5a62f24c.bindPopup(popup_b738934211b3180c7a09467e3e69a730)
+        ;
+
+        
+    
+    
+            circle_marker_d8002bcd7dd73d6c23cea4af5a62f24c.bindTooltip(
+                `<div>
+                     AWQ127 (8a02cb)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a872e6dd38f3f547aebd5232bfb019f6 = L.circleMarker(
+                [48.4481, 1.3755],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_be5ed7fc965a55070f861569db8b4804 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3897df94ee31ca7e460840b35eea6db3 = $(`<div id="html_3897df94ee31ca7e460840b35eea6db3" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> MBU2VF<br>             <b>ICAO:</b> 511188<br>             <b>Altitude:</b> 36025 ft<br>             <b>Speed:</b> 443.3 kts<br>         </div>         </div>`)[0];
+                popup_be5ed7fc965a55070f861569db8b4804.setContent(html_3897df94ee31ca7e460840b35eea6db3);
+            
+        
+
+        circle_marker_a872e6dd38f3f547aebd5232bfb019f6.bindPopup(popup_be5ed7fc965a55070f861569db8b4804)
+        ;
+
+        
+    
+    
+            circle_marker_a872e6dd38f3f547aebd5232bfb019f6.bindTooltip(
+                `<div>
+                     MBU2VF (511188)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ffdfa412af2a9c2f4d3b251dbe155a93 = L.circleMarker(
+                [27.7744, -97.5116],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_b39a4dfd6d07600aa4fa7e4cfb5cba2f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b48212f4a51f14241fe2a1e02832dcb1 = $(`<div id="html_b48212f4a51f14241fe2a1e02832dcb1" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> HAWK290<br>             <b>ICAO:</b> ae6301<br>             <b>Altitude:</b> 22625 ft<br>             <b>Speed:</b> 417.4 kts<br>         </div>         </div>`)[0];
+                popup_b39a4dfd6d07600aa4fa7e4cfb5cba2f.setContent(html_b48212f4a51f14241fe2a1e02832dcb1);
+            
+        
+
+        circle_marker_ffdfa412af2a9c2f4d3b251dbe155a93.bindPopup(popup_b39a4dfd6d07600aa4fa7e4cfb5cba2f)
+        ;
+
+        
+    
+    
+            circle_marker_ffdfa412af2a9c2f4d3b251dbe155a93.bindTooltip(
+                `<div>
+                     HAWK290 (ae6301)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ceb1718cdcefa5266bc08b3d0e9782f2 = L.circleMarker(
+                [37.8339, -111.5601],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_b8d373a15b344c9559e6c0e1c2e2a434 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d34a258226d3ecfb13864cca8f29be48 = $(`<div id="html_d34a258226d3ecfb13864cca8f29be48" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> N339LS<br>             <b>ICAO:</b> a3b849<br>             <b>Altitude:</b> 33550 ft<br>             <b>Speed:</b> 453.5 kts<br>         </div>         </div>`)[0];
+                popup_b8d373a15b344c9559e6c0e1c2e2a434.setContent(html_d34a258226d3ecfb13864cca8f29be48);
+            
+        
+
+        circle_marker_ceb1718cdcefa5266bc08b3d0e9782f2.bindPopup(popup_b8d373a15b344c9559e6c0e1c2e2a434)
+        ;
+
+        
+    
+    
+            circle_marker_ceb1718cdcefa5266bc08b3d0e9782f2.bindTooltip(
+                `<div>
+                     N339LS (a3b849)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a07087263e8b86329e691490e8edcc9 = L.circleMarker(
+                [56.2784, 18.7265],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_075fdbf55c2f19884881eea709eecbc3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bdac781602a629c11509414424a88bc5 = $(`<div id="html_bdac781602a629c11509414424a88bc5" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> NSZ8485<br>             <b>ICAO:</b> 4acb02<br>             <b>Altitude:</b> 18150 ft<br>             <b>Speed:</b> 457.9 kts<br>         </div>         </div>`)[0];
+                popup_075fdbf55c2f19884881eea709eecbc3.setContent(html_bdac781602a629c11509414424a88bc5);
+            
+        
+
+        circle_marker_2a07087263e8b86329e691490e8edcc9.bindPopup(popup_075fdbf55c2f19884881eea709eecbc3)
+        ;
+
+        
+    
+    
+            circle_marker_2a07087263e8b86329e691490e8edcc9.bindTooltip(
+                `<div>
+                     NSZ8485 (4acb02)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_45b1938be1d72e34f73cd6d8f4f5727d = L.circleMarker(
+                [36.0148, -91.111],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_1e32c97904f0044d8cde805ca56e0e8c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_26633ec57277650a68496eb743984794 = $(`<div id="html_26633ec57277650a68496eb743984794" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> DAL449<br>             <b>ICAO:</b> a47597<br>             <b>Altitude:</b> 37000 ft<br>             <b>Speed:</b> 521.2 kts<br>         </div>         </div>`)[0];
+                popup_1e32c97904f0044d8cde805ca56e0e8c.setContent(html_26633ec57277650a68496eb743984794);
+            
+        
+
+        circle_marker_45b1938be1d72e34f73cd6d8f4f5727d.bindPopup(popup_1e32c97904f0044d8cde805ca56e0e8c)
+        ;
+
+        
+    
+    
+            circle_marker_45b1938be1d72e34f73cd6d8f4f5727d.bindTooltip(
+                `<div>
+                     DAL449 (a47597)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c9501114a1475204d11effcc59baed51 = L.circleMarker(
+                [39.1076, -98.1509],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_c099dfbb96e7163837c32f3744c1fbb6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6a89efbd76fb1b8881e3ac15b1e81606 = $(`<div id="html_6a89efbd76fb1b8881e3ac15b1e81606" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> AAL239<br>             <b>ICAO:</b> ab034d<br>             <b>Altitude:</b> 39975 ft<br>             <b>Speed:</b> 469.8 kts<br>         </div>         </div>`)[0];
+                popup_c099dfbb96e7163837c32f3744c1fbb6.setContent(html_6a89efbd76fb1b8881e3ac15b1e81606);
+            
+        
+
+        circle_marker_c9501114a1475204d11effcc59baed51.bindPopup(popup_c099dfbb96e7163837c32f3744c1fbb6)
+        ;
+
+        
+    
+    
+            circle_marker_c9501114a1475204d11effcc59baed51.bindTooltip(
+                `<div>
+                     AAL239 (ab034d)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_76c3da5623b608f2799a6f4f3da526c3 = L.circleMarker(
+                [47.2825, -0.0855],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_f51236703d488eff113bf3293085596a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_af79176928370b40162fde4f3e232ab3 = $(`<div id="html_af79176928370b40162fde4f3e232ab3" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> MBU8TN<br>             <b>ICAO:</b> 51116f<br>             <b>Altitude:</b> 36000 ft<br>             <b>Speed:</b> 447.0 kts<br>         </div>         </div>`)[0];
+                popup_f51236703d488eff113bf3293085596a.setContent(html_af79176928370b40162fde4f3e232ab3);
+            
+        
+
+        circle_marker_76c3da5623b608f2799a6f4f3da526c3.bindPopup(popup_f51236703d488eff113bf3293085596a)
+        ;
+
+        
+    
+    
+            circle_marker_76c3da5623b608f2799a6f4f3da526c3.bindTooltip(
+                `<div>
+                     MBU8TN (51116f)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3b3dad335a427fb1d0493984bb2170e6 = L.circleMarker(
+                [36.2711, 32.0543],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_5319a33eac5604192832aad3a309dff8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_924b5bcbc64cfb2b2e113a171ffbc8c1 = $(`<div id="html_924b5bcbc64cfb2b2e113a171ffbc8c1" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> PGT2070<br>             <b>ICAO:</b> 4bc8c7<br>             <b>Altitude:</b> 3150 ft<br>             <b>Speed:</b> 151.1 kts<br>         </div>         </div>`)[0];
+                popup_5319a33eac5604192832aad3a309dff8.setContent(html_924b5bcbc64cfb2b2e113a171ffbc8c1);
+            
+        
+
+        circle_marker_3b3dad335a427fb1d0493984bb2170e6.bindPopup(popup_5319a33eac5604192832aad3a309dff8)
+        ;
+
+        
+    
+    
+            circle_marker_3b3dad335a427fb1d0493984bb2170e6.bindTooltip(
+                `<div>
+                     PGT2070 (4bc8c7)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5ed5b9d9a200b24a319935adc64c3e0e = L.circleMarker(
+                [35.1175, 30.8646],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_e7090bb56e906297d8abb364e42dd693 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_df534c2461c3848c529f6971405bb4a3 = $(`<div id="html_df534c2461c3848c529f6971405bb4a3" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> PGT594<br>             <b>ICAO:</b> 4bc8c3<br>             <b>Altitude:</b> 37000 ft<br>             <b>Speed:</b> 436.3 kts<br>         </div>         </div>`)[0];
+                popup_e7090bb56e906297d8abb364e42dd693.setContent(html_df534c2461c3848c529f6971405bb4a3);
+            
+        
+
+        circle_marker_5ed5b9d9a200b24a319935adc64c3e0e.bindPopup(popup_e7090bb56e906297d8abb364e42dd693)
+        ;
+
+        
+    
+    
+            circle_marker_5ed5b9d9a200b24a319935adc64c3e0e.bindTooltip(
+                `<div>
+                     PGT594 (4bc8c3)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_77c97c8213ed8f468c10774c2c206573 = L.circleMarker(
+                [43.8402, 21.0348],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_5d2bd676a04ae4d3a84af5738ae8d93c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5d536239055703a7a633271b687827ba = $(`<div id="html_5d536239055703a7a633271b687827ba" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> PGT7282<br>             <b>ICAO:</b> 4bc8d0<br>             <b>Altitude:</b> 35000 ft<br>             <b>Speed:</b> 444.1 kts<br>         </div>         </div>`)[0];
+                popup_5d2bd676a04ae4d3a84af5738ae8d93c.setContent(html_5d536239055703a7a633271b687827ba);
+            
+        
+
+        circle_marker_77c97c8213ed8f468c10774c2c206573.bindPopup(popup_5d2bd676a04ae4d3a84af5738ae8d93c)
+        ;
+
+        
+    
+    
+            circle_marker_77c97c8213ed8f468c10774c2c206573.bindTooltip(
+                `<div>
+                     PGT7282 (4bc8d0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_59d22bbbd310d67c1f83df3091059bc3 = L.circleMarker(
+                [42.2826, 22.8751],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_e9394fb72d4254c44bcf70a5b59b7f29 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_599d6ac38471b5610c1d8bd0f811bcf8 = $(`<div id="html_599d6ac38471b5610c1d8bd0f811bcf8" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> MBU6147<br>             <b>ICAO:</b> 511171<br>             <b>Altitude:</b> 36025 ft<br>             <b>Speed:</b> 487.0 kts<br>         </div>         </div>`)[0];
+                popup_e9394fb72d4254c44bcf70a5b59b7f29.setContent(html_599d6ac38471b5610c1d8bd0f811bcf8);
+            
+        
+
+        circle_marker_59d22bbbd310d67c1f83df3091059bc3.bindPopup(popup_e9394fb72d4254c44bcf70a5b59b7f29)
+        ;
+
+        
+    
+    
+            circle_marker_59d22bbbd310d67c1f83df3091059bc3.bindTooltip(
+                `<div>
+                     MBU6147 (511171)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f1b9ad6fddd93f069d1c25449528c7af = L.circleMarker(
+                [-14.3929, -55.8703],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_cd96205f03e51ebdfccbc31dbefd9e3a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5a693fb7e43c6465a1a231b7471dc830 = $(`<div id="html_5a693fb7e43c6465a1a231b7471dc830" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> ARE4907<br>             <b>ICAO:</b> e80267<br>             <b>Altitude:</b> 36950 ft<br>             <b>Speed:</b> 428.7 kts<br>         </div>         </div>`)[0];
+                popup_cd96205f03e51ebdfccbc31dbefd9e3a.setContent(html_5a693fb7e43c6465a1a231b7471dc830);
+            
+        
+
+        circle_marker_f1b9ad6fddd93f069d1c25449528c7af.bindPopup(popup_cd96205f03e51ebdfccbc31dbefd9e3a)
+        ;
+
+        
+    
+    
+            circle_marker_f1b9ad6fddd93f069d1c25449528c7af.bindTooltip(
+                `<div>
+                     ARE4907 (e80267)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_95adf909dec5d3f47d4c493b172a9d0c = L.circleMarker(
+                [37.3493, 33.7179],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_dbb0e5a045db468341e77687ab752b03 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2a375ed0d4c366a383fd7ca2223ebde5 = $(`<div id="html_2a375ed0d4c366a383fd7ca2223ebde5" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> PGT2088<br>             <b>ICAO:</b> 4bc8d5<br>             <b>Altitude:</b> 27850 ft<br>             <b>Speed:</b> 463.7 kts<br>         </div>         </div>`)[0];
+                popup_dbb0e5a045db468341e77687ab752b03.setContent(html_2a375ed0d4c366a383fd7ca2223ebde5);
+            
+        
+
+        circle_marker_95adf909dec5d3f47d4c493b172a9d0c.bindPopup(popup_dbb0e5a045db468341e77687ab752b03)
+        ;
+
+        
+    
+    
+            circle_marker_95adf909dec5d3f47d4c493b172a9d0c.bindTooltip(
+                `<div>
+                     PGT2088 (4bc8d5)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5bcfc2f1058078c5332ed907af31df6a = L.circleMarker(
+                [44.1291, 23.961],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_6dcabe9aaf6c695147d2d0fd7ddfd4e6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_899d31e679ed6402a83df6072bc18680 = $(`<div id="html_899d31e679ed6402a83df6072bc18680" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> PGT96WD<br>             <b>ICAO:</b> 4bc8d6<br>             <b>Altitude:</b> 38025 ft<br>             <b>Speed:</b> 471.9 kts<br>         </div>         </div>`)[0];
+                popup_6dcabe9aaf6c695147d2d0fd7ddfd4e6.setContent(html_899d31e679ed6402a83df6072bc18680);
+            
+        
+
+        circle_marker_5bcfc2f1058078c5332ed907af31df6a.bindPopup(popup_6dcabe9aaf6c695147d2d0fd7ddfd4e6)
+        ;
+
+        
+    
+    
+            circle_marker_5bcfc2f1058078c5332ed907af31df6a.bindTooltip(
+                `<div>
+                     PGT96WD (4bc8d6)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4e02f3177535ef247b5de79b5b5d2cfe = L.circleMarker(
+                [36.0403, 30.8476],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_6f57ec8cb4cafbffc262a280f4296804 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a6964d769cd9164d30c816418c40562f = $(`<div id="html_a6964d769cd9164d30c816418c40562f" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> WZZ42GZ<br>             <b>ICAO:</b> 471efb<br>             <b>Altitude:</b> 37025 ft<br>             <b>Speed:</b> 468.2 kts<br>         </div>         </div>`)[0];
+                popup_6f57ec8cb4cafbffc262a280f4296804.setContent(html_a6964d769cd9164d30c816418c40562f);
+            
+        
+
+        circle_marker_4e02f3177535ef247b5de79b5b5d2cfe.bindPopup(popup_6f57ec8cb4cafbffc262a280f4296804)
+        ;
+
+        
+    
+    
+            circle_marker_4e02f3177535ef247b5de79b5b5d2cfe.bindTooltip(
+                `<div>
+                     WZZ42GZ (471efb)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6b0e98df0b44ed3cf1e07584ca506132 = L.circleMarker(
+                [44.5267, 14.8373],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_28b393cd2c590893d60c0305f3d088c1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c9e3e3e1c6eb29e521f10713371fad3 = $(`<div id="html_0c9e3e3e1c6eb29e521f10713371fad3" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> WMT581<br>             <b>ICAO:</b> 471efc<br>             <b>Altitude:</b> 35000 ft<br>             <b>Speed:</b> 456.0 kts<br>         </div>         </div>`)[0];
+                popup_28b393cd2c590893d60c0305f3d088c1.setContent(html_0c9e3e3e1c6eb29e521f10713371fad3);
+            
+        
+
+        circle_marker_6b0e98df0b44ed3cf1e07584ca506132.bindPopup(popup_28b393cd2c590893d60c0305f3d088c1)
+        ;
+
+        
+    
+    
+            circle_marker_6b0e98df0b44ed3cf1e07584ca506132.bindTooltip(
+                `<div>
+                     WMT581 (471efc)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8263a85182ab2f714e98c1ada109d244 = L.circleMarker(
+                [17.6487, -86.8874],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_bc6f847956d45a8f6098c836eeff5705 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_61f384b39ff586ab1d0077f86cda9037 = $(`<div id="html_61f384b39ff586ab1d0077f86cda9037" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> LPE2459<br>             <b>ICAO:</b> e80277<br>             <b>Altitude:</b> 33000 ft<br>             <b>Speed:</b> 481.1 kts<br>         </div>         </div>`)[0];
+                popup_bc6f847956d45a8f6098c836eeff5705.setContent(html_61f384b39ff586ab1d0077f86cda9037);
+            
+        
+
+        circle_marker_8263a85182ab2f714e98c1ada109d244.bindPopup(popup_bc6f847956d45a8f6098c836eeff5705)
+        ;
+
+        
+    
+    
+            circle_marker_8263a85182ab2f714e98c1ada109d244.bindTooltip(
+                `<div>
+                     LPE2459 (e80277)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f973afe8ead1871adda1e00348da8a3b = L.circleMarker(
+                [32.016, -93.387],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_2417af2083ebd143e38074465e339e80 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_daea05692e338e48acd26507224c9e45 = $(`<div id="html_daea05692e338e48acd26507224c9e45" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> N161CE<br>             <b>ICAO:</b> a0f59c<br>             <b>Altitude:</b> 22000 ft<br>             <b>Speed:</b> 363.9 kts<br>         </div>         </div>`)[0];
+                popup_2417af2083ebd143e38074465e339e80.setContent(html_daea05692e338e48acd26507224c9e45);
+            
+        
+
+        circle_marker_f973afe8ead1871adda1e00348da8a3b.bindPopup(popup_2417af2083ebd143e38074465e339e80)
+        ;
+
+        
+    
+    
+            circle_marker_f973afe8ead1871adda1e00348da8a3b.bindTooltip(
+                `<div>
+                     N161CE (a0f59c)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bfc896c34ca33764c202b077a0afb910 = L.circleMarker(
+                [27.0572, -98.0284],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_890be644fd99ca1f3144c50e0e219929 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3b26438c88751b5c353ead0429050072 = $(`<div id="html_3b26438c88751b5c353ead0429050072" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> BLZR221<br>             <b>ICAO:</b> ae631c<br>             <b>Altitude:</b> 0 ft<br>             <b>Speed:</b> 443.7 kts<br>         </div>         </div>`)[0];
+                popup_890be644fd99ca1f3144c50e0e219929.setContent(html_3b26438c88751b5c353ead0429050072);
+            
+        
+
+        circle_marker_bfc896c34ca33764c202b077a0afb910.bindPopup(popup_890be644fd99ca1f3144c50e0e219929)
+        ;
+
+        
+    
+    
+            circle_marker_bfc896c34ca33764c202b077a0afb910.bindTooltip(
+                `<div>
+                     BLZR221 (ae631c)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f92afd883f40c311d07e80d9d1fd3a25 = L.circleMarker(
+                [30.4011, -91.7509],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_fcac9a050c73d13caac8192fcc38dad6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0154003274446a3633796bb86fa7a691 = $(`<div id="html_0154003274446a3633796bb86fa7a691" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> SKW3767<br>             <b>ICAO:</b> a34268<br>             <b>Altitude:</b> 37000 ft<br>             <b>Speed:</b> 419.3 kts<br>         </div>         </div>`)[0];
+                popup_fcac9a050c73d13caac8192fcc38dad6.setContent(html_0154003274446a3633796bb86fa7a691);
+            
+        
+
+        circle_marker_f92afd883f40c311d07e80d9d1fd3a25.bindPopup(popup_fcac9a050c73d13caac8192fcc38dad6)
+        ;
+
+        
+    
+    
+            circle_marker_f92afd883f40c311d07e80d9d1fd3a25.bindTooltip(
+                `<div>
+                     SKW3767 (a34268)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_40eb5f1618a8b0818ec0d873507cec9c = L.circleMarker(
+                [26.8682, -98.5482],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_384b4c21d656d1eef3b3c5b802b79c3d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_34a31fdc761018ef754af76ec6798f1a = $(`<div id="html_34a31fdc761018ef754af76ec6798f1a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> HAWK258<br>             <b>ICAO:</b> ae6319<br>             <b>Altitude:</b> 0 ft<br>             <b>Speed:</b> 302.4 kts<br>         </div>         </div>`)[0];
+                popup_384b4c21d656d1eef3b3c5b802b79c3d.setContent(html_34a31fdc761018ef754af76ec6798f1a);
+            
+        
+
+        circle_marker_40eb5f1618a8b0818ec0d873507cec9c.bindPopup(popup_384b4c21d656d1eef3b3c5b802b79c3d)
+        ;
+
+        
+    
+    
+            circle_marker_40eb5f1618a8b0818ec0d873507cec9c.bindTooltip(
+                `<div>
+                     HAWK258 (ae6319)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_77d754ca8260fdbf5445fcc02a1aaece = L.circleMarker(
+                [31.4514, -97.1954],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_90fc54684a28b72b292d3f8a023210e8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b3b928e08c804e0b5aec25a6b888418a = $(`<div id="html_b3b928e08c804e0b5aec25a6b888418a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> N28DC<br>             <b>ICAO:</b> a2cbf0<br>             <b>Altitude:</b> 30000 ft<br>             <b>Speed:</b> 498.7 kts<br>         </div>         </div>`)[0];
+                popup_90fc54684a28b72b292d3f8a023210e8.setContent(html_b3b928e08c804e0b5aec25a6b888418a);
+            
+        
+
+        circle_marker_77d754ca8260fdbf5445fcc02a1aaece.bindPopup(popup_90fc54684a28b72b292d3f8a023210e8)
+        ;
+
+        
+    
+    
+            circle_marker_77d754ca8260fdbf5445fcc02a1aaece.bindTooltip(
+                `<div>
+                     N28DC (a2cbf0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ac5b4c7571de8d25ace1f8fb8fb022f8 = L.circleMarker(
+                [31.6573, -83.9871],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_50747825327004b4d7295215103f5c85 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1728aefa2ea3c83227b7bdad1fe1820d = $(`<div id="html_1728aefa2ea3c83227b7bdad1fe1820d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> UAL1592<br>             <b>ICAO:</b> a53ee2<br>             <b>Altitude:</b> 31975 ft<br>             <b>Speed:</b> 433.6 kts<br>         </div>         </div>`)[0];
+                popup_50747825327004b4d7295215103f5c85.setContent(html_1728aefa2ea3c83227b7bdad1fe1820d);
+            
+        
+
+        circle_marker_ac5b4c7571de8d25ace1f8fb8fb022f8.bindPopup(popup_50747825327004b4d7295215103f5c85)
+        ;
+
+        
+    
+    
+            circle_marker_ac5b4c7571de8d25ace1f8fb8fb022f8.bindTooltip(
+                `<div>
+                     UAL1592 (a53ee2)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f203c113c5df38bd1908dcfc37c6d405 = L.circleMarker(
+                [51.1791, -0.0104],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_430dbfe23dffeab80faceed09f4b3af0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_16756b8ab93ad6220784f784d5c23f3d = $(`<div id="html_16756b8ab93ad6220784f784d5c23f3d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> SAS4686<br>             <b>ICAO:</b> 4acb44<br>             <b>Altitude:</b> 38000 ft<br>             <b>Speed:</b> 492.9 kts<br>         </div>         </div>`)[0];
+                popup_430dbfe23dffeab80faceed09f4b3af0.setContent(html_16756b8ab93ad6220784f784d5c23f3d);
+            
+        
+
+        circle_marker_f203c113c5df38bd1908dcfc37c6d405.bindPopup(popup_430dbfe23dffeab80faceed09f4b3af0)
+        ;
+
+        
+    
+    
+            circle_marker_f203c113c5df38bd1908dcfc37c6d405.bindTooltip(
+                `<div>
+                     SAS4686 (4acb44)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f9c01ef1a91cdabce5bf80823d727a09 = L.circleMarker(
+                [48.4569, 13.844],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_ddd1117d6c6ee2fff761f96d467279ed = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_16a39023e0c224dc3a462824dcbde468 = $(`<div id="html_16a39023e0c224dc3a462824dcbde468" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> MNB9397<br>             <b>ICAO:</b> 4bb5d6<br>             <b>Altitude:</b> 32000 ft<br>             <b>Speed:</b> 442.1 kts<br>         </div>         </div>`)[0];
+                popup_ddd1117d6c6ee2fff761f96d467279ed.setContent(html_16a39023e0c224dc3a462824dcbde468);
+            
+        
+
+        circle_marker_f9c01ef1a91cdabce5bf80823d727a09.bindPopup(popup_ddd1117d6c6ee2fff761f96d467279ed)
+        ;
+
+        
+    
+    
+            circle_marker_f9c01ef1a91cdabce5bf80823d727a09.bindTooltip(
+                `<div>
+                     MNB9397 (4bb5d6)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b668a049060865f1b22ed807e19b91b8 = L.circleMarker(
+                [32.9815, -110.5484],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_300e76b2222b7c39893f385c412fe551 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4007fb66d0743408fa2bfc708f36fbb0 = $(`<div id="html_4007fb66d0743408fa2bfc708f36fbb0" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> DAL753<br>             <b>ICAO:</b> a0f4a2<br>             <b>Altitude:</b> 36000 ft<br>             <b>Speed:</b> 459.6 kts<br>         </div>         </div>`)[0];
+                popup_300e76b2222b7c39893f385c412fe551.setContent(html_4007fb66d0743408fa2bfc708f36fbb0);
+            
+        
+
+        circle_marker_b668a049060865f1b22ed807e19b91b8.bindPopup(popup_300e76b2222b7c39893f385c412fe551)
+        ;
+
+        
+    
+    
+            circle_marker_b668a049060865f1b22ed807e19b91b8.bindTooltip(
+                `<div>
+                     DAL753 (a0f4a2)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7f20a3963f3075910fe9921811220bc8 = L.circleMarker(
+                [19.6514, -99.1574],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_6e95a5faa784de00173d6de203a18f50 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f81deb089f8f44553e2481bae230d21f = $(`<div id="html_f81deb089f8f44553e2481bae230d21f" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> VIV7434<br>             <b>ICAO:</b> 0d11e4<br>             <b>Altitude:</b> 9275 ft<br>             <b>Speed:</b> 195.1 kts<br>         </div>         </div>`)[0];
+                popup_6e95a5faa784de00173d6de203a18f50.setContent(html_f81deb089f8f44553e2481bae230d21f);
+            
+        
+
+        circle_marker_7f20a3963f3075910fe9921811220bc8.bindPopup(popup_6e95a5faa784de00173d6de203a18f50)
+        ;
+
+        
+    
+    
+            circle_marker_7f20a3963f3075910fe9921811220bc8.bindTooltip(
+                `<div>
+                     VIV7434 (0d11e4)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4a71d52ba6d98b7354ccd8c1a4abfdf3 = L.circleMarker(
+                [33.0094, -87.9093],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_bf9b32c974205e7ee6cc43618436f3d8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6e1a0967bafd96764527e9cbfdede92c = $(`<div id="html_6e1a0967bafd96764527e9cbfdede92c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> AAL2967<br>             <b>ICAO:</b> a9653d<br>             <b>Altitude:</b> 34000 ft<br>             <b>Speed:</b> 453.1 kts<br>         </div>         </div>`)[0];
+                popup_bf9b32c974205e7ee6cc43618436f3d8.setContent(html_6e1a0967bafd96764527e9cbfdede92c);
+            
+        
+
+        circle_marker_4a71d52ba6d98b7354ccd8c1a4abfdf3.bindPopup(popup_bf9b32c974205e7ee6cc43618436f3d8)
+        ;
+
+        
+    
+    
+            circle_marker_4a71d52ba6d98b7354ccd8c1a4abfdf3.bindTooltip(
+                `<div>
+                     AAL2967 (a9653d)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f10940e4dba54b6aed223f0d079ae052 = L.circleMarker(
+                [40.9012, 26.5522],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_0d416dae768879a7ca526644ba25e60c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f0e8ebda61fbeac985721dc8780d9beb = $(`<div id="html_f0e8ebda61fbeac985721dc8780d9beb" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> PGT341<br>             <b>ICAO:</b> 4bc8ce<br>             <b>Altitude:</b> 36000 ft<br>             <b>Speed:</b> 435.4 kts<br>         </div>         </div>`)[0];
+                popup_0d416dae768879a7ca526644ba25e60c.setContent(html_f0e8ebda61fbeac985721dc8780d9beb);
+            
+        
+
+        circle_marker_f10940e4dba54b6aed223f0d079ae052.bindPopup(popup_0d416dae768879a7ca526644ba25e60c)
+        ;
+
+        
+    
+    
+            circle_marker_f10940e4dba54b6aed223f0d079ae052.bindTooltip(
+                `<div>
+                     PGT341 (4bc8ce)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_29f7eabc9aefe554d1a18f4fb51d5861 = L.circleMarker(
+                [39.9638, -105.855],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_ecaf4f9d04576a4dde4f225e4ddcce85 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_76a5898c29aab9c6fb430858e9ef507a = $(`<div id="html_76a5898c29aab9c6fb430858e9ef507a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> KOW555<br>             <b>ICAO:</b> a71291<br>             <b>Altitude:</b> 29925 ft<br>             <b>Speed:</b> 370.7 kts<br>         </div>         </div>`)[0];
+                popup_ecaf4f9d04576a4dde4f225e4ddcce85.setContent(html_76a5898c29aab9c6fb430858e9ef507a);
+            
+        
+
+        circle_marker_29f7eabc9aefe554d1a18f4fb51d5861.bindPopup(popup_ecaf4f9d04576a4dde4f225e4ddcce85)
+        ;
+
+        
+    
+    
+            circle_marker_29f7eabc9aefe554d1a18f4fb51d5861.bindTooltip(
+                `<div>
+                     KOW555 (a71291)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ac6f6eb30face10b7d7b8449861f440a = L.circleMarker(
+                [40.8256, 29.2486],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_3dd9ffc53443c823b8844109babd67d9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c9bed13b484c8977f9baa256fe91376e = $(`<div id="html_c9bed13b484c8977f9baa256fe91376e" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> PGT81UL<br>             <b>ICAO:</b> 4bc8ca<br>             <b>Altitude:</b> 4175 ft<br>             <b>Speed:</b> 250.9 kts<br>         </div>         </div>`)[0];
+                popup_3dd9ffc53443c823b8844109babd67d9.setContent(html_c9bed13b484c8977f9baa256fe91376e);
+            
+        
+
+        circle_marker_ac6f6eb30face10b7d7b8449861f440a.bindPopup(popup_3dd9ffc53443c823b8844109babd67d9)
+        ;
+
+        
+    
+    
+            circle_marker_ac6f6eb30face10b7d7b8449861f440a.bindTooltip(
+                `<div>
+                     PGT81UL (4bc8ca)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_82f32870402e93fd1c5bd5db7b3a95ef = L.circleMarker(
+                [17.5741, -87.2573],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_0c4365125e58cbbafd045a5dcd32d3c9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ae32626be2bba4de9a3a542032a99544 = $(`<div id="html_ae32626be2bba4de9a3a542032a99544" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> IBE0221<br>             <b>ICAO:</b> 3455c1<br>             <b>Altitude:</b> 39000 ft<br>             <b>Speed:</b> 416.0 kts<br>         </div>         </div>`)[0];
+                popup_0c4365125e58cbbafd045a5dcd32d3c9.setContent(html_ae32626be2bba4de9a3a542032a99544);
+            
+        
+
+        circle_marker_82f32870402e93fd1c5bd5db7b3a95ef.bindPopup(popup_0c4365125e58cbbafd045a5dcd32d3c9)
+        ;
+
+        
+    
+    
+            circle_marker_82f32870402e93fd1c5bd5db7b3a95ef.bindTooltip(
+                `<div>
+                     IBE0221 (3455c1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_495cb00fb4062de5fd66f360c6c76dad = L.circleMarker(
+                [-34.0036, -70.2962],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_ca2dc274ce8768337ea22b4f68130e58 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c914941956140edb767fff9660d7be37 = $(`<div id="html_c914941956140edb767fff9660d7be37" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> LAN425<br>             <b>ICAO:</b> e80239<br>             <b>Altitude:</b> 20950 ft<br>             <b>Speed:</b> 419.3 kts<br>         </div>         </div>`)[0];
+                popup_ca2dc274ce8768337ea22b4f68130e58.setContent(html_c914941956140edb767fff9660d7be37);
+            
+        
+
+        circle_marker_495cb00fb4062de5fd66f360c6c76dad.bindPopup(popup_ca2dc274ce8768337ea22b4f68130e58)
+        ;
+
+        
+    
+    
+            circle_marker_495cb00fb4062de5fd66f360c6c76dad.bindTooltip(
+                `<div>
+                     LAN425 (e80239)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_40bbb39917fea259c09da751f28d0519 = L.circleMarker(
+                [39.0199, 20.5079],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_d9b1a8dfdca4a033da1e78ad1c54b0ed = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e15c9acdc4b2083a3d007e622ea0ba21 = $(`<div id="html_e15c9acdc4b2083a3d007e622ea0ba21" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> AEE6BR<br>             <b>ICAO:</b> 46b82a<br>             <b>Altitude:</b> 35000 ft<br>             <b>Speed:</b> 499.8 kts<br>         </div>         </div>`)[0];
+                popup_d9b1a8dfdca4a033da1e78ad1c54b0ed.setContent(html_e15c9acdc4b2083a3d007e622ea0ba21);
+            
+        
+
+        circle_marker_40bbb39917fea259c09da751f28d0519.bindPopup(popup_d9b1a8dfdca4a033da1e78ad1c54b0ed)
+        ;
+
+        
+    
+    
+            circle_marker_40bbb39917fea259c09da751f28d0519.bindTooltip(
+                `<div>
+                     AEE6BR (46b82a)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6b0a0b771b25f7a19e216a46f45303f8 = L.circleMarker(
+                [31.5965, -101.8088],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_312b12f51bdc160db5e6492a6848c7b4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9e9d4996c2d01bbe86144de404ca9bff = $(`<div id="html_9e9d4996c2d01bbe86144de404ca9bff" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> UAL2451<br>             <b>ICAO:</b> a127bb<br>             <b>Altitude:</b> 37000 ft<br>             <b>Speed:</b> 474.5 kts<br>         </div>         </div>`)[0];
+                popup_312b12f51bdc160db5e6492a6848c7b4.setContent(html_9e9d4996c2d01bbe86144de404ca9bff);
+            
+        
+
+        circle_marker_6b0a0b771b25f7a19e216a46f45303f8.bindPopup(popup_312b12f51bdc160db5e6492a6848c7b4)
+        ;
+
+        
+    
+    
+            circle_marker_6b0a0b771b25f7a19e216a46f45303f8.bindTooltip(
+                `<div>
+                     UAL2451 (a127bb)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bb9b0b101973ec8d13523e2e699ecaee = L.circleMarker(
+                [5.4509, -74.1024],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_1449a1fd2ff67714c9ee2159dcbc38df = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f2c5083aead30ae24dbd8e01c273adf4 = $(`<div id="html_f2c5083aead30ae24dbd8e01c273adf4" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> LAE2507<br>             <b>ICAO:</b> e80241<br>             <b>Altitude:</b> 22300 ft<br>             <b>Speed:</b> 403.4 kts<br>         </div>         </div>`)[0];
+                popup_1449a1fd2ff67714c9ee2159dcbc38df.setContent(html_f2c5083aead30ae24dbd8e01c273adf4);
+            
+        
+
+        circle_marker_bb9b0b101973ec8d13523e2e699ecaee.bindPopup(popup_1449a1fd2ff67714c9ee2159dcbc38df)
+        ;
+
+        
+    
+    
+            circle_marker_bb9b0b101973ec8d13523e2e699ecaee.bindTooltip(
+                `<div>
+                     LAE2507 (e80241)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0bd7bdd2f9c07d2d09bc00d0439b745c = L.circleMarker(
+                [34.6707, -77.327],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_304682d11bcaa9dbb8f7056be472b5df = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7e650d8b9f4324581f6a82a590c26d24 = $(`<div id="html_7e650d8b9f4324581f6a82a590c26d24" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> SAS953<br>             <b>ICAO:</b> 478854<br>             <b>Altitude:</b> 38000 ft<br>             <b>Speed:</b> 455.6 kts<br>         </div>         </div>`)[0];
+                popup_304682d11bcaa9dbb8f7056be472b5df.setContent(html_7e650d8b9f4324581f6a82a590c26d24);
+            
+        
+
+        circle_marker_0bd7bdd2f9c07d2d09bc00d0439b745c.bindPopup(popup_304682d11bcaa9dbb8f7056be472b5df)
+        ;
+
+        
+    
+    
+            circle_marker_0bd7bdd2f9c07d2d09bc00d0439b745c.bindTooltip(
+                `<div>
+                     SAS953 (478854)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3cc171108cdd17e42025e16c5e6478b4 = L.circleMarker(
+                [32.7692, -93.0224],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_8076909359563331c47ddcb71869a927 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_342e6a575eee9149f0f1f3fb98c0e73a = $(`<div id="html_342e6a575eee9149f0f1f3fb98c0e73a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> DAL2099<br>             <b>ICAO:</b> a091d5<br>             <b>Altitude:</b> 37000 ft<br>             <b>Speed:</b> 456.4 kts<br>         </div>         </div>`)[0];
+                popup_8076909359563331c47ddcb71869a927.setContent(html_342e6a575eee9149f0f1f3fb98c0e73a);
+            
+        
+
+        circle_marker_3cc171108cdd17e42025e16c5e6478b4.bindPopup(popup_8076909359563331c47ddcb71869a927)
+        ;
+
+        
+    
+    
+            circle_marker_3cc171108cdd17e42025e16c5e6478b4.bindTooltip(
+                `<div>
+                     DAL2099 (a091d5)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aa058b8026215d501582ad38ee31a579 = L.circleMarker(
+                [37.1062, -85.9005],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_431c8cfb2bce74db95436a6ee9d99c38 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_725c113eceaec73e47cc9dca0095470e = $(`<div id="html_725c113eceaec73e47cc9dca0095470e" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> FFT4161<br>             <b>ICAO:</b> a8eed8<br>             <b>Altitude:</b> 34000 ft<br>             <b>Speed:</b> 386.2 kts<br>         </div>         </div>`)[0];
+                popup_431c8cfb2bce74db95436a6ee9d99c38.setContent(html_725c113eceaec73e47cc9dca0095470e);
+            
+        
+
+        circle_marker_aa058b8026215d501582ad38ee31a579.bindPopup(popup_431c8cfb2bce74db95436a6ee9d99c38)
+        ;
+
+        
+    
+    
+            circle_marker_aa058b8026215d501582ad38ee31a579.bindTooltip(
+                `<div>
+                     FFT4161 (a8eed8)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a32e09834de16a54ab97be4abf2d24d3 = L.circleMarker(
+                [34.1443, -90.5423],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_f1ad107e9c0ab6aac497347795ab0a68 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_85278b78c55c6fbf429444ec5cbda1d1 = $(`<div id="html_85278b78c55c6fbf429444ec5cbda1d1" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> DAL2862<br>             <b>ICAO:</b> ac491d<br>             <b>Altitude:</b> 30000 ft<br>             <b>Speed:</b> 427.0 kts<br>         </div>         </div>`)[0];
+                popup_f1ad107e9c0ab6aac497347795ab0a68.setContent(html_85278b78c55c6fbf429444ec5cbda1d1);
+            
+        
+
+        circle_marker_a32e09834de16a54ab97be4abf2d24d3.bindPopup(popup_f1ad107e9c0ab6aac497347795ab0a68)
+        ;
+
+        
+    
+    
+            circle_marker_a32e09834de16a54ab97be4abf2d24d3.bindTooltip(
+                `<div>
+                     DAL2862 (ac491d)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5487ecea03b3cd56ff61c77c8dc2e59c = L.circleMarker(
+                [33.7792, -83.3546],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_c3139d9d4893a0b1461cf1b6b99f23b4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8eebd37aefa64ae50862493a86f2ef3e = $(`<div id="html_8eebd37aefa64ae50862493a86f2ef3e" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> AAL2953<br>             <b>ICAO:</b> a101c3<br>             <b>Altitude:</b> 31625 ft<br>             <b>Speed:</b> 465.1 kts<br>         </div>         </div>`)[0];
+                popup_c3139d9d4893a0b1461cf1b6b99f23b4.setContent(html_8eebd37aefa64ae50862493a86f2ef3e);
+            
+        
+
+        circle_marker_5487ecea03b3cd56ff61c77c8dc2e59c.bindPopup(popup_c3139d9d4893a0b1461cf1b6b99f23b4)
+        ;
+
+        
+    
+    
+            circle_marker_5487ecea03b3cd56ff61c77c8dc2e59c.bindTooltip(
+                `<div>
+                     AAL2953 (a101c3)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4ad9cc473705d5d424112a2843ed95a5 = L.circleMarker(
+                [33.6668, -110.3338],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_6dff36597b7ea9c872f4ea627a60dd19 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6753fa0d987d44c5b103c1ddde1c5ea1 = $(`<div id="html_6753fa0d987d44c5b103c1ddde1c5ea1" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> SWA1777<br>             <b>ICAO:</b> a5958c<br>             <b>Altitude:</b> 36000 ft<br>             <b>Speed:</b> 432.2 kts<br>         </div>         </div>`)[0];
+                popup_6dff36597b7ea9c872f4ea627a60dd19.setContent(html_6753fa0d987d44c5b103c1ddde1c5ea1);
+            
+        
+
+        circle_marker_4ad9cc473705d5d424112a2843ed95a5.bindPopup(popup_6dff36597b7ea9c872f4ea627a60dd19)
+        ;
+
+        
+    
+    
+            circle_marker_4ad9cc473705d5d424112a2843ed95a5.bindTooltip(
+                `<div>
+                     SWA1777 (a5958c)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4ac366f3df102e866015f2bb12020770 = L.circleMarker(
+                [36.3154, -109.1184],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_5bce69208002d93311991a6565d76154 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f70734705a15b3333b5b869dc621b82a = $(`<div id="html_f70734705a15b3333b5b869dc621b82a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> AAY1595<br>             <b>ICAO:</b> a1ad44<br>             <b>Altitude:</b> 33000 ft<br>             <b>Speed:</b> 479.9 kts<br>         </div>         </div>`)[0];
+                popup_5bce69208002d93311991a6565d76154.setContent(html_f70734705a15b3333b5b869dc621b82a);
+            
+        
+
+        circle_marker_4ac366f3df102e866015f2bb12020770.bindPopup(popup_5bce69208002d93311991a6565d76154)
+        ;
+
+        
+    
+    
+            circle_marker_4ac366f3df102e866015f2bb12020770.bindTooltip(
+                `<div>
+                     AAY1595 (a1ad44)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9c92d3caf810bc93f47338303ac13191 = L.circleMarker(
+                [33.3354, 30.7099],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_baf98b893cdb958ac762f84297ecfb0d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b04489e701f05e2c26e9d7931c79763c = $(`<div id="html_b04489e701f05e2c26e9d7931c79763c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> AEE950<br>             <b>ICAO:</b> 46b828<br>             <b>Altitude:</b> 33000 ft<br>             <b>Speed:</b> 514.2 kts<br>         </div>         </div>`)[0];
+                popup_baf98b893cdb958ac762f84297ecfb0d.setContent(html_b04489e701f05e2c26e9d7931c79763c);
+            
+        
+
+        circle_marker_9c92d3caf810bc93f47338303ac13191.bindPopup(popup_baf98b893cdb958ac762f84297ecfb0d)
+        ;
+
+        
+    
+    
+            circle_marker_9c92d3caf810bc93f47338303ac13191.bindTooltip(
+                `<div>
+                     AEE950 (46b828)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a0534b41421a1400ede5b5207d68dbb4 = L.circleMarker(
+                [59.6822, 2.6719],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_7ff414df73449189276a883dbc7ee556 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6591f3f8a6e36470a51a593106ee6bc8 = $(`<div id="html_6591f3f8a6e36470a51a593106ee6bc8" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> ICE275<br>             <b>ICAO:</b> 4cc2a6<br>             <b>Altitude:</b> 37975 ft<br>             <b>Speed:</b> 451.9 kts<br>         </div>         </div>`)[0];
+                popup_7ff414df73449189276a883dbc7ee556.setContent(html_6591f3f8a6e36470a51a593106ee6bc8);
+            
+        
+
+        circle_marker_a0534b41421a1400ede5b5207d68dbb4.bindPopup(popup_7ff414df73449189276a883dbc7ee556)
+        ;
+
+        
+    
+    
+            circle_marker_a0534b41421a1400ede5b5207d68dbb4.bindTooltip(
+                `<div>
+                     ICE275 (4cc2a6)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7cdb9b66571ec44e55ca0538537f3e64 = L.circleMarker(
+                [20.9994, -89.0891],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_4e007654f02337f45c2182b8b891c875 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c71db65a18bfbee5304335081e95359 = $(`<div id="html_0c71db65a18bfbee5304335081e95359" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> SCX578<br>             <b>ICAO:</b> aaf617<br>             <b>Altitude:</b> 37975 ft<br>             <b>Speed:</b> 428.3 kts<br>         </div>         </div>`)[0];
+                popup_4e007654f02337f45c2182b8b891c875.setContent(html_0c71db65a18bfbee5304335081e95359);
+            
+        
+
+        circle_marker_7cdb9b66571ec44e55ca0538537f3e64.bindPopup(popup_4e007654f02337f45c2182b8b891c875)
+        ;
+
+        
+    
+    
+            circle_marker_7cdb9b66571ec44e55ca0538537f3e64.bindTooltip(
+                `<div>
+                     SCX578 (aaf617)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4b3cc1630c9107e6e782e7ea89fab5d9 = L.circleMarker(
+                [33.3588, -101.9858],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_f511cd6a73a1a79282876b56a22d9c70 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0676c3b3be6724e8b73dd51129807a79 = $(`<div id="html_0676c3b3be6724e8b73dd51129807a79" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> N11EF<br>             <b>ICAO:</b> a02a44<br>             <b>Altitude:</b> 43000 ft<br>             <b>Speed:</b> 437.0 kts<br>         </div>         </div>`)[0];
+                popup_f511cd6a73a1a79282876b56a22d9c70.setContent(html_0676c3b3be6724e8b73dd51129807a79);
+            
+        
+
+        circle_marker_4b3cc1630c9107e6e782e7ea89fab5d9.bindPopup(popup_f511cd6a73a1a79282876b56a22d9c70)
+        ;
+
+        
+    
+    
+            circle_marker_4b3cc1630c9107e6e782e7ea89fab5d9.bindTooltip(
+                `<div>
+                     N11EF (a02a44)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_676f551cb202792ce8a7e067533ff947 = L.circleMarker(
+                [34.1606, -79.7566],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_ce06c08f70bafe8f176e371b330131fe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0304d383510338b9544682c310243365 = $(`<div id="html_0304d383510338b9544682c310243365" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> SKW3897<br>             <b>ICAO:</b> a247f0<br>             <b>Altitude:</b> 26950 ft<br>             <b>Speed:</b> 439.2 kts<br>         </div>         </div>`)[0];
+                popup_ce06c08f70bafe8f176e371b330131fe.setContent(html_0304d383510338b9544682c310243365);
+            
+        
+
+        circle_marker_676f551cb202792ce8a7e067533ff947.bindPopup(popup_ce06c08f70bafe8f176e371b330131fe)
+        ;
+
+        
+    
+    
+            circle_marker_676f551cb202792ce8a7e067533ff947.bindTooltip(
+                `<div>
+                     SKW3897 (a247f0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e4d56b748acc7312c6c2f0390032aee6 = L.circleMarker(
+                [53.3387, 2.1686],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_02f7ead4468653dd343bee48aba0f7dc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e4756f9bbafc9390f17dd8eba0a22de2 = $(`<div id="html_e4756f9bbafc9390f17dd8eba0a22de2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> NOZ3KH<br>             <b>ICAO:</b> 47880f<br>             <b>Altitude:</b> 36000 ft<br>             <b>Speed:</b> 498.4 kts<br>         </div>         </div>`)[0];
+                popup_02f7ead4468653dd343bee48aba0f7dc.setContent(html_e4756f9bbafc9390f17dd8eba0a22de2);
+            
+        
+
+        circle_marker_e4d56b748acc7312c6c2f0390032aee6.bindPopup(popup_02f7ead4468653dd343bee48aba0f7dc)
+        ;
+
+        
+    
+    
+            circle_marker_e4d56b748acc7312c6c2f0390032aee6.bindTooltip(
+                `<div>
+                     NOZ3KH (47880f)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0cc2793297d8c7c6e24a6704e9fce720 = L.circleMarker(
+                [31.9966, -107.7111],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_015156325ab4eefdce2e5639473c019c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_74cc0a1f5ea03c71b9198caec4a9a5e9 = $(`<div id="html_74cc0a1f5ea03c71b9198caec4a9a5e9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> SKW4904<br>             <b>ICAO:</b> aaf60a<br>             <b>Altitude:</b> 36000 ft<br>             <b>Speed:</b> 451.4 kts<br>         </div>         </div>`)[0];
+                popup_015156325ab4eefdce2e5639473c019c.setContent(html_74cc0a1f5ea03c71b9198caec4a9a5e9);
+            
+        
+
+        circle_marker_0cc2793297d8c7c6e24a6704e9fce720.bindPopup(popup_015156325ab4eefdce2e5639473c019c)
+        ;
+
+        
+    
+    
+            circle_marker_0cc2793297d8c7c6e24a6704e9fce720.bindTooltip(
+                `<div>
+                     SKW4904 (aaf60a)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_81e74b72dff9d07be6df3ae91645969a = L.circleMarker(
+                [10.0798, -74.5172],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_7eb1c6420636042fbe78eb81f26e082e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_12265385c505f0fe42b07650625d5712 = $(`<div id="html_12265385c505f0fe42b07650625d5712" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> ARE4141<br>             <b>ICAO:</b> e80201<br>             <b>Altitude:</b> 21175 ft<br>             <b>Speed:</b> 407.7 kts<br>         </div>         </div>`)[0];
+                popup_7eb1c6420636042fbe78eb81f26e082e.setContent(html_12265385c505f0fe42b07650625d5712);
+            
+        
+
+        circle_marker_81e74b72dff9d07be6df3ae91645969a.bindPopup(popup_7eb1c6420636042fbe78eb81f26e082e)
+        ;
+
+        
+    
+    
+            circle_marker_81e74b72dff9d07be6df3ae91645969a.bindTooltip(
+                `<div>
+                     ARE4141 (e80201)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_821da9535bc4743ad8ffe766199980b1 = L.circleMarker(
+                [30.47, -90.1115],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_15e926867970b710591013ddcef91983 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4886fb493afac8b5fb583ee148cc87fe = $(`<div id="html_4886fb493afac8b5fb583ee148cc87fe" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> N813TA<br>             <b>ICAO:</b> ab162b<br>             <b>Altitude:</b> 37000 ft<br>             <b>Speed:</b> 468.4 kts<br>         </div>         </div>`)[0];
+                popup_15e926867970b710591013ddcef91983.setContent(html_4886fb493afac8b5fb583ee148cc87fe);
+            
+        
+
+        circle_marker_821da9535bc4743ad8ffe766199980b1.bindPopup(popup_15e926867970b710591013ddcef91983)
+        ;
+
+        
+    
+    
+            circle_marker_821da9535bc4743ad8ffe766199980b1.bindTooltip(
+                `<div>
+                     N813TA (ab162b)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_49c062fda8f62dda2ac72eea6b682a06 = L.circleMarker(
+                [32.6876, -110.1179],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_8a3afa744409beddf788690ddbee5948 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3f4df5dd10227f93f4312793a2a28d15 = $(`<div id="html_3f4df5dd10227f93f4312793a2a28d15" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> PXT88<br>             <b>ICAO:</b> ac3613<br>             <b>Altitude:</b> 45000 ft<br>             <b>Speed:</b> 444.1 kts<br>         </div>         </div>`)[0];
+                popup_8a3afa744409beddf788690ddbee5948.setContent(html_3f4df5dd10227f93f4312793a2a28d15);
+            
+        
+
+        circle_marker_49c062fda8f62dda2ac72eea6b682a06.bindPopup(popup_8a3afa744409beddf788690ddbee5948)
+        ;
+
+        
+    
+    
+            circle_marker_49c062fda8f62dda2ac72eea6b682a06.bindTooltip(
+                `<div>
+                     PXT88 (ac3613)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2e57d378e17c0d7721171e7057bac398 = L.circleMarker(
+                [37.4257, -80.5776],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_c9cb8f8677c62c9c6e91c5e3caae0690 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e0f1c341171753d48371f5f8f1b01dd3 = $(`<div id="html_e0f1c341171753d48371f5f8f1b01dd3" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> UAL2674<br>             <b>ICAO:</b> aa931d<br>             <b>Altitude:</b> 38000 ft<br>             <b>Speed:</b> 421.6 kts<br>         </div>         </div>`)[0];
+                popup_c9cb8f8677c62c9c6e91c5e3caae0690.setContent(html_e0f1c341171753d48371f5f8f1b01dd3);
+            
+        
+
+        circle_marker_2e57d378e17c0d7721171e7057bac398.bindPopup(popup_c9cb8f8677c62c9c6e91c5e3caae0690)
+        ;
+
+        
+    
+    
+            circle_marker_2e57d378e17c0d7721171e7057bac398.bindTooltip(
+                `<div>
+                     UAL2674 (aa931d)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7006f79992765e276ce201798726ed37 = L.circleMarker(
+                [39.7531, -112.3047],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_5679bcdd5ced4c0d68aa065bb3ad5298 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_49d6f683a8c1e46f4b0f7cf44613a042 = $(`<div id="html_49d6f683a8c1e46f4b0f7cf44613a042" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> N42JH<br>             <b>ICAO:</b> a4fa16<br>             <b>Altitude:</b> 43000 ft<br>             <b>Speed:</b> 444.2 kts<br>         </div>         </div>`)[0];
+                popup_5679bcdd5ced4c0d68aa065bb3ad5298.setContent(html_49d6f683a8c1e46f4b0f7cf44613a042);
+            
+        
+
+        circle_marker_7006f79992765e276ce201798726ed37.bindPopup(popup_5679bcdd5ced4c0d68aa065bb3ad5298)
+        ;
+
+        
+    
+    
+            circle_marker_7006f79992765e276ce201798726ed37.bindTooltip(
+                `<div>
+                     N42JH (a4fa16)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_129c31a1e6331fe42dc3faf31f7f7572 = L.circleMarker(
+                [33.2109, -92.8247],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_ac5d241ccb6e51fd68cb362aa0e64843 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_208fe118d77a7c19b532fcf4496d2ea5 = $(`<div id="html_208fe118d77a7c19b532fcf4496d2ea5" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> UAL2648<br>             <b>ICAO:</b> aa07f9<br>             <b>Altitude:</b> 34000 ft<br>             <b>Speed:</b> 420.8 kts<br>         </div>         </div>`)[0];
+                popup_ac5d241ccb6e51fd68cb362aa0e64843.setContent(html_208fe118d77a7c19b532fcf4496d2ea5);
+            
+        
+
+        circle_marker_129c31a1e6331fe42dc3faf31f7f7572.bindPopup(popup_ac5d241ccb6e51fd68cb362aa0e64843)
+        ;
+
+        
+    
+    
+            circle_marker_129c31a1e6331fe42dc3faf31f7f7572.bindTooltip(
+                `<div>
+                     UAL2648 (aa07f9)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_217de80c3424f908bf136ed365e079f3 = L.circleMarker(
+                [39.049, -122.6223],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_31db890b282690b24cd11e656996c03b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c6e4a8c8209b06df602d21e09c1c4bc9 = $(`<div id="html_c6e4a8c8209b06df602d21e09c1c4bc9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> N360MC<br>             <b>ICAO:</b> a40d62<br>             <b>Altitude:</b> 33000 ft<br>             <b>Speed:</b> 338.0 kts<br>         </div>         </div>`)[0];
+                popup_31db890b282690b24cd11e656996c03b.setContent(html_c6e4a8c8209b06df602d21e09c1c4bc9);
+            
+        
+
+        circle_marker_217de80c3424f908bf136ed365e079f3.bindPopup(popup_31db890b282690b24cd11e656996c03b)
+        ;
+
+        
+    
+    
+            circle_marker_217de80c3424f908bf136ed365e079f3.bindTooltip(
+                `<div>
+                     N360MC (a40d62)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_053f23204168731f8cef3071fb9bdae4 = L.circleMarker(
+                [26.2191, 81.7166],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_9ad727b4da8d6f6b718fa6fff97488f8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0596b8d0b6f82cc392642aea1fcc6a4e = $(`<div id="html_0596b8d0b6f82cc392642aea1fcc6a4e" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> THA934<br>             <b>ICAO:</b> 885226<br>             <b>Altitude:</b> 36000 ft<br>             <b>Speed:</b> 402.0 kts<br>         </div>         </div>`)[0];
+                popup_9ad727b4da8d6f6b718fa6fff97488f8.setContent(html_0596b8d0b6f82cc392642aea1fcc6a4e);
+            
+        
+
+        circle_marker_053f23204168731f8cef3071fb9bdae4.bindPopup(popup_9ad727b4da8d6f6b718fa6fff97488f8)
+        ;
+
+        
+    
+    
+            circle_marker_053f23204168731f8cef3071fb9bdae4.bindTooltip(
+                `<div>
+                     THA934 (885226)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dc7b78cfea5be01e2c93c703d6f775bf = L.circleMarker(
+                [48.8082, 3.0654],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_d50e2a03b6b8f57b435018d50866d1d8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eda85b70819f163611b3362e5fb9f7f6 = $(`<div id="html_eda85b70819f163611b3362e5fb9f7f6" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> VLG8008<br>             <b>ICAO:</b> 343194<br>             <b>Altitude:</b> 5725 ft<br>             <b>Speed:</b> 213.4 kts<br>         </div>         </div>`)[0];
+                popup_d50e2a03b6b8f57b435018d50866d1d8.setContent(html_eda85b70819f163611b3362e5fb9f7f6);
+            
+        
+
+        circle_marker_dc7b78cfea5be01e2c93c703d6f775bf.bindPopup(popup_d50e2a03b6b8f57b435018d50866d1d8)
+        ;
+
+        
+    
+    
+            circle_marker_dc7b78cfea5be01e2c93c703d6f775bf.bindTooltip(
+                `<div>
+                     VLG8008 (343194)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_99d15f1402ebc076a078782695d8fb4e = L.circleMarker(
+                [20.6551, 89.579],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_b4b9496ada67a6eed74e4c05441972c8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4054a3ecf0fb6b262c0d02ce013b1a9f = $(`<div id="html_4054a3ecf0fb6b262c0d02ce013b1a9f" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> THA935<br>             <b>ICAO:</b> 885221<br>             <b>Altitude:</b> 41000 ft<br>             <b>Speed:</b> 530.2 kts<br>         </div>         </div>`)[0];
+                popup_b4b9496ada67a6eed74e4c05441972c8.setContent(html_4054a3ecf0fb6b262c0d02ce013b1a9f);
+            
+        
+
+        circle_marker_99d15f1402ebc076a078782695d8fb4e.bindPopup(popup_b4b9496ada67a6eed74e4c05441972c8)
+        ;
+
+        
+    
+    
+            circle_marker_99d15f1402ebc076a078782695d8fb4e.bindTooltip(
+                `<div>
+                     THA935 (885221)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3f25fe41dd1900ca0339c530cc10c32c = L.circleMarker(
+                [51.7901, -104.4924],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_983b6ef0c72b99a35d2e9c2435658663 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_08162e8f6a69819d7ae468c36c90ec79 = $(`<div id="html_08162e8f6a69819d7ae468c36c90ec79" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> ROU1933<br>             <b>ICAO:</b> c0481b<br>             <b>Altitude:</b> 38000 ft<br>             <b>Speed:</b> 357.5 kts<br>         </div>         </div>`)[0];
+                popup_983b6ef0c72b99a35d2e9c2435658663.setContent(html_08162e8f6a69819d7ae468c36c90ec79);
+            
+        
+
+        circle_marker_3f25fe41dd1900ca0339c530cc10c32c.bindPopup(popup_983b6ef0c72b99a35d2e9c2435658663)
+        ;
+
+        
+    
+    
+            circle_marker_3f25fe41dd1900ca0339c530cc10c32c.bindTooltip(
+                `<div>
+                     ROU1933 (c0481b)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4e79a176d3066fbc2848ec6c17e3c4d0 = L.circleMarker(
+                [34.2157, -80.7112],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_096e5b6d02e1c72ff48615bd3ab7aaad = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d22bdcf0ffc1c76c9dd6ad07375e2eac = $(`<div id="html_d22bdcf0ffc1c76c9dd6ad07375e2eac" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> ROU1627<br>             <b>ICAO:</b> c0481c<br>             <b>Altitude:</b> 37075 ft<br>             <b>Speed:</b> 447.6 kts<br>         </div>         </div>`)[0];
+                popup_096e5b6d02e1c72ff48615bd3ab7aaad.setContent(html_d22bdcf0ffc1c76c9dd6ad07375e2eac);
+            
+        
+
+        circle_marker_4e79a176d3066fbc2848ec6c17e3c4d0.bindPopup(popup_096e5b6d02e1c72ff48615bd3ab7aaad)
+        ;
+
+        
+    
+    
+            circle_marker_4e79a176d3066fbc2848ec6c17e3c4d0.bindTooltip(
+                `<div>
+                     ROU1627 (c0481c)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4a058f578270ae46863fc714bc43b88d = L.circleMarker(
+                [37.1573, -76.9256],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_c5bb91ee9d3c9c1e5799e60a486503fe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_25e92df25d2d038f2e1fbc4db3974067 = $(`<div id="html_25e92df25d2d038f2e1fbc4db3974067" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> N11GJ<br>             <b>ICAO:</b> a02a79<br>             <b>Altitude:</b> 38000 ft<br>             <b>Speed:</b> 416.5 kts<br>         </div>         </div>`)[0];
+                popup_c5bb91ee9d3c9c1e5799e60a486503fe.setContent(html_25e92df25d2d038f2e1fbc4db3974067);
+            
+        
+
+        circle_marker_4a058f578270ae46863fc714bc43b88d.bindPopup(popup_c5bb91ee9d3c9c1e5799e60a486503fe)
+        ;
+
+        
+    
+    
+            circle_marker_4a058f578270ae46863fc714bc43b88d.bindTooltip(
+                `<div>
+                     N11GJ (a02a79)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_11fd0f9e1f28363e5c785553bfcd4de7 = L.circleMarker(
+                [56.5425, 15.8086],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_acbf9c0d50533393fca18f146e0adaad = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_43ab12433f99b108db02f3f071ab9be7 = $(`<div id="html_43ab12433f99b108db02f3f071ab9be7" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> NSZ9LH<br>             <b>ICAO:</b> 4aca82<br>             <b>Altitude:</b> 37000 ft<br>             <b>Speed:</b> 469.8 kts<br>         </div>         </div>`)[0];
+                popup_acbf9c0d50533393fca18f146e0adaad.setContent(html_43ab12433f99b108db02f3f071ab9be7);
+            
+        
+
+        circle_marker_11fd0f9e1f28363e5c785553bfcd4de7.bindPopup(popup_acbf9c0d50533393fca18f146e0adaad)
+        ;
+
+        
+    
+    
+            circle_marker_11fd0f9e1f28363e5c785553bfcd4de7.bindTooltip(
+                `<div>
+                     NSZ9LH (4aca82)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_945dd7718248262d09d0a70aeaf84382 = L.circleMarker(
+                [56.4149, 8.0362],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_cf8eedf7be2c57cfbffc708f9541a2d2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_37fb5ca6fded4ad2380bd55f54763dea = $(`<div id="html_37fb5ca6fded4ad2380bd55f54763dea" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> NSZ2873<br>             <b>ICAO:</b> 4aca85<br>             <b>Altitude:</b> 37000 ft<br>             <b>Speed:</b> 495.5 kts<br>         </div>         </div>`)[0];
+                popup_cf8eedf7be2c57cfbffc708f9541a2d2.setContent(html_37fb5ca6fded4ad2380bd55f54763dea);
+            
+        
+
+        circle_marker_945dd7718248262d09d0a70aeaf84382.bindPopup(popup_cf8eedf7be2c57cfbffc708f9541a2d2)
+        ;
+
+        
+    
+    
+            circle_marker_945dd7718248262d09d0a70aeaf84382.bindTooltip(
+                `<div>
+                     NSZ2873 (4aca85)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7edf26e60951240337a4023c0f5e5566 = L.circleMarker(
+                [36.1323, -92.009],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_b568671066d5af02f8878313eb62648c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c68b54049d206523de2521f5991dd236 = $(`<div id="html_c68b54049d206523de2521f5991dd236" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> AAL2710<br>             <b>ICAO:</b> ab5d4a<br>             <b>Altitude:</b> 34000 ft<br>             <b>Speed:</b> 391.9 kts<br>         </div>         </div>`)[0];
+                popup_b568671066d5af02f8878313eb62648c.setContent(html_c68b54049d206523de2521f5991dd236);
+            
+        
+
+        circle_marker_7edf26e60951240337a4023c0f5e5566.bindPopup(popup_b568671066d5af02f8878313eb62648c)
+        ;
+
+        
+    
+    
+            circle_marker_7edf26e60951240337a4023c0f5e5566.bindTooltip(
+                `<div>
+                     AAL2710 (ab5d4a)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3f8d50cf83c736c4b9e2c329fc068c6 = L.circleMarker(
+                [45.7782, 0.6343],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_17f8d58b5a8c41fbed0304f6f2b7985d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6b3f88aa43db95d64881bbee8780bb0c = $(`<div id="html_6b3f88aa43db95d64881bbee8780bb0c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> NSZ1NW<br>             <b>ICAO:</b> 4aca92<br>             <b>Altitude:</b> 37000 ft<br>             <b>Speed:</b> 452.9 kts<br>         </div>         </div>`)[0];
+                popup_17f8d58b5a8c41fbed0304f6f2b7985d.setContent(html_6b3f88aa43db95d64881bbee8780bb0c);
+            
+        
+
+        circle_marker_f3f8d50cf83c736c4b9e2c329fc068c6.bindPopup(popup_17f8d58b5a8c41fbed0304f6f2b7985d)
+        ;
+
+        
+    
+    
+            circle_marker_f3f8d50cf83c736c4b9e2c329fc068c6.bindTooltip(
+                `<div>
+                     NSZ1NW (4aca92)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aff86b1b9c55d946ae863129a40fd51d = L.circleMarker(
+                [51.7027, 1.0114],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_e755759c2bcf03b8dc76dfc60a5fa7d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f92f8365735e861edc3a155d78756329 = $(`<div id="html_f92f8365735e861edc3a155d78756329" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> NSZ3693<br>             <b>ICAO:</b> 4aca96<br>             <b>Altitude:</b> 38000 ft<br>             <b>Speed:</b> 508.8 kts<br>         </div>         </div>`)[0];
+                popup_e755759c2bcf03b8dc76dfc60a5fa7d1.setContent(html_f92f8365735e861edc3a155d78756329);
+            
+        
+
+        circle_marker_aff86b1b9c55d946ae863129a40fd51d.bindPopup(popup_e755759c2bcf03b8dc76dfc60a5fa7d1)
+        ;
+
+        
+    
+    
+            circle_marker_aff86b1b9c55d946ae863129a40fd51d.bindTooltip(
+                `<div>
+                     NSZ3693 (4aca96)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a75b2f1b699176d543c592113cc7368a = L.circleMarker(
+                [66.4657, 14.4984],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_3f1684bad8eb655269810c0742352256 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_93ff9ce8e421468a00deedca680c9fe8 = $(`<div id="html_93ff9ce8e421468a00deedca680c9fe8" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> NOZ1613<br>             <b>ICAO:</b> 4aca99<br>             <b>Altitude:</b> 39000 ft<br>             <b>Speed:</b> 504.9 kts<br>         </div>         </div>`)[0];
+                popup_3f1684bad8eb655269810c0742352256.setContent(html_93ff9ce8e421468a00deedca680c9fe8);
+            
+        
+
+        circle_marker_a75b2f1b699176d543c592113cc7368a.bindPopup(popup_3f1684bad8eb655269810c0742352256)
+        ;
+
+        
+    
+    
+            circle_marker_a75b2f1b699176d543c592113cc7368a.bindTooltip(
+                `<div>
+                     NOZ1613 (4aca99)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2b051d6008fd2eb4285ecf28f8bcba1f = L.circleMarker(
+                [22.2925, 116.0074],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_a915c192eb87834246cbd98e513ee719 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_39a85151d3b009ff6d308b6c34331dfb = $(`<div id="html_39a85151d3b009ff6d308b6c34331dfb" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> GIA894<br>             <b>ICAO:</b> 8a0479<br>             <b>Altitude:</b> 39000 ft<br>             <b>Speed:</b> 500.3 kts<br>         </div>         </div>`)[0];
+                popup_a915c192eb87834246cbd98e513ee719.setContent(html_39a85151d3b009ff6d308b6c34331dfb);
+            
+        
+
+        circle_marker_2b051d6008fd2eb4285ecf28f8bcba1f.bindPopup(popup_a915c192eb87834246cbd98e513ee719)
+        ;
+
+        
+    
+    
+            circle_marker_2b051d6008fd2eb4285ecf28f8bcba1f.bindTooltip(
+                `<div>
+                     GIA894 (8a0479)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a0c3f9667251b1b8d4eb792c07f7eef1 = L.circleMarker(
+                [38.63, -106.2035],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_c7682c8f4f3e916c851db81e8528a003 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b5410780b67b135563e46f738381b7d0 = $(`<div id="html_b5410780b67b135563e46f738381b7d0" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> N650DM<br>             <b>ICAO:</b> a88d11<br>             <b>Altitude:</b> 25975 ft<br>             <b>Speed:</b> 236.3 kts<br>         </div>         </div>`)[0];
+                popup_c7682c8f4f3e916c851db81e8528a003.setContent(html_b5410780b67b135563e46f738381b7d0);
+            
+        
+
+        circle_marker_a0c3f9667251b1b8d4eb792c07f7eef1.bindPopup(popup_c7682c8f4f3e916c851db81e8528a003)
+        ;
+
+        
+    
+    
+            circle_marker_a0c3f9667251b1b8d4eb792c07f7eef1.bindTooltip(
+                `<div>
+                     N650DM (a88d11)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_df699020c3c4ea1618bb857a1a75cc60 = L.circleMarker(
+                [39.0538, -108.2592],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_5c682c2507e32a07397dc3a356c8a796 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_25a6df7a03f925fa6f0567e120164549 = $(`<div id="html_25a6df7a03f925fa6f0567e120164549" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> SWA4448<br>             <b>ICAO:</b> ac47de<br>             <b>Altitude:</b> 36000 ft<br>             <b>Speed:</b> 398.9 kts<br>         </div>         </div>`)[0];
+                popup_5c682c2507e32a07397dc3a356c8a796.setContent(html_25a6df7a03f925fa6f0567e120164549);
+            
+        
+
+        circle_marker_df699020c3c4ea1618bb857a1a75cc60.bindPopup(popup_5c682c2507e32a07397dc3a356c8a796)
+        ;
+
+        
+    
+    
+            circle_marker_df699020c3c4ea1618bb857a1a75cc60.bindTooltip(
+                `<div>
+                     SWA4448 (ac47de)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f6200d923ff7c56938cfd30cdeaa8319 = L.circleMarker(
+                [28.1302, -80.3043],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_d1058f1e854a0e971be07d0da1577617 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_85d93a8a44c15381db51f08b512cc9cf = $(`<div id="html_85d93a8a44c15381db51f08b512cc9cf" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> N637AM<br>             <b>ICAO:</b> a857c9<br>             <b>Altitude:</b> 27325 ft<br>             <b>Speed:</b> 422.9 kts<br>         </div>         </div>`)[0];
+                popup_d1058f1e854a0e971be07d0da1577617.setContent(html_85d93a8a44c15381db51f08b512cc9cf);
+            
+        
+
+        circle_marker_f6200d923ff7c56938cfd30cdeaa8319.bindPopup(popup_d1058f1e854a0e971be07d0da1577617)
+        ;
+
+        
+    
+    
+            circle_marker_f6200d923ff7c56938cfd30cdeaa8319.bindTooltip(
+                `<div>
+                     N637AM (a857c9)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9e73633f5dbc6a811fc72041f96ea89f = L.circleMarker(
+                [-12.8639, -54.7115],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_dd5aa683a2627b296e2941c2c5f8a9c2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_853ae778cddf517e179544c0a304f714 = $(`<div id="html_853ae778cddf517e179544c0a304f714" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> GLO1245<br>             <b>ICAO:</b> e49eeb<br>             <b>Altitude:</b> 37000 ft<br>             <b>Speed:</b> 469.9 kts<br>         </div>         </div>`)[0];
+                popup_dd5aa683a2627b296e2941c2c5f8a9c2.setContent(html_853ae778cddf517e179544c0a304f714);
+            
+        
+
+        circle_marker_9e73633f5dbc6a811fc72041f96ea89f.bindPopup(popup_dd5aa683a2627b296e2941c2c5f8a9c2)
+        ;
+
+        
+    
+    
+            circle_marker_9e73633f5dbc6a811fc72041f96ea89f.bindTooltip(
+                `<div>
+                     GLO1245 (e49eeb)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b98965fc9ee65d382aacfee584735298 = L.circleMarker(
+                [39.4675, -115.849],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_daa85f2d9f63a6b1122cc201fad38b41 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e5584a30fcae328f5faf2935b5a3ef47 = $(`<div id="html_e5584a30fcae328f5faf2935b5a3ef47" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> EJA275<br>             <b>ICAO:</b> a2ba7e<br>             <b>Altitude:</b> 39975 ft<br>             <b>Speed:</b> 406.9 kts<br>         </div>         </div>`)[0];
+                popup_daa85f2d9f63a6b1122cc201fad38b41.setContent(html_e5584a30fcae328f5faf2935b5a3ef47);
+            
+        
+
+        circle_marker_b98965fc9ee65d382aacfee584735298.bindPopup(popup_daa85f2d9f63a6b1122cc201fad38b41)
+        ;
+
+        
+    
+    
+            circle_marker_b98965fc9ee65d382aacfee584735298.bindTooltip(
+                `<div>
+                     EJA275 (a2ba7e)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_806a3231f5541dd1512c2551d59d0b23 = L.circleMarker(
+                [-39.9577, 173.8126],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_9a641d468db7cd737dc5e0d7043ff87f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_599787758825d1221bdbbcb395d8ffa0 = $(`<div id="html_599787758825d1221bdbbcb395d8ffa0" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> ANZ614<br>             <b>ICAO:</b> c81d9d<br>             <b>Altitude:</b> 32975 ft<br>             <b>Speed:</b> 482.5 kts<br>         </div>         </div>`)[0];
+                popup_9a641d468db7cd737dc5e0d7043ff87f.setContent(html_599787758825d1221bdbbcb395d8ffa0);
+            
+        
+
+        circle_marker_806a3231f5541dd1512c2551d59d0b23.bindPopup(popup_9a641d468db7cd737dc5e0d7043ff87f)
+        ;
+
+        
+    
+    
+            circle_marker_806a3231f5541dd1512c2551d59d0b23.bindTooltip(
+                `<div>
+                     ANZ614 (c81d9d)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9f4c73cbb0a7f11aeffc707ef600110a = L.circleMarker(
+                [31.034, -96.5575],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_a846d87afc1aa20ec52522c71270bbe8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ac8232a39f6a307d56bbf122144c2cf2 = $(`<div id="html_ac8232a39f6a307d56bbf122144c2cf2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> FFT1434<br>             <b>ICAO:</b> a3b7cb<br>             <b>Altitude:</b> 32850 ft<br>             <b>Speed:</b> 445.6 kts<br>         </div>         </div>`)[0];
+                popup_a846d87afc1aa20ec52522c71270bbe8.setContent(html_ac8232a39f6a307d56bbf122144c2cf2);
+            
+        
+
+        circle_marker_9f4c73cbb0a7f11aeffc707ef600110a.bindPopup(popup_a846d87afc1aa20ec52522c71270bbe8)
+        ;
+
+        
+    
+    
+            circle_marker_9f4c73cbb0a7f11aeffc707ef600110a.bindTooltip(
+                `<div>
+                     FFT1434 (a3b7cb)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d5e2be707daa09950d1ef8cc4bcc12b5 = L.circleMarker(
+                [40.7912, -1.0472],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_706f6d5afbeea9926b89023787838c2a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aa7360010154f9e27ce4c5a1f3f0ac03 = $(`<div id="html_aa7360010154f9e27ce4c5a1f3f0ac03" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> IBE07EA<br>             <b>ICAO:</b> 344481<br>             <b>Altitude:</b> 28350 ft<br>             <b>Speed:</b> 409.6 kts<br>         </div>         </div>`)[0];
+                popup_706f6d5afbeea9926b89023787838c2a.setContent(html_aa7360010154f9e27ce4c5a1f3f0ac03);
+            
+        
+
+        circle_marker_d5e2be707daa09950d1ef8cc4bcc12b5.bindPopup(popup_706f6d5afbeea9926b89023787838c2a)
+        ;
+
+        
+    
+    
+            circle_marker_d5e2be707daa09950d1ef8cc4bcc12b5.bindTooltip(
+                `<div>
+                     IBE07EA (344481)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f25d994839e22a6a5a83ed03223bb5a8 = L.circleMarker(
+                [32.0113, -96.7282],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_eb04c29e0bf4577119bfe613d6dbc1a7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5d9b89a20541a15640507a4fea9899b0 = $(`<div id="html_5d9b89a20541a15640507a4fea9899b0" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> DAL2445<br>             <b>ICAO:</b> a39d9b<br>             <b>Altitude:</b> 37000 ft<br>             <b>Speed:</b> 462.7 kts<br>         </div>         </div>`)[0];
+                popup_eb04c29e0bf4577119bfe613d6dbc1a7.setContent(html_5d9b89a20541a15640507a4fea9899b0);
+            
+        
+
+        circle_marker_f25d994839e22a6a5a83ed03223bb5a8.bindPopup(popup_eb04c29e0bf4577119bfe613d6dbc1a7)
+        ;
+
+        
+    
+    
+            circle_marker_f25d994839e22a6a5a83ed03223bb5a8.bindTooltip(
+                `<div>
+                     DAL2445 (a39d9b)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_abe38a77236ad9aa39df0dc5e3c5222b = L.circleMarker(
+                [29.961, -82.3286],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_23ba67e6022f14f76fff1d5b97287960 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_790a6ff4360b527b8908c48dc893ebc3 = $(`<div id="html_790a6ff4360b527b8908c48dc893ebc3" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> N983SC<br>             <b>ICAO:</b> adb7dc<br>             <b>Altitude:</b> 21000 ft<br>             <b>Speed:</b> 265.0 kts<br>         </div>         </div>`)[0];
+                popup_23ba67e6022f14f76fff1d5b97287960.setContent(html_790a6ff4360b527b8908c48dc893ebc3);
+            
+        
+
+        circle_marker_abe38a77236ad9aa39df0dc5e3c5222b.bindPopup(popup_23ba67e6022f14f76fff1d5b97287960)
+        ;
+
+        
+    
+    
+            circle_marker_abe38a77236ad9aa39df0dc5e3c5222b.bindTooltip(
+                `<div>
+                     N983SC (adb7dc)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b4d2eb02c5481a0a2b99f0d26e41ed6f = L.circleMarker(
+                [24.83, 83.4988],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_e5a3324a39dc5d4e08079b5c25d5b778 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_45c545a5ac9389d5ef39c0ae7991da0e = $(`<div id="html_45c545a5ac9389d5ef39c0ae7991da0e" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> AIC2702<br>             <b>ICAO:</b> 8014c4<br>             <b>Altitude:</b> 35000 ft<br>             <b>Speed:</b> 498.0 kts<br>         </div>         </div>`)[0];
+                popup_e5a3324a39dc5d4e08079b5c25d5b778.setContent(html_45c545a5ac9389d5ef39c0ae7991da0e);
+            
+        
+
+        circle_marker_b4d2eb02c5481a0a2b99f0d26e41ed6f.bindPopup(popup_e5a3324a39dc5d4e08079b5c25d5b778)
+        ;
+
+        
+    
+    
+            circle_marker_b4d2eb02c5481a0a2b99f0d26e41ed6f.bindTooltip(
+                `<div>
+                     AIC2702 (8014c4)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_996ed5e57297258a910f65e6f7861d02 = L.circleMarker(
+                [34.4181, -86.4565],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_2c35413acf24894bb7f0b8d7fa9fc89d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_08c0f9ff9a42c01066f4cc88a2eca684 = $(`<div id="html_08c0f9ff9a42c01066f4cc88a2eca684" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> DAL2427<br>             <b>ICAO:</b> a40d7a<br>             <b>Altitude:</b> 28975 ft<br>             <b>Speed:</b> 512.0 kts<br>         </div>         </div>`)[0];
+                popup_2c35413acf24894bb7f0b8d7fa9fc89d.setContent(html_08c0f9ff9a42c01066f4cc88a2eca684);
+            
+        
+
+        circle_marker_996ed5e57297258a910f65e6f7861d02.bindPopup(popup_2c35413acf24894bb7f0b8d7fa9fc89d)
+        ;
+
+        
+    
+    
+            circle_marker_996ed5e57297258a910f65e6f7861d02.bindTooltip(
+                `<div>
+                     DAL2427 (a40d7a)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d882f3ad4cb597cbf81aa368cbe8560d = L.circleMarker(
+                [-19.9558, -43.295],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_c77d17522755b4c314d7803fab3223f4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3276395b903d1fe84f27f3a8831401cb = $(`<div id="html_3276395b903d1fe84f27f3a8831401cb" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> TAM4704<br>             <b>ICAO:</b> e49ed4<br>             <b>Altitude:</b> 39000 ft<br>             <b>Speed:</b> 444.2 kts<br>         </div>         </div>`)[0];
+                popup_c77d17522755b4c314d7803fab3223f4.setContent(html_3276395b903d1fe84f27f3a8831401cb);
+            
+        
+
+        circle_marker_d882f3ad4cb597cbf81aa368cbe8560d.bindPopup(popup_c77d17522755b4c314d7803fab3223f4)
+        ;
+
+        
+    
+    
+            circle_marker_d882f3ad4cb597cbf81aa368cbe8560d.bindTooltip(
+                `<div>
+                     TAM4704 (e49ed4)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_826683e10543b2b75bca64875e9912de = L.circleMarker(
+                [-24.4863, -53.5657],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_7c209315c46d7d2e8a2ffc733ffdd15e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_01357a97c1aa8715a7be379a38fcb267 = $(`<div id="html_01357a97c1aa8715a7be379a38fcb267" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> PRFMW<br>             <b>ICAO:</b> e48ba5<br>             <b>Altitude:</b> 43025 ft<br>             <b>Speed:</b> 437.5 kts<br>         </div>         </div>`)[0];
+                popup_7c209315c46d7d2e8a2ffc733ffdd15e.setContent(html_01357a97c1aa8715a7be379a38fcb267);
+            
+        
+
+        circle_marker_826683e10543b2b75bca64875e9912de.bindPopup(popup_7c209315c46d7d2e8a2ffc733ffdd15e)
+        ;
+
+        
+    
+    
+            circle_marker_826683e10543b2b75bca64875e9912de.bindTooltip(
+                `<div>
+                     PRFMW (e48ba5)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_830dc5bd696a46eec3f219acaa712c76 = L.circleMarker(
+                [45.2388, 13.8948],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_0e225fb40a2bcb14e94318f30efd6f6a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8ca1f4c914426f9910e0892b2c6a394b = $(`<div id="html_8ca1f4c914426f9910e0892b2c6a394b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> WMT6CV<br>             <b>ICAO:</b> 471f6d<br>             <b>Altitude:</b> 36100 ft<br>             <b>Speed:</b> 453.9 kts<br>         </div>         </div>`)[0];
+                popup_0e225fb40a2bcb14e94318f30efd6f6a.setContent(html_8ca1f4c914426f9910e0892b2c6a394b);
+            
+        
+
+        circle_marker_830dc5bd696a46eec3f219acaa712c76.bindPopup(popup_0e225fb40a2bcb14e94318f30efd6f6a)
+        ;
+
+        
+    
+    
+            circle_marker_830dc5bd696a46eec3f219acaa712c76.bindTooltip(
+                `<div>
+                     WMT6CV (471f6d)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bbe23f91e3b35d4d2d5b400f55198dd5 = L.circleMarker(
+                [36.2746, 15.3193],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_1210e5139ebfa5ac6c478218bcdc3932 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2e12ceb6af8f8f97142993adf43ba26d = $(`<div id="html_2e12ceb6af8f8f97142993adf43ba26d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> WZZ22JU<br>             <b>ICAO:</b> 471f6b<br>             <b>Altitude:</b> 20800 ft<br>             <b>Speed:</b> 463.1 kts<br>         </div>         </div>`)[0];
+                popup_1210e5139ebfa5ac6c478218bcdc3932.setContent(html_2e12ceb6af8f8f97142993adf43ba26d);
+            
+        
+
+        circle_marker_bbe23f91e3b35d4d2d5b400f55198dd5.bindPopup(popup_1210e5139ebfa5ac6c478218bcdc3932)
+        ;
+
+        
+    
+    
+            circle_marker_bbe23f91e3b35d4d2d5b400f55198dd5.bindTooltip(
+                `<div>
+                     WZZ22JU (471f6b)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_521407f8164adc9d7930b0a6912a91aa = L.circleMarker(
+                [-22.4792, -45.8722],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_61aa26aefb7d22c5a9eb589df93f6095 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9c15c14ba3d7b8890f05fd04d38bf3e4 = $(`<div id="html_9c15c14ba3d7b8890f05fd04d38bf3e4" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> TAM8120<br>             <b>ICAO:</b> e48ba7<br>             <b>Altitude:</b> 21100 ft<br>             <b>Speed:</b> 459.4 kts<br>         </div>         </div>`)[0];
+                popup_61aa26aefb7d22c5a9eb589df93f6095.setContent(html_9c15c14ba3d7b8890f05fd04d38bf3e4);
+            
+        
+
+        circle_marker_521407f8164adc9d7930b0a6912a91aa.bindPopup(popup_61aa26aefb7d22c5a9eb589df93f6095)
+        ;
+
+        
+    
+    
+            circle_marker_521407f8164adc9d7930b0a6912a91aa.bindTooltip(
+                `<div>
+                     TAM8120 (e48ba7)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_298d5595b5f97754dc97085ef81af71d = L.circleMarker(
+                [35.5276, -107.4092],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d03f5317294179f492890d5dd82fa2db);
+        
+    
+        var popup_9d8a4b03a113de1cb16665a6947e1174 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d494364db79c5a6bf85fab496a3cc38a = $(`<div id="html_d494364db79c5a6bf85fab496a3cc38a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 250px;">             <h5 style="color: #ffcc00; margin-bottom: 5px;">🟡 UNUSUAL EVENT</h5>             <b>Callsign:</b> XAPBT<br>             <b>ICAO:</b> 0d129c<br>             <b>Altitude:</b> 28000 ft<br>             <b>Speed:</b> 452.6 kts<br>         </div>         </div>`)[0];
+                popup_9d8a4b03a113de1cb16665a6947e1174.setContent(html_d494364db79c5a6bf85fab496a3cc38a);
+            
+        
+
+        circle_marker_298d5595b5f97754dc97085ef81af71d.bindPopup(popup_9d8a4b03a113de1cb16665a6947e1174)
+        ;
+
+        
+    
+    
+            circle_marker_298d5595b5f97754dc97085ef81af71d.bindTooltip(
+                `<div>
+                     XAPBT (0d129c)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_d03f5317294179f492890d5dd82fa2db.addTo(map_8b9fc17ccc2d3ae03994977d6c1da38d);
+        
+    
+            var layer_control_576adfaeb35e2512f23da222319ad04c_layers = {
+                base_layers : {
+                    "cartodbdarkmatter" : tile_layer_d14ec18eb7012873c04285576e054d44,
+                },
+                overlays :  {
+                    "\ud83d\udd34 UNEXPLAINED Anomalies" : feature_group_59b1f3568de9345d41be8a65490e2eb1,
+                    "\ud83d\udfe1 UNUSUAL Anomalies (Top 100)" : feature_group_d03f5317294179f492890d5dd82fa2db,
+                },
+            };
+            let layer_control_576adfaeb35e2512f23da222319ad04c = L.control.layers(
+                layer_control_576adfaeb35e2512f23da222319ad04c_layers.base_layers,
+                layer_control_576adfaeb35e2512f23da222319ad04c_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_8b9fc17ccc2d3ae03994977d6c1da38d);
+
+        
+</script>
+</html>

@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
+import { useStore } from '../stores/useStore';
 import countries from 'world-countries';
 
 type TripType =
@@ -136,12 +137,6 @@ function formatMoney(amount: number, currency: CurrencyCode) {
   const safe = Math.max(0, rounded);
   const formatted = safe.toLocaleString(undefined, { maximumFractionDigits: 0 });
   return sym ? `${sym}${formatted}` : `${formatted} ${currency}`;
-}
-
-function dateToLabel(d: string) {
-  if (!d) return '';
-  const dt = new Date(d + 'T00:00:00');
-  return dt.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' });
 }
 
 function daysBetweenInclusive(start: string, end: string) {
@@ -484,13 +479,16 @@ function buildDownloadText(profile: TravelDetails, plan: ReturnType<typeof build
 
 export default function TravelChatbotV2({
   onChatComplete,
+  className = '',
 }: {
-  onChatComplete?: (travelDetails: TravelDetails) => void;
+  onChatComplete?: (profile: TravelDetails) => void;
+  className?: string;
 }) {
+  const { setRecommendedPlan } = useStore();
   const [step, setStep] = useState<1 | 2 | 3 | 4 | 5 | 6>(1);
   const [typing, setTyping] = useState(false);
   const [messages, setMessages] = useState<ChatMsg[]>([
-    { role: 'ai', text: 'Welcome aboard! 🌍 What type of trip are you planning?' },
+    { role: 'ai', text: "Hey! I'm Roamie. Where are you dreaming of going?" },
   ]);
 
   const [tripType, setTripType] = useState<TripType | null>(null);
@@ -682,6 +680,7 @@ export default function TravelChatbotV2({
     const computed = buildPlan(profile, days);
     setPlanDays(days);
     setPlan(computed);
+    setRecommendedPlan(computed);
     pushAi('Done! Here’s your personalized plan. ✨');
     setTyping(true);
     setTimeout(() => {
@@ -729,7 +728,9 @@ export default function TravelChatbotV2({
     const profile = buildProfile();
     profile.budget_amount = nextBudget;
     const days = planDays || 1;
-    setPlan(buildPlan(profile, days));
+    const p = buildPlan(profile, days);
+    setPlan(p);
+    setRecommendedPlan(p);
     setActionNote(`Budget adjusted to ${formatMoney(nextBudget, profile.currency)}. Updated breakdown below.`);
   };
 
@@ -745,16 +746,18 @@ export default function TravelChatbotV2({
   const destinationEditSuggestions = useMemo(() => {
     const q = destinationEditValue.trim().toLowerCase();
     if (!q) return [];
-    return DESTINATION_SUGGESTIONS.filter((x) => x.toLowerCase().includes(q)).slice(0, 8);
+    return POPULAR_DESTINATIONS.filter((x: string) => x.toLowerCase().includes(q)).slice(0, 8);
   }, [destinationEditValue]);
   const applyDestinationChange = (nextDest: string) => {
     setShowDestinationEdit(false);
     setDestinationConfirmed(nextDest);
-    setDestinationQuery(nextDest);
+    setQuery(nextDest);
     if (!plan || !tripType || !currency) return;
     const profile = buildProfile();
     profile.destination = nextDest;
-    setPlan(buildPlan(profile, planDays || 1));
+    const p = buildPlan(profile, planDays || 1);
+    setPlan(p);
+    setRecommendedPlan(p);
     setActionNote(`Destination updated to ${nextDest}. Recomputed itinerary and tips.`);
   };
 
@@ -1158,32 +1161,7 @@ export default function TravelChatbotV2({
               </div>
             </div>
 
-            {/* 2) Recommended itinerary */}
-            <div style={{ marginBottom: 14 }}>
-              <p style={{ fontFamily: 'Syne, sans-serif', fontWeight: 900, color: '#0e2125', fontSize: 16, marginBottom: 8 }}>
-                Recommended itinerary
-              </p>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-                {plan?.itinerary.map((day) => (
-                  <div key={day.dayNum} style={{ border: '1px solid #f0dfc0', borderRadius: 14, padding: 12, background: '#fff6e0' }}>
-                    <p style={{ fontSize: 13, fontWeight: 900, color: '#0e2125', marginBottom: 8 }}>
-                      Day {day.dayNum} — {day.dateLabel}
-                    </p>
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: 6 }}>
-                      <div style={{ fontSize: 13, color: '#0e2125', fontWeight: 700 }}>
-                        Morning: <span style={{ fontWeight: 600, color: '#6b5c45' }}>{day.morning}</span>
-                      </div>
-                      <div style={{ fontSize: 13, color: '#0e2125', fontWeight: 700 }}>
-                        Afternoon: <span style={{ fontWeight: 600, color: '#6b5c45' }}>{day.afternoon}</span>
-                      </div>
-                      <div style={{ fontSize: 13, color: '#0e2125', fontWeight: 700 }}>
-                        Evening: <span style={{ fontWeight: 600, color: '#6b5c45' }}>{day.evening}</span>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
+            {/* 2) Recommended itinerary rendering logic has been moved to MyItinerary */}
 
             {/* 3) Top experiences */}
             <div style={{ marginBottom: 14 }}>
@@ -1302,7 +1280,9 @@ export default function TravelChatbotV2({
                 const next = clamp(planDays + 2, 1, 14);
                 const profile = buildProfile();
                 setPlanDays(next);
-                setPlan(buildPlan(profile, next));
+                const p = buildPlan(profile, next);
+                setPlan(p);
+                setRecommendedPlan(p);
                 setActionNote('Added 2 more days. Updated itinerary highlights below.');
               }}
             >
@@ -1410,7 +1390,7 @@ export default function TravelChatbotV2({
 
                   {destinationEditSuggestions.length > 0 && (
                     <div className="travel-dd">
-                      {destinationEditSuggestions.map((d) => (
+                      {destinationEditSuggestions.map((d: string) => (
                         <button
                           type="button"
                           key={d}

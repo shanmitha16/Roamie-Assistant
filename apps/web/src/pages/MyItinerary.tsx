@@ -109,7 +109,7 @@ function getTripBudget(tid: string) { try { return JSON.parse(localStorage.getIt
 
 export default function MyItinerary() {
   const navigate = useNavigate();
-  const { currentTrip, cart, triggerDisruption, buildItinerary, itineraryBuilding, addCustomEvent, regenerateDay, undoDay } = useStore();
+  const { currentTrip, cart, triggerDisruption, buildItinerary, itineraryBuilding, addCustomEvent, regenerateDay, undoDay, recommendedPlan } = useStore();
 
   const [expandedNodes, setExpandedNodes] = useState<Set<string>>(new Set(['day-0']));
   const [disrupting, setDisrupting] = useState(false);
@@ -453,6 +453,46 @@ export default function MyItinerary() {
           </div>
         );
       })()}
+
+      {/* Recommended Itinerary */}
+      {recommendedPlan && (
+        <div style={{ marginBottom: 24, padding: '24px', background: '#fff', border: '1px solid #f0dfc0', borderRadius: 16, boxShadow: '0 2px 12px rgba(14,33,37,0.06)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
+            <div style={{ width: 40, height: 40, borderRadius: 12, background: '#fde8d8', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <Sparkles size={20} style={{ color: '#e55803' }} />
+            </div>
+            <div>
+              <p style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800, color: '#0e2125', fontSize: 18 }}>
+                AI Recommended Itinerary
+              </p>
+              <p style={{ fontSize: 12, color: '#6b5c45', fontWeight: 600 }}>Drafted from your chat profile</p>
+            </div>
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+            {recommendedPlan.itinerary?.map((day: any) => (
+              <div key={day.dayNum} style={{ border: '1px solid #f0dfc0', borderRadius: 12, padding: 14, background: '#fff6e0' }}>
+                <p style={{ fontSize: 13, fontWeight: 900, color: '#0e2125', marginBottom: 10 }}>
+                  Day {day.dayNum} — {day.dateLabel}
+                </p>
+                <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr)', gap: 8 }}>
+                  <div style={{ fontSize: 13, color: '#0e2125', fontWeight: 700, display: 'flex', gap: 8 }}>
+                    <span style={{ width: 70, color: '#6b5c45', flexShrink: 0 }}>Morning:</span>
+                    <span style={{ fontWeight: 600 }}>{day.morning}</span>
+                  </div>
+                  <div style={{ fontSize: 13, color: '#0e2125', fontWeight: 700, display: 'flex', gap: 8 }}>
+                    <span style={{ width: 70, color: '#6b5c45', flexShrink: 0 }}>Afternoon:</span>
+                    <span style={{ fontWeight: 600 }}>{day.afternoon}</span>
+                  </div>
+                  <div style={{ fontSize: 13, color: '#0e2125', fontWeight: 700, display: 'flex', gap: 8 }}>
+                    <span style={{ width: 70, color: '#6b5c45', flexShrink: 0 }}>Evening:</span>
+                    <span style={{ fontWeight: 600 }}>{day.evening}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Timeline Container */}
       <div className="relative">

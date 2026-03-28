@@ -8,6 +8,7 @@ const COUNTRY_CODES: Record<string, string> = {
   'united states': 'US', 'usa': 'US', 'new york': 'US', 'los angeles': 'US', 'san francisco': 'US',
   'uae': 'AE', 'dubai': 'AE', 'abu dhabi': 'AE',
   'thailand': 'TH', 'bangkok': 'TH', 'phuket': 'TH', 'chiang mai': 'TH',
+  'france': 'FR', 'paris': 'FR',
 };
 
 export class GetLawNudges {

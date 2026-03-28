@@ -46,7 +46,33 @@ router.get('/:tripId', authMiddleware, async (req: AuthRequest, res: Response) =
       eventCategories,
     });
 
-    res.json({ packingList, docChecklist, lawNudges });
+    // Format packing list
+    const groupedPacking: Record<string, any[]> = {};
+    for (const item of (packingList || [])) {
+      if (!groupedPacking[item.category]) groupedPacking[item.category] = [];
+      groupedPacking[item.category].push({ name: item.item, essential: item.essential, reason: item.reason });
+    }
+    const formattedPackingList = Object.keys(groupedPacking).map(cat => ({
+      category: cat,
+      items: groupedPacking[cat]
+    }));
+
+    // Format doc checklist
+    const formattedDocChecklist = (docChecklist || []).map(doc => ({
+      document: doc.item,
+      description: doc.details,
+      severity: doc.urgent ? 'critical' : 'warning',
+      status: 'Required'
+    }));
+
+    // Format law nudges
+    const formattedLawNudges = (lawNudges || []).map(law => ({
+      rule: law.rule,
+      description: '', 
+      flag: law.severity === 'critical' ? '🔴' : law.severity === 'warning' ? '⚠️' : 'ℹ️'
+    }));
+
+    res.json({ packingList: formattedPackingList, docChecklist: formattedDocChecklist, lawNudges: formattedLawNudges });
   } catch (error) {
     res.status(500).json({ error: 'Failed to generate checklist', code: 'SERVER_ERROR' });
   }

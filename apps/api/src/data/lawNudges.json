@@ -33,5 +33,8 @@
   {"country":"TH","venueType":"any","rule":"It is illegal to criticise or disrespect the Thai royal family (lèse-majesté law).","severity":"critical"},
   {"country":"TH","venueType":"sightseeing","rule":"Always remove shoes before entering temples. Dress modestly — no tank tops or shorts.","severity":"warning"},
   {"country":"TH","venueType":"any","rule":"Avoid pointing at people or things with your feet — feet are considered the lowest part of the body.","severity":"info"},
-  {"country":"TH","venueType":"any","rule":"Do not touch anyone's head — the head is considered sacred.","severity":"info"}
+  {"country":"TH","venueType":"any","rule":"Do not touch anyone's head — the head is considered sacred.","severity":"info"},
+  {"country":"FR","venueType":"food","rule":"Bread is typically placed directly on the table, not on a plate.","severity":"info"},
+  {"country":"FR","venueType":"any","rule":"Always say 'Bonjour' (good morning) or 'Bonsoir' (good evening) when entering a shop or greeting staff.","severity":"critical"},
+  {"country":"FR","venueType":"transport","rule":"You must validate your Metro/bus ticket before boarding to avoid heavy fines.","severity":"warning"}
 ]

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Routes, Route, NavLink, Navigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Plane, LayoutDashboard, AlertTriangle, Receipt, Package, Menu, X, Map } from 'lucide-react';
+import { Plane, LayoutDashboard, AlertTriangle, Receipt, Package, Menu, X, Map, MessageSquare } from 'lucide-react';
 import { useStore } from './stores/useStore';
 import Dashboard from './pages/Dashboard';
 import Disruption from './pages/Disruption';
@@ -11,6 +11,8 @@ import PackingChecklist from './pages/PackingChecklist';
 import VoiceTranslateWidget from './components/VoiceTranslateWidget';
 import OpenClawCart from './components/OpenClawCart';
 import MyItinerary from './pages/MyItinerary';
+import AdminFeedback from './pages/AdminFeedback';
+import LeaveFeedback from './pages/LeaveFeedback';
 
 const LANGUAGES = [
   { code: 'en', flag: '🇬🇧' }, { code: 'hi', flag: '🇮🇳' },
@@ -24,6 +26,7 @@ const NAV = [
   { path: '/disruption', icon: AlertTriangle, label: 'Disruption' },
   { path: '/expenses', icon: Receipt, label: 'Expenses' },
   { path: '/checklist', icon: Package, label: 'Packing List' },
+  { path: '/feedback', icon: MessageSquare, label: 'Feedback' },
 ];
 
 export default function App() {
@@ -150,6 +153,8 @@ export default function App() {
                 { path: '/disruption', El: Disruption },
                 { path: '/expenses', El: Expenses },
                 { path: '/checklist', El: PackingChecklist },
+                { path: '/feedback', El: LeaveFeedback },
+                { path: '/admin/feedback', El: AdminFeedback },
               ].map(({ path, El }) => (
                 <Route key={path} path={path} element={
                   <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}

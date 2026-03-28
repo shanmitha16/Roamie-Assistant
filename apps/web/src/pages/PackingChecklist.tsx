@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  CheckCircle2, Circle, AlertTriangle, Shield, FileText, Heart, DollarSign,
+  CheckCircle2, Circle, Shield, FileText, Heart, DollarSign,
   Shirt, Plug, Package, ChevronDown, Search, Plus
 } from 'lucide-react';
 import { useStore } from '../stores/useStore';
@@ -24,7 +24,7 @@ const SEV_STYLE: Record<string,{ bg:string; border:string; color:string }> = {
 };
 
 export default function PackingChecklist() {
-  const { t } = useTranslation();
+  useTranslation();
   const { currentTrip, fetchChecklist } = useStore();
   const [packingList, setPackingList] = useState<any[]>([]);
   const [docChecklist, setDocChecklist] = useState<any[]>([]);

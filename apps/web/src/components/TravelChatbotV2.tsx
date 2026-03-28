@@ -612,15 +612,7 @@ export default function TravelChatbotV2({
     setActionNote(null);
   };
 
-  const canContinueStep3 =
-    !!tripType &&
-    !!destinationConfirmed &&
-    departureDate &&
-    returnDate &&
-    new Date(returnDate + 'T00:00:00').getTime() >= new Date(departureDate + 'T00:00:00').getTime() &&
-    travellers >= 1 &&
-    budgetAmount > 0 &&
-    !!currency;
+
 
   const buildProfile = (): TravelDetails => {
     return {
@@ -667,10 +659,9 @@ export default function TravelChatbotV2({
     transition: 'border-color 0.15s, box-shadow 0.15s',
   } as const;
 
-  const totalDays = useMemo(() => {
-    const d = daysBetweenInclusive(departureDate, returnDate);
-    return d > 0 ? d : 0;
-  }, [departureDate, returnDate]);
+
+
+
 
   const showPlan = step === 6 && plan;
 
@@ -773,7 +764,7 @@ export default function TravelChatbotV2({
   };
 
   return (
-    <div className="r-card" style={{ padding: 16, display: 'flex', flexDirection: 'column', gap: 12 }}>
+    <div className={`r-card ${className}`.trim()} style={{ padding: 16, display: 'flex', flexDirection: 'column', gap: 12 }}>
       <div
         style={{
           maxHeight: 480,

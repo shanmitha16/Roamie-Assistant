@@ -23,10 +23,9 @@ function getBudget(tid: string) {
 const CURR: Record<string, string> = { INR:'₹',USD:'$',EUR:'€',GBP:'£',SGD:'S$',JPY:'¥' };
 
 export default function Disruption() {
-  const { t } = useTranslation();
+  useTranslation();
   const navigate = useNavigate();
   const { currentTrip, triggerDisruption } = useStore();
-  const cart = useStore(s => s.cart);
 
   const [resolution, setResolution]   = useState<any>(null);
   const [disrupting, setDisrupting]   = useState(false);

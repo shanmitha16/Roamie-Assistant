@@ -239,7 +239,7 @@ export default function VoiceTranslateWidget() {
     // Split into sentences for long text
     if (text.length > 150) {
       const sentences = text.match(/[^.!?।]+[.!?।]+|[^.!?।]+$/g) || [text];
-      sentences.forEach((sentence, i) => {
+      sentences.forEach((sentence) => {
         const part = new SpeechSynthesisUtterance(sentence.trim());
         part.lang = u.lang;
         part.rate = u.rate;

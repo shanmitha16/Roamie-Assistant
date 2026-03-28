@@ -1,4 +1,4 @@
-﻿import { useState } from 'react';
+import { useState } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CreditCard, Check, ShieldCheck, ArrowLeft, Plane, Building2, ShoppingCart, QrCode, Lock, Zap } from 'lucide-react';
@@ -16,7 +16,6 @@ export default function Payment() {
   // Support multiple payment sources
   const cartItem = location.state?.cartItem;
   const cartItems = location.state?.cartItems;
-  const itemType = location.state?.itemType || 'flight';
   const amount = location.state?.amount || 15400;
   const flightNumber = location.state?.flightNumber || 'FL-NEW';
 
@@ -34,7 +33,7 @@ export default function Payment() {
       await new Promise(r => setTimeout(r, 2000));
 
       if (isCartPayment) {
-        // For cart items â€” remove from cart after successful payment
+        // For cart items — remove from cart after successful payment
         if (isBundlePayment) {
           clearCart();
         } else if (cartItem) {
@@ -175,7 +174,7 @@ export default function Payment() {
                   </motion.div>
                 ) : (
                   <motion.span key="pay" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="flex items-center gap-2">
-                    <Lock size={18} /> Pay â‚¹{amount.toLocaleString()}
+                    <Lock size={18} /> Pay ₹{amount.toLocaleString()}
                   </motion.span>
                 )}
               </AnimatePresence>
@@ -205,7 +204,7 @@ export default function Payment() {
                   <div className="flex-1 min-w-0">
                     <p className="font-display font-bold text-slate-200 truncate">{item.name}</p>
                     <p className="text-xs text-[#6b5c45]/70 font-medium truncate mt-1">{item.details}</p>
-                    <p className="font-display font-bold text-white text-lg mt-2">â‚¹{item.price?.toLocaleString()}</p>
+                    <p className="font-display font-bold text-white text-lg mt-2">₹{item.price?.toLocaleString()}</p>
                   </div>
                 </div>
               ))
@@ -225,7 +224,7 @@ export default function Payment() {
           <div className="bg-slate-800/50 border border-[#f0dfc0]/50 rounded-2xl p-6">
             <div className="flex justify-between items-center mb-3">
               <span className="text-[#6b5c45]/70 font-medium text-sm">Subtotal</span>
-              <span className="text-slate-200 font-bold">â‚¹{amount.toLocaleString()}</span>
+              <span className="text-slate-200 font-bold">₹{amount.toLocaleString()}</span>
             </div>
             <div className="flex justify-between items-center pb-6 border-b border-[#f0dfc0]/50 mb-6">
               <span className="text-[#6b5c45]/70 font-medium text-sm flex items-center gap-1.5"><GlobeIcon size={14} /> Node Processing</span>
@@ -233,7 +232,7 @@ export default function Payment() {
             </div>
             <div className="flex justify-between items-end">
               <span className="text-white font-bold text-lg">Total Payload</span>
-              <span className="font-display font-extrabold text-[#e55803] text-4xl leading-none">â‚¹{amount.toLocaleString()}</span>
+              <span className="font-display font-extrabold text-[#e55803] text-4xl leading-none">₹{amount.toLocaleString()}</span>
             </div>
           </div>
         </div>

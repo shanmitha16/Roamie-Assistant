@@ -22,7 +22,7 @@ function getBudget(tid: string) {
 }
 
 export default function Expenses() {
-  const { t } = useTranslation();
+  useTranslation();
   const { currentTrip, scanExpense, fetchExpenses } = useStore();
   const [receiptText, setReceiptText] = useState('');
   const [scanning, setScanning] = useState(false);

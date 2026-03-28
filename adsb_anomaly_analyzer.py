@@ -22,6 +22,12 @@ import os
 from datetime import datetime, timezone
 from collections import defaultdict
 
+# Force UTF-8 encoding for stdout on Windows to prevent UnicodeEncodeError
+if sys.platform == "win32":
+    import io
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
+
 # ─────────────────────────── CONFIGURATION ──────────────────────────────────
 
 OPENSKY_API_URL = "https://opensky-network.org/api/states/all"

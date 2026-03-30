@@ -1,0 +1,50 @@
+﻿
+> roamie@1.0.0 dev
+> concurrently "npm run dev:api" "npm run dev:web"
+
+[0] 
+[0] > roamie@1.0.0 dev:api
+[0] > cd apps/api && npm run dev
+[0] 
+[1] 
+[1] > roamie@1.0.0 dev:web
+[1] > cd apps/web && npm run dev
+[1] 
+[0] 
+[0] > roamie-api@1.0.0 dev
+[0] > ts-node-dev --respawn --transpile-only src/index.ts
+[0] 
+[1] 
+[1] > web@0.0.0 dev
+[1] > vite
+[1] 
+[0] [INFO] 10:45:29 ts-node-dev ver. 2.0.0 (using ts-node ver. 10.9.2, typescript ver. 5.9.3)
+[1] Port 5173 is in use, trying another one...
+[1] 
+[1]   [32m[1mVITE[22m v8.0.0[39m  [2mready in [0m[1m2318[22m[2m[0m ms[22m
+[1] 
+[1]   [32mΓ₧£[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5174[22m/[39m
+[1] [2m  [32mΓ₧£[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[0] [dotenv@17.3.1] injecting env (0) from .env -- tip: ≡ƒöÉ prevent committing .env to code: https://dotenvx.com/precommit
+[0] [dotenv@17.3.1] injecting env (8) from ..\..\.env -- tip: ΓÜÖ∩╕Å  load multiple .env files with { path: ['.env.local', '.env'] }
+[0] Failed to start server: PrismaClientKnownRequestError: 
+[0] Invalid `prisma.user.findUnique()` invocation in
+[0] C:\Users\SHANMITHA\Desktop\PROJECTS!\Roamie-Assistant\apps\api\src\index.ts:9:38
+[0] 
+[0]   6 const app = createApp();
+[0]   7 
+[0]   8 async function ensureDemoUser() {
+[0] ΓåÆ 9   const existing = await prisma.user.findUnique(
+[0] The table `main.User` does not exist in the current database.
+[0]     at $n.handleRequestError (C:\Users\SHANMITHA\Desktop\PROJECTS!\Roamie-Assistant\apps\api\node_modules\@prisma\client\runtime\library.js:121:7315)
+[0]     at $n.handleAndLogRequestError (C:\Users\SHANMITHA\Desktop\PROJECTS!\Roamie-Assistant\apps\api\node_modules\@prisma\client\runtime\library.js:121:6623)
+[0]     at $n.request (C:\Users\SHANMITHA\Desktop\PROJECTS!\Roamie-Assistant\apps\api\node_modules\@prisma\client\runtime\library.js:121:6307)
+[0]     at l (C:\Users\SHANMITHA\Desktop\PROJECTS!\Roamie-Assistant\apps\api\node_modules\@prisma\client\runtime\library.js:130:9633)
+[0]     at ensureDemoUser (C:\Users\SHANMITHA\Desktop\PROJECTS!\Roamie-Assistant\apps\api\src\index.ts:9:20)
+[0]     at startServer (C:\Users\SHANMITHA\Desktop\PROJECTS!\Roamie-Assistant\apps\api\src\index.ts:31:3) {
+[0]   code: 'P2021',
+[0]   clientVersion: '5.22.0',
+[0]   meta: { modelName: 'User', table: 'main.User' }
+[0] }
+[0] ^C^CTerminate batch job (Y/N)? ^C^Cnpm run dev:web exited with code 3221225786
+[0] npm run dev:api exited with code 3221225786

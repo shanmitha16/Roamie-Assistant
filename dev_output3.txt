@@ -1,0 +1,70 @@
+﻿
+> roamie@1.0.0 dev
+> concurrently "npm run dev:api" "npm run dev:web"
+
+[1] 
+[1] > roamie@1.0.0 dev:web
+[1] > cd apps/web && npm run dev
+[1] 
+[0] 
+[0] > roamie@1.0.0 dev:api
+[0] > cd apps/api && npm run dev
+[0] 
+[0] 
+[0] > roamie-api@1.0.0 dev
+[0] > ts-node-dev --respawn --transpile-only src/index.ts
+[0] 
+[1] 
+[1] > web@0.0.0 dev
+[1] > vite
+[1] 
+[0] [INFO] 10:50:33 ts-node-dev ver. 2.0.0 (using ts-node ver. 10.9.2, typescript ver. 5.9.3)
+[1] Port 5173 is in use, trying another one...
+[1] Port 5174 is in use, trying another one...
+[1] 
+[1]   [32m[1mVITE[22m v8.0.0[39m  [2mready in [0m[1m2219[22m[2m[0m ms[22m
+[1] 
+[1]   [32mΓ₧£[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5175[22m/[39m
+[1] [2m  [32mΓ₧£[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[0] [dotenv@17.3.1] injecting env (8) from .env -- tip: ≡ƒñû agentic secret storage: https://dotenvx.com/as2
+[0] [dotenv@17.3.1] injecting env (0) from ..\..\.env -- tip: ΓÜÖ∩╕Å  specify custom .env file path with { path: '/custom/path/.env' }
+[0] Γ£à Demo user seeded: demo@roamie.app / password123
+[0] ≡ƒÜÇ Roamie API running on http://localhost:3001
+[0] ≡ƒôí Ollama endpoint: http://localhost:11434
+[0] ≡ƒîÉ Frontend URL: http://localhost:5173
+[0] Google Translate gtx failed: Translation echoed input
+[0] Google Translate gtx failed: Translation echoed input
+[0] MyMemory API failed: MyMemory returned no result
+[0] Google Translate gtx failed: Translation echoed input
+[0] MyMemory API failed: MyMemory returned no result
+[0] LibreTranslate failed: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[0] All translation backends failed for: 12
+[0] MyMemory API failed: MyMemory returned no result
+[0] LibreTranslate failed: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[0] All translation backends failed for: 123-4567
+[0] LibreTranslate failed: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[0] All translation backends failed for: 12345
+[0] ANTHROPIC_API_KEY not set, using fallback itinerary service
+[0] Ollama unavailable, using fallback itinerary: fetch failed
+[0] Google Translate gtx failed: Translation echoed input
+[0] Google Translate gtx failed: Translation echoed input
+[0] Google Translate gtx failed: Translation echoed input
+[0] Google Translate gtx failed: Translation echoed input
+[0] Google Translate gtx failed: Translation echoed input
+[0] Google Translate gtx failed: Translation echoed input
+[0] Google Translate gtx failed: Translation echoed input
+[0] Google Translate gtx failed: Translation echoed input
+[0] Google Translate gtx failed: Translation echoed input
+[0] MyMemory API failed: MyMemory returned no result
+[0] Google Translate gtx failed: Translation echoed input
+[0] MyMemory API failed: MyMemory returned no result
+[0] LibreTranslate failed: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[0] All translation backends failed for: peter height benmont
+[0] LibreTranslate failed: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[0] All translation backends failed for: Peter Height, Benmont.
+[0] ANTHROPIC_API_KEY not set, using fallback itinerary service
+[0] Ollama unavailable, using fallback itinerary: fetch failed
+[0] ANTHROPIC_API_KEY not set, using fallback itinerary service
+[0] Ollama unavailable, using fallback itinerary: fetch failed
+[0] ^C^CTerminate batch job (Y/N)? ^C^CTerminate batch job (Y/N)? ^Cnpm run dev:web exited with code 3221225786
+[0] npm run dev:api exited with code 3221225786

@@ -1,0 +1,25 @@
+﻿node.exe : npm error could 
+not determine executable 
+to run
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
+    + CategoryInfo         
+     : NotSpecified: (npm  
+   error could...ecutabl   
+ e to run:String) [], R    
+emoteException
+    + FullyQualifiedErrorI 
+   d : NativeCommandError
+ 
+npm error A complete log 
+of this run can be found 
+in: C:\Users\SHANMITHA\AppD
+ata\Local\npm-cache\_logs\2
+026-03-28T05_04_06_881Z-deb
+ug-0.log

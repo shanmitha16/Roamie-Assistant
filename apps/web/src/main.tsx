@@ -7,7 +7,7 @@ import App from './App'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/Roamie-Assistant/">
       <App />
     </BrowserRouter>
   </StrictMode>,

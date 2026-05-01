@@ -27,7 +27,7 @@ export function createApp() {
   }));
 
   app.use(cors({
-    origin: config.FRONTEND_URL,
+    origin: [config.FRONTEND_URL, 'https://shanmitha16.github.io'],
     credentials: true,
   }));
 

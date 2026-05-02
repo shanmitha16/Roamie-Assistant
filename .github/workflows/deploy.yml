@@ -33,6 +33,8 @@ jobs:
           npm install
           cd apps/web && npm install
       - name: Build
+        env:
+          VITE_API_URL: http://127.0.0.1:3001/api
         run: |
           npm run build
           cp apps/web/dist/index.html apps/web/dist/404.html

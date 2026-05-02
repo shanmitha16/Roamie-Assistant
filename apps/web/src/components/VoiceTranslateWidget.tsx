@@ -72,11 +72,24 @@ export default function VoiceTranslateWidget() {
     }
   }, [lang]);
 
-  // Translate function — returns translated text, cancellable via id
+  // Translate function — returns translated text, cancellable via id for interim
   const fetchTranslation = useCallback(async (text: string, isFinal: boolean) => {
     if (!text.trim()) return;
     
-    const thisId = ++translationIdRef.current;
+    let thisId = 0;
+    let tempId = '';
+    
+    if (!isFinal) {
+      thisId = ++translationIdRef.current;
+    } else {
+      // Optimistic UI for final text to prevent blank space
+      tempId = Math.random().toString(36);
+      setHistory(prev => [...prev, { 
+        id: tempId, 
+        sourceText: text, 
+        translatedText: 'Translating...' 
+      }]);
+    }
     
     try {
       const { data } = await api.post('/translate', {
@@ -85,30 +98,28 @@ export default function VoiceTranslateWidget() {
         targetLang: LANGS.find(l => l.code === lang)?.label || lang,
       });
 
-      // If a newer request has been issued, discard this result
-      if (translationIdRef.current !== thisId) return;
-
       if (isFinal) {
         const translatedText = data.translated || text;
-        setHistory(prev => [...prev, { 
-          id: Math.random().toString(36), 
-          sourceText: text, 
-          translatedText 
-        }]);
-        setInterimSource('');
-        setInterimTranslated('');
+        // Update the optimistic UI block with actual translation
+        setHistory(prev => prev.map(b => b.id === tempId ? { ...b, translatedText } : b));
         
         // Auto-speak the final translation
         if (autoSpeak && translatedText && !translatedText.startsWith('[')) {
           speak(translatedText);
         }
       } else {
-        setInterimTranslated(data.translated || '...');
+        // If a newer request has been issued, discard this interim result
+        if (translationIdRef.current === thisId) {
+          setInterimTranslated(data.translated || '...');
+        }
       }
     } catch {
-      if (translationIdRef.current !== thisId) return;
-      if (!isFinal) setInterimTranslated('...');
-      else setErr('Translation failed. Check your connection.');
+      if (isFinal) {
+        setErr('Translation failed. Check your connection.');
+        setHistory(prev => prev.map(b => b.id === tempId ? { ...b, translatedText: '[Translation failed]' } : b));
+      } else if (translationIdRef.current === thisId) {
+        setInterimTranslated('...');
+      }
     }
   }, [lang, autoSpeak]);
 
@@ -121,7 +132,7 @@ export default function VoiceTranslateWidget() {
     if (translatorTimeoutRef.current) clearTimeout(translatorTimeoutRef.current);
     translatorTimeoutRef.current = setTimeout(() => {
       fetchTranslation(interimSource, false);
-    }, 350); // 350ms debounce — slightly longer for stability
+    }, 250); // 250ms debounce for faster replies without hitting rate limits
     return () => clearTimeout(translatorTimeoutRef.current);
   }, [interimSource, fetchTranslation]);
 

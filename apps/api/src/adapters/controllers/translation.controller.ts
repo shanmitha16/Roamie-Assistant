@@ -61,12 +61,10 @@ async function tryTranslate(text: string, srcCode: string, destCode: string): Pr
     }
 
     const result = translated.trim();
-    // Validate translation actually happened (not just echo)
-    if (result && result.toLowerCase() !== text.toLowerCase()) {
+    if (result) {
       return result;
     }
-    // If Google returned the same text, it may have failed silently
-    throw new Error('Translation echoed input');
+    throw new Error('Google Translate returned empty string');
   } catch (e1) {
     console.warn('Google Translate gtx failed:', (e1 as Error).message);
   }

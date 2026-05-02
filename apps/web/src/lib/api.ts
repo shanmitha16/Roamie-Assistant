@@ -1,10 +1,9 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://roamie-api.loca.lt',
+  baseURL: import.meta.env.VITE_API_URL || '/api',
   headers: { 
     'Content-Type': 'application/json',
-    'Bypass-Tunnel-Reminder': 'true'
   },
 });
 

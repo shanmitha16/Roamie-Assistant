@@ -181,12 +181,8 @@ export default function Expenses() {
               onClick={async () => {
                 if (!manualDesc.trim()||!manualAmt) return;
                 try {
-                  const apiUrl = (import.meta as any).env?.VITE_API_URL || 'http://localhost:3001';
-                  const res = await fetch(`${apiUrl}/api/expense/scan`, {
-                    method:'POST', headers:{ 'Content-Type':'application/json', Authorization:`Bearer ${localStorage.getItem('roamie-token')||'demo-token'}` },
-                    body:JSON.stringify({ receiptText:`${manualDesc} - ${manualCur} ${manualAmt} - ${manualCat}`, tripId:currentTrip?.id }),
-                  });
-                  if (res.ok) { setManualDesc(''); setManualAmt(''); await load(); }
+                  await scanExpense(`${manualDesc} - ${manualCur} ${manualAmt} - ${manualCat}`, currentTrip?.id);
+                  setManualDesc(''); setManualAmt(''); await load();
                 } catch {}
               }}>
               <Plus size={15} /> Add Entry

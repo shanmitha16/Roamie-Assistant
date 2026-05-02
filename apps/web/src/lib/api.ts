@@ -38,7 +38,7 @@ api.interceptors.response.use(
       }
     }
     if (error.code === 'ERR_NETWORK' || error.message?.includes('Network Error')) {
-      console.warn('API Connection Error: Ensure your local backend is running at http://127.0.0.1:3001');
+      console.warn('API Connection Error: Please check your internet connection or backend status.');
     }
     return Promise.reject(error);
   }

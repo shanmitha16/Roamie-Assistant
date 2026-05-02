@@ -15,6 +15,7 @@ import translationController from '../adapters/controllers/translation.controlle
 import suggestionsController from '../adapters/controllers/suggestions.controller';
 import bookingSuggestionsController from '../adapters/controllers/booking-suggestions.controller';
 import packingController from '../adapters/controllers/packing.controller';
+import voiceController from '../adapters/controllers/voice.controller';
 import feedbackController, { getFeedbackRoutes } from '../adapters/controllers/feedback.controller';
 import { authMiddleware } from './middleware/auth';
 
@@ -50,7 +51,8 @@ export function createApp() {
   app.use('/api/suggestions', suggestionsController);
   app.use('/api/booking-suggestions', bookingSuggestionsController);
   app.use('/api/packing', packingController);
-  app.use('/api/feedback', feedbackController);
+  app.use('/api/voice', voiceController);
+  app.use('/api/create-trip', tripController); // Alias for POST /api/create-trip
   app.use('/api/admin/feedback', getFeedbackRoutes(authMiddleware));
 
   app.use((err: Error, req: express.Request, res: express.Response, next: express.NextFunction) => {

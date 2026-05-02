@@ -13,7 +13,7 @@ const LANGUAGES = [
 ];
 
 export default function Onboarding({ onComplete }: { onComplete: () => void }) {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const { login, register, error, setError } = useStore();
   const [step, setStep] = useState<'auth' | 'prefs'>('auth');
   const [isLogin, setIsLogin] = useState(true);
@@ -45,7 +45,7 @@ export default function Onboarding({ onComplete }: { onComplete: () => void }) {
   };
 
   const containerAnim = { hidden: { opacity: 0 }, show: { opacity: 1, transition: { staggerChildren: 0.1 } }, exit: { opacity: 0, scale: 0.95, transition: { duration: 0.2 } } };
-  const itemAnim = { hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { duration: 0.4, ease: [0.4, 0, 0.2, 1] } } };
+  const itemAnim = { hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { duration: 0.4, ease: 'easeOut' as any } } };
 
   return (
     <div className="min-h-screen flex items-center justify-center p-6 relative overflow-hidden" style={{ background: 'var(--color-bg-cream)' }}>

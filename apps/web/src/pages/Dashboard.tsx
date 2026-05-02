@@ -364,7 +364,7 @@ export default function Dashboard() {
                       navigate('/my-itinerary');
                     } catch (err: any) {
                       console.error('Trip creation failed:', err);
-                      alert('Failed to create trip. Please ensure your local backend is running at http://127.0.0.1:3001');
+                      alert('Failed to create trip. Please ensure the backend is reachable.');
                     }
                     setCreating(false);
                   }}

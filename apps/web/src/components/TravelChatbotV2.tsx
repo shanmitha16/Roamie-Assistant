@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
+import { Mic } from 'lucide-react';
 import { useStore } from '../stores/useStore';
+import api from '../lib/api';
 import countries from 'world-countries';
 
 type TripType =
@@ -542,6 +544,42 @@ export default function TravelChatbotV2({
     setTimeout(scrollToBottom, 0);
   };
 
+  const startListening = () => {
+    const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+      alert("Your browser doesn't support speech recognition.");
+      return;
+    }
+    const recognition = new SpeechRecognition();
+    recognition.lang = 'en-US';
+    recognition.start();
+
+    recognition.onresult = async (event: any) => {
+      const text = event.results[0][0].transcript;
+      pushUser(text);
+      setTyping(true);
+      try {
+        const { data } = await api.post('/voice', { text });
+        const aiResponse = data.response;
+        pushAi(aiResponse);
+        speak(aiResponse);
+      } catch (err) {
+        pushAi("I'm sorry, I encountered an error with my voice module.");
+      } finally {
+        setTyping(false);
+      }
+    };
+  };
+
+  const speak = (text: string) => {
+    if (!window.speechSynthesis) return;
+    window.speechSynthesis.cancel(); // Stop any current speech
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.rate = 1.0;
+    utterance.pitch = 1.0;
+    window.speechSynthesis.speak(utterance);
+  };
+
   // Destination filtering (offline, fast, capped)
   useEffect(() => {
     const q = query.trim().toLowerCase();
@@ -764,7 +802,25 @@ export default function TravelChatbotV2({
   };
 
   return (
-    <div className={`r-card ${className}`.trim()} style={{ padding: 16, display: 'flex', flexDirection: 'column', gap: 12 }}>
+    <div className={`r-card ${className}`.trim()} style={{ padding: 16, display: 'flex', flexDirection: 'column', gap: 12, position: 'relative' }}>
+      <button 
+        onClick={startListening}
+        className="btn btn-ghost btn-sm"
+        style={{ 
+          position: 'absolute', 
+          top: 12, 
+          right: 12, 
+          zIndex: 10, 
+          gap: 6, 
+          padding: '6px 10px',
+          background: 'rgba(229,88,3,0.1)',
+          color: '#e55803',
+          border: '1px solid rgba(229,88,3,0.2)'
+        }}
+        title="Voice AI Assistant"
+      >
+        <Mic size={14} /> Voice AI
+      </button>
       <div
         style={{
           maxHeight: 480,

@@ -43,7 +43,7 @@ export default function App() {
   if (!ready) return (
     <div style={{ minHeight: '100vh', background: '#fff6e0', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       <div style={{ textAlign: 'center' }}>
-        <motion.div animate={{ rotate: 360 }} transition={{ duration: 1.6, repeat: Infinity, ease: 'linear' }}
+        <motion.div animate={{ rotate: 360 }} transition={{ duration: 1.6, repeat: Infinity, ease: 'linear' as any }}
           style={{ display: 'inline-block', marginBottom: 12 }}>
           <Plane size={30} style={{ color: '#e55803' }} />
         </motion.div>

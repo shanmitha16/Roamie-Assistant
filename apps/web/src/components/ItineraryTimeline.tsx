@@ -132,7 +132,6 @@ function DaySection({
             <TimelineNode
               key={`${day.id}-${i}`}
               event={event}
-              isLast={i === day.events.length - 1}
               currency={currency}
               onClick={() => onEventClick?.(day.id, event)}
             />
@@ -160,12 +159,10 @@ function DaySection({
 /* ─── Timeline Node ─── */
 function TimelineNode({
   event,
-  isLast,
   currency,
   onClick,
 }: {
   event: TimelineEvent;
-  isLast: boolean;
   currency: string;
   onClick: () => void;
 }) {
@@ -243,7 +240,7 @@ function TimelineNode({
                 initial={{ height: 0, opacity: 0 }}
                 animate={{ height: 'auto', opacity: 1 }}
                 exit={{ height: 0, opacity: 0 }}
-                transition={{ duration: 0.35, ease: [0.4, 0, 0.2, 1] }}
+                transition={{ duration: 0.35, ease: 'easeOut' as any }}
                 className="overflow-hidden"
               >
                 <div className="pt-3 mt-3 space-y-2" style={{ borderTop: '1px solid var(--color-border)' }}>
